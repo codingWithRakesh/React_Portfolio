@@ -1,0 +1,408 @@
+@media only screen and (max-width: 1050px) {
+
+    /* navbar */
+    .nav {
+        height: 9vh;
+    }
+
+    .searchBar {
+        width: 65%;
+    }
+
+    .searchBar label {
+        width: 10%;
+    }
+
+    .searchBar input {
+        width: 87%;
+    }
+
+    .showBox span {
+        width: 10%;
+    }
+
+    /* sidebar */
+    .sideNavSmall {
+        width: 12% !important;
+    }
+
+    /* home */
+    .mainContainerSmall {
+        width: 88% !important;
+    }
+
+    .mainContainer {
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+    .boxes {
+        height: 15rem;
+        width: 44%;
+    }
+
+    .bigName {
+        font-size: 1.6rem;
+    }
+
+    .summary p {
+        font-size: 1rem;
+    }
+
+    .summary h2 {
+        font-size: 1.6rem;
+    }
+
+    .titleClient h1 {
+        font-size: 1.8rem;
+    }
+
+    /* swiper card */
+    .swiperClass {
+        width: 98%;
+        height: 18rem;
+    }
+
+    .clientBox {
+        height: 14rem;
+        width: 83%;
+    }
+
+    .clientImg {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .clientWrite p {
+        font-size: 1rem;
+    }
+
+    .clientWrite h2 {
+        font-size: 1.5rem;
+    }
+
+    /* about page */
+    .about {
+        padding: 1rem;
+    }
+
+    .AboutComAA {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .firstAb {
+        width: 50%;
+        margin-top: .5rem;
+    }
+
+    .peraAB {
+        width: 98%;
+    }
+
+    .col .contents {
+        padding: 0 5px 0 30px;
+    }
+
+    /* skill */
+    .skills {
+        padding: 1rem 2rem;
+    }
+
+    .titleSkill {
+        font-size: 1.8rem;
+    }
+
+    .skillBox {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .skillBox p {
+        font-size: 1rem;
+    }
+
+    /* projects */
+    .projects {
+        padding: 1rem 2rem;
+    }
+
+    .project:hover{
+        scale: 1;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    /* certificate  */
+    .certificate {
+        padding: 1rem 2rem;
+    }
+
+    .CertificateComClass {
+        width: 90%;
+    }
+
+    /* contact */
+
+    .contact {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .inputContact {
+        width: 70%;
+    }
+
+    /* theme */
+    .modarContainer {
+        width: 85%;
+    }
+
+    .searchIcon{
+        display: none;
+    }
+
+    .bottomBar{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    /* navbar */
+    .navShadow{
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .nav{
+        justify-content: flex-end;
+        gap: 5px;
+    }
+
+    .searchBar{
+        width: 95%;
+    }
+
+    .showSarchResult{
+        max-height: none;
+        height: 90vh;
+    }
+
+    .searchIcon{
+        height: 6vh;
+        width: 6vh;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--componentBG);
+        border: 1px solid var(--componentBGhover);
+        color: var(--headerColor);
+        /* border: 1px solid black; */
+    }
+
+    /* home */
+    .sideNavSmall{
+        display: none;
+    }
+    .mainContainerSmall {
+        width: 100% !important;
+    }
+
+    .home{
+        padding: .5rem;
+        padding-top: 0;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .boxes {
+        width: 90%;
+    }
+
+    .titleClient {
+        width: 60%;
+    }
+
+    .titleClient h1{
+        font-size: 1.5rem;
+    }
+
+    .swiperClass{
+        height: 28rem;
+        width: 100%;
+    }
+
+    .clientBox {
+        height: 24rem;
+        width: 83%;
+        flex-direction: column;
+    }
+
+    .clientWrite {
+        width: 90%;
+        padding-top: 0;
+        font-size: 1.1rem;
+        position: relative;
+    }
+
+    /* about */
+    .about{
+        padding-top: 0;
+    }
+
+    .firstAb{
+        width: 80%;
+    }
+
+    .titleAbout{
+        margin: 1rem;
+    }
+
+    /* skills */
+    .skills{
+        padding: 1rem;
+        padding-top: 0;
+        gap: 1.5rem;
+    }
+
+    .titleSkill{
+        font-size: 1.5rem;
+    }
+
+    /* projects */
+    .projects {
+        padding: 1rem;
+        padding-top: 0;
+        gap: 1rem;
+    }
+
+    /* .certificate */
+    .certificate {
+        padding: 1rem;
+        padding-top: 0;
+    }
+    .CertificateComClass{
+        width: 100%;
+    }
+
+    /* contact us */
+    .contact{
+        padding: 1rem;
+        padding-top: 0;
+    }
+    .showGIF{
+        width: 100%;
+    }
+
+    .inputContact{
+        width: 100%;
+    }
+
+    /* theme */
+    .modarContainer {
+        width: 95%;
+        height: 90vh;
+    }
+
+    .fonts {
+        width: 100%;
+    }
+
+    .showResult {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .back-to-top{
+        bottom: 5rem;
+        right: 1rem;
+    }
+
+    /* bottom bar */
+    .bottomBar{
+        width: 100%;
+        min-height: 0;
+        background-color: var(--componentBG);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 11;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 1rem;
+        border-top: 1px solid var(--componentBGhover);
+    }
+
+    .bottomBox{
+        width: 5rem ;
+        height: 4rem;
+        border: 2px solid var(--componentBGhover);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin: 0 5px; */
+        text-decoration: none;
+        padding: 5px;
+        line-height: 1.1;
+    }
+
+    .croseBottom{
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        color: var(--headerColor);
+    }
+
+    .bottomBox .bottomF{
+        font-size: 1.5rem;
+        color: var(--headerColor);
+    }
+
+    .bottomBox span{
+        color: var(--headerColor);
+        text-align: center;
+        font-size: .8rem;
+        color: var(--paragraphColor);
+    }
+
+    [aria-current="page"]{
+        border: 2px solid var(--smallColor);
+        background-color: transparent;
+    }
+
+    [aria-current="page"]::before {
+        content: "";
+        position: static;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 0;
+        background-color: transparent;
+    }
+
+    .menu{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 8;
+        color: var(--headerColor);
+    }
+}
