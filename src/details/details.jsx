@@ -22,12 +22,12 @@ import portfolio from '../assets/videos/portpolio.mp4'
 import firstPortfolio from '../assets/videos/first_portfolio.mp4'
 import secondPortfolio from '../assets/videos/second_portfolio.mp4'
 
-
 import calcluter from '../assets/images/calcluter.png'
 import curancyChange from '../assets/images/curancyChange.png'
 import examonline from '../assets/images/examonline.png'
 import stonepapersesar from '../assets/images/stonepapersesar.png'
 import tictacto from '../assets/images/tictacto.png'
+import BattingGame from '../assets/images/Batting Game.png'
 import fileDownloder from '../assets/images/file_downloder.png'
 import { BiLogoGmail } from "react-icons/bi";
 import { MdLocalPhone } from "react-icons/md";
@@ -94,7 +94,7 @@ export const details = {
             },
             {
                 durationWork: "Sep,2022 - Jun,2024",
-                work: "Teacher",
+                work: "Teaching",
                 peragraph: "I have 1.5 years of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there",
                 link: workExperience,
                 name: "certificate",
@@ -113,7 +113,7 @@ export const details = {
             {
                 durationWork: "2024 - 2027",
                 work: "Bachelor Of Computer Application",
-                peragraph: "I Have Started My Bachelor Of Computer Application Degree from ...",
+                peragraph: "I Have Started My Bachelor Of Computer Application Degree from Brainware University (Kolkata)",
                 isTrue: false
             },
             {
@@ -206,6 +206,12 @@ export const details = {
             link: "https://tarapada-projects.netlify.app/project/instagram/home/",
             skills: ["JavaScript", "HTML", "CSS", "Dom Management","Flex Box"],
             video: instagramClone
+        },
+        {
+            name: "Batting Game",
+            link: "https://batting.netlify.app/",
+            skills: ["JavaScript", "HTML", "CSS", "Dom Management","Flex Box"],
+            image: BattingGame
         },
         {
             name: "Netflix Clone",

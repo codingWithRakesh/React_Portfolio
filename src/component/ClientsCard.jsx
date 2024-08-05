@@ -1,8 +1,6 @@
 import React from 'react'
-import {details} from '../details/details'
 
 const ClientsCard = ({data}) => {
-    // console.log(details.map((data) => console.log(data.projects[0].skills[0])))
     return (
         <div className="clientBox boxShadows">
             <div className="clientImg">

@@ -9,7 +9,6 @@ import { useBorder } from '../contexts/borderContext';
 import TopLoadingBar from './TopLoadingBar';
 import { useTopLoader } from '../contexts/topLoderContext';
 import { FaCode } from 'react-icons/fa';
-import { IoMdSearch } from 'react-icons/io';
 import SearchIcon from './SearchIcon';
 
 const Navbar = () => {

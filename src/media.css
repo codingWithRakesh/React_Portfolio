@@ -182,6 +182,7 @@
     .nav{
         justify-content: flex-end;
         gap: 5px;
+        background-color: transparent;
     }
 
     .searchBar{

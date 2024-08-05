@@ -7,24 +7,24 @@ import { NavLink } from 'react-router-dom'
 import { useModal } from '../contexts/modalProvider'
 import { GoX } from 'react-icons/go'
 
-const Bottombar = ({menuCheck, setMenuCheck}) => {
+const Bottombar = ({ menuCheck, setMenuCheck }) => {
     const [[closeModal, setCloseModal]] = useModal()
     const sidebarFun = () => {
         setCloseModal(!closeModal)
     }
 
     useEffect(() => {
-      window.addEventListener('click',() => {
-        setMenuCheck(!menuCheck)
-      })
-    
-      return () => {
-        window.removeEventListener('click',() => {
+        window.addEventListener('click', () => {
             setMenuCheck(!menuCheck)
-          })
-      }
+        })
+
+        return () => {
+            window.removeEventListener('click', () => {
+                setMenuCheck(!menuCheck)
+            })
+        }
     }, [setMenuCheck])
-    
+
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -68,7 +68,7 @@ const Bottombar = ({menuCheck, setMenuCheck}) => {
                         src: <MdContacts />,
                         name: "Contact"
                     }
-                ].map((value, index) => (<NavLink to={value.href}  onClick={scrollToTop} key={index} title={value.name} className={`bottomBox`}>
+                ].map((value, index) => (<NavLink to={value.href} onClick={scrollToTop} key={index} title={value.name} className={`bottomBox`}>
                     <span className='bottomF'>
                         {value.src}
                     </span>
@@ -81,7 +81,7 @@ const Bottombar = ({menuCheck, setMenuCheck}) => {
                 </span>
                 <span>Setting</span>
             </div>
-            <div className="croseBottom" onClick={() =>setMenuCheck(!menuCheck)}>
+            <div className="croseBottom" onClick={() => setMenuCheck(!menuCheck)}>
                 <GoX />
             </div>
         </div>

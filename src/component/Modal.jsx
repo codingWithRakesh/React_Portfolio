@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import { RxCross1 } from "react-icons/rx";
 import { useModal } from '../contexts/modalProvider';
 import Modes from './Modes';

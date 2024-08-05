@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../App.css'
 import { useMode } from '../contexts/modeChangeContext'
 
 const Modes = ({ data }) => {
   const [[,setGetName]] = useMode("")
-  // const 
   return (
-    <div onClick={() => setGetName(data.attribute)} className={`modesClass ${data.isTrue ? "borderBlue" : ""}`}> {/* for only one */}
+    <div onClick={() => setGetName(data.attribute)} className={`modesClass ${data.isTrue ? "borderBlue" : ""}`}>
       <div className={`allmods ${data.backGrounds[1]}`}>
         <div className={`navLite  ${data.backGrounds[0]}`}></div>
         <div className="sidebarLite whiteLite">

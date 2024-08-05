@@ -5,10 +5,10 @@ export const FontContext = createContext()
 
 const FontContextProvider = ({ children }) => {
     const [fonts, setFonts] = useState([
-        { value: 'RobotSanSserif', label: 'Roboto sans-serif', className: "RobotoSans", isTrue : false},
-        { value: 'PlaywriteUSTradCursive', label: 'Playwrite US Trad cursive', className: "PlaywriteUS", isTrue : true },
-        { value: 'PlaywritePLcursive', label: 'Playwrite PL cursive', className: "PlaywritePL", isTrue : false },
-        { value: 'RobotoSlabSerif', label: 'Roboto Slab serif', className: "RobotoSlab", isTrue : false},
+        { value: 'RobotSanSserif', label: 'Roboto sans-serif', className: "RobotoSans", isTrue: false },
+        { value: 'PlaywriteUSTradCursive', label: 'Playwrite US Trad cursive', className: "PlaywriteUS", isTrue: true },
+        { value: 'PlaywritePLcursive', label: 'Playwrite PL cursive', className: "PlaywritePL", isTrue: false },
+        { value: 'RobotoSlabSerif', label: 'Roboto Slab serif', className: "RobotoSlab", isTrue: false },
     ])
     const [allFonts, setAllFonts] = useState("RobotSanSserif")
 

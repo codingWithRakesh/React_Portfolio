@@ -120,14 +120,12 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
 
     const backHome = () => {
         screen.width <= 500 ? setSetshowInput(!setshowInput) : setSetshowInput(false)
-        
     }
 
     return (
         <div className='searchBar' onClick={stopBouncing}>
             <div className={`inputBoxs ${check ? "borderBottom" : ""}`}>
                 <label htmlFor="inputId" onClick={backHome}>
-                    {/* <IoMdSearch /> */}
                     {screen.width <= 500 ? <GoArrowLeft /> : <IoMdSearch />}
                 </label>
                 <input 

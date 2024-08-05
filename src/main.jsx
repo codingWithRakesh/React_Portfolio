@@ -64,7 +64,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <UserContextProvider>
                   <React.StrictMode>
                     <RouterProvider router={router} />
-                  </React.StrictMode>,
+                  </React.StrictMode>
                 </UserContextProvider>
               </ModalContextProvider>
             </BorderContextProvider>

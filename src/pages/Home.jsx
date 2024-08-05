@@ -4,7 +4,6 @@ import { UserContext } from '../contexts/context'
 import SwiperCom from '../component/SwiperCom'
 import { useTopLoader } from '../contexts/topLoderContext'
 import {details} from '../details/details.jsx'
-import BackToTop from '../component/BackToTop.jsx'
 
 const Home = () => {
   const [[sidebar]] = useContext(UserContext)
@@ -41,7 +40,6 @@ const Home = () => {
       <div className="titleClient boxShadows">
         <h1>My Clients</h1>
       </div>
-      {/* <BackToTop /> */}
       <SwiperCom clients={details.home.MyClients} />
     </div>
   )
