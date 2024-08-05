@@ -288,6 +288,8 @@
     .certificate {
         padding: 1rem;
         padding-top: 0;
+        align-content: flex-start;
+        gap: 1rem;
     }
     .CertificateComClass{
         width: 100%;
