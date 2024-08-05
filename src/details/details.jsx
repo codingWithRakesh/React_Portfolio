@@ -38,7 +38,7 @@ export const details = {
     home: {
         titlesHome: [
             {
-                big: "12+",
+                big: "15+",
                 normal: "Decent Projects"
             },
             {
