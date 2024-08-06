@@ -215,6 +215,9 @@
     .mainContainerSmall {
         width: 100% !important;
     }
+    .mainContainer{
+        top: 9vh;
+    }
 
     .home{
         padding: .5rem;
