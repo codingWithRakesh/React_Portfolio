@@ -1,9 +1,6 @@
 @media only screen and (max-width: 1050px) {
 
     /* navbar */
-    .nav {
-        height: 9vh;
-    }
 
     .searchBar {
         width: 65%;
@@ -140,10 +137,15 @@
     /* certificate  */
     .certificate {
         padding: 1rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.8rem;
     }
 
     .CertificateComClass {
         width: 90%;
+        margin: 0;
     }
 
     /* contact */
@@ -183,6 +185,7 @@
         justify-content: flex-end;
         gap: 5px;
         background-color: transparent;
+        height: 9vh;
     }
 
     .searchBar{

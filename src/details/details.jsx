@@ -9,6 +9,7 @@ import client2 from '../assets/images/clients/client2.png'
 import MyImage from '../assets/images/TARAPADA.jpg'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 import workExperience from '../assets/certificate/work_experience.pdf'
+import workExperienceIMG from '../assets/certificate/work_experience_image.jpg'
 
 import ComputerCenter from '../assets/videos/Computer Center Webside.mp4'
 import YouTubeClone from '../assets/videos/YouTube.mp4'
@@ -314,6 +315,11 @@ export const details = {
             name: "DSA certificate",
             image: DSACertificate,
             link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/"
+        },
+        {
+            name : "Teaching Experience certificate",
+            image : workExperienceIMG,
+            link : workExperience
         }
     ],
     profile: {
