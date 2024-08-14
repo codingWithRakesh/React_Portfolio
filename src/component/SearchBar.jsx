@@ -84,13 +84,10 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         const handleKeyDown = (event) => {
             if (event.key === 'ArrowUp') {
                 topFun();
-                console.log(inputSelect)
             } else if (event.key === 'ArrowDown') {
                 downFun();
-                console.log(inputSelect)
             } else if (event.key === "Enter") {
                 enterFun();
-                console.log(inputSelect)
             }
         };
 
