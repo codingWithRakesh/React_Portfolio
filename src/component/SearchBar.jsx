@@ -9,7 +9,7 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
     const [query, setQuery] = useState("");
     const [check, setCheck] = useState(false);
     const [[searchQu, setsearchQu]] = useSearch();
-    const inputSelect = useRef(null);
+    const inputSelect = useRef();
     const [searchP, setSearchP] = useSearchParams({ q: "" });
     const q = searchP.get("q");
 
@@ -84,17 +84,20 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         const handleKeyDown = (event) => {
             if (event.key === 'ArrowUp') {
                 topFun();
+                console.log(inputSelect)
             } else if (event.key === 'ArrowDown') {
                 downFun();
+                console.log(inputSelect)
             } else if (event.key === "Enter") {
                 enterFun();
+                console.log(inputSelect)
             }
         };
 
-        window.addEventListener('keydown', handleKeyDown);
+        inputSelect.current.addEventListener('keydown', handleKeyDown);
 
         return () => {
-            window.removeEventListener('keydown', handleKeyDown);
+            inputSelect.current.removeEventListener('keydown', handleKeyDown);
         };
     }, [topFun, downFun, enterFun]);
 
