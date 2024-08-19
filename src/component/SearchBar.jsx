@@ -90,11 +90,15 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
                 enterFun();
             }
         };
-
-        inputSelect.current.addEventListener('keydown', handleKeyDown);
-
+    
+        if (inputSelect.current) {
+            inputSelect.current.addEventListener('keydown', handleKeyDown);
+        }
+    
         return () => {
-            inputSelect.current.removeEventListener('keydown', handleKeyDown);
+            if (inputSelect.current) {
+                inputSelect.current.removeEventListener('keydown', handleKeyDown);
+            }
         };
     }, [topFun, downFun, enterFun]);
 
@@ -119,7 +123,7 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
     });
 
     const backHome = () => {
-        screen.width <= 500 ? setSetshowInput(!setshowInput) : setSetshowInput(false)
+        screen.width <= 500 ? setSetshowInput((pre) => !pre) : setSetshowInput(false)
     }
 
     return (

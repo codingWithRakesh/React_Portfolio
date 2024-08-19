@@ -698,8 +698,8 @@
 }
 
 .boxLite {
-    width: 5.9rem;
-    height: 3rem;
+    width: 43%;
+    height: 40%;
     border-radius: 5px;
 }
 
@@ -1345,7 +1345,7 @@
 }
 
 .CertificateComClass:hover {
-    scale: 1.02;
+    scale: 1.05;
 }
 
 .imageCerti {
