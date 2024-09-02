@@ -96,7 +96,7 @@ export const details = {
             {
                 durationWork: "Sep,2022 - Jun,2024",
                 work: "Teaching",
-                peragraph: "I have 1.5 years of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there",
+                peragraph: "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there",
                 link: workExperience,
                 name: "certificate",
                 isTrue: true
