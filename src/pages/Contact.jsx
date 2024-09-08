@@ -5,6 +5,7 @@ import GIFContact from '../assets/images/contact.gif'
 import { FiSend } from 'react-icons/fi'
 import { useTopLoader } from '../contexts/topLoderContext'
 import { SlCheck } from 'react-icons/sl'
+import loadingGif from '../assets/images/loading.gif'
 
 const Contact = () => {
   const [[sidebar]] = useContext(UserContext)
@@ -17,20 +18,28 @@ const Contact = () => {
     }, 20)
   }, [setProgress])
 
-  const [isTrue, setIsTrue] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
   const form = useRef(null)
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyXZOwoKIQ_Dm1qLrXOcp1qC8205nP0bRVWGMHNFa45hztL7QHPxDOT1unsYKJFNrRg/exec'
-  const sumnitFun = (e) => {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzpMQEiXYpkx5Skzqa85Y4K9Z8WZEOSatP0Y4lAdFF1GeFJNhedwVABjbWgCcPLXPmt/exec'
+
+  const submitForm = (e) => {
     e.preventDefault()
+    setLoading(true)
+
     fetch(scriptURL, { method: 'POST', body: new FormData(form.current) })
       .then(response => {
-        setIsTrue(true)
+        setLoading(false)
+        setIsSubmitted(true)
         setTimeout(() => {
-          setIsTrue(false)
+          setIsSubmitted(false)
         }, 1000)
         form.current.reset()
       })
-      .catch(error => console.error('Error!', error.message))
+      .catch(error => {
+        setLoading(false)
+        console.error('Error!', error.message)
+      })
   }
 
   return (
@@ -38,12 +47,28 @@ const Contact = () => {
       <div className="showGIF">
         <img src={GIFContact} alt={GIFContact} />
       </div>
-      <form className="inputContact boxShadows" action="#" ref={form} name="submit-to-google-sheet" onSubmit={sumnitFun}>
+      <form className="inputContact boxShadows" action="#" ref={form} name="submit-to-google-sheet" onSubmit={submitForm}>
         <input type="text" placeholder='Name' className='firstRow' name="Name" required />
         <input type="email" placeholder='Email' className='firstRow' name="Email" required />
         <input type="text" placeholder='Subject' className='firstRow' name="Subject" required />
         <textarea placeholder='Message...' className='lastRow' name="Message" required></textarea>
-        <button type='submit' className='button-60 contactButton'>{isTrue ? "Submited" : "Submit"}{isTrue ? <SlCheck /> : <FiSend />}</button>
+
+        <button type='submit' className='button-60 contactButton'>
+          {loading ? (
+            <>
+              Loading...
+              <img src={loadingGif} alt="loading" />
+            </>
+          ) : isSubmitted ? (
+            <>
+              Submitted <SlCheck />
+            </>
+          ) : (
+            <>
+              Submit <FiSend />
+            </>
+          )}
+        </button>
       </form>
     </div>
   )

@@ -1430,6 +1430,11 @@
     gap: 10px;
 }
 
+.contactButton img{
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+}
 
 /* back to top */
 .back-to-top {
