@@ -31,9 +31,18 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         }
     };
 
-    window.addEventListener("click", () => {
-        setCheck(false);
-    });
+    // Clean up window event listener for click
+    useEffect(() => {
+        const handleClick = () => {
+            setCheck(false);
+        };
+
+        window.addEventListener("click", handleClick);
+
+        return () => {
+            window.removeEventListener("click", handleClick);
+        };
+    }, []);
 
     const stopBouncing = (e) => {
         e.stopPropagation();
@@ -90,11 +99,11 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
                 enterFun();
             }
         };
-    
+
         if (inputSelect.current) {
             inputSelect.current.addEventListener('keydown', handleKeyDown);
         }
-    
+
         return () => {
             if (inputSelect.current) {
                 inputSelect.current.removeEventListener('keydown', handleKeyDown);
@@ -102,18 +111,32 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         };
     }, [topFun, downFun, enterFun]);
 
+    // Scroll selected item into view
     const ShowSearchResult = React.memo(({ index, showCount, item }) => {
-        return (
-            <div onClick={() => {
-                setQuery(item);
-                setsearchQu(item.toLowerCase());
-                setSearchP((prev) => {
-                    prev.set("q", item);
-                    return prev;
+        useEffect(() => {
+            if (index === showCount) {
+                document.getElementById(`search-item-${index}`).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
                 });
-                navigate('/projects');
-                setCheck(false);
-            }} className={`showBox ${index === showCount ? "selectedIn" : ""}`}>
+            }
+        }, [showCount, index]);
+
+        return (
+            <div 
+                id={`search-item-${index}`} 
+                onClick={() => {
+                    setQuery(item);
+                    setsearchQu(item.toLowerCase());
+                    setSearchP((prev) => {
+                        prev.set("q", item);
+                        return prev;
+                    });
+                    navigate('/projects');
+                    setCheck(false);
+                }} 
+                className={`showBox ${index === showCount ? "selectedIn" : ""}`}
+            >
                 <span>
                     <IoMdSearch />
                 </span>
