@@ -1,9 +1,9 @@
 import React, { memo } from 'react'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia'
 
-const ProjectCom = ({ data }) => {
+const ProjectCom = ({ data , classProject }) => {
     return (
-        <div className="project boxShadows">
+        <div className={`project boxShadows ${classProject ? classProject : ""}`}>
             <div className="videoShow">
                 {data.video ? (
                     <video src={data.video} autoPlay muted loop></video>

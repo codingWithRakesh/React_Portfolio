@@ -121,6 +121,44 @@
         font-size: 1rem;
     }
 
+
+    /* show all skills */
+    .showmain{
+        width: 70%;
+    }
+
+    .showsuggason{
+        width: 30%;
+    }
+
+    .boxChartBox{
+        width: 90%;
+    }
+
+    .mainshowproject{
+        width: 100%;
+    }
+
+    .titleChartBox{
+        height: 2rem;
+        margin-bottom: 0;
+    }
+
+    .mainShowCertifickets{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainShowCertifickets .CertificateComClass {
+        width: 100%;
+    }
+
+    .showSkill {
+        padding-bottom: 2rem;
+    }
+
     /* projects */
     .projects {
         padding: 1rem 2rem;
@@ -281,6 +319,33 @@
 
     .titleSkill{
         font-size: 1.5rem;
+    }
+
+    /* show .skills */
+
+    .showmain {
+        width: 100%;
+        padding: 0;
+    }
+
+    .showsuggason{
+        width: 100%;
+    }
+
+    .backRow{
+        padding-left: 1rem;
+    }
+
+    .mainChart {
+        height: 23rem;
+    }
+
+    .showsuggason h1{
+        margin-left: 1rem;
+    }
+
+    .certifickteRow{
+        margin-bottom: 1rem;
     }
 
     /* projects */

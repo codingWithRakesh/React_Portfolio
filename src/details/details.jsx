@@ -1,7 +1,7 @@
 import { DiJqueryLogo } from "react-icons/di";
-import { FaBootstrap, FaCss3Alt, FaDatabase, FaFacebook, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaInstagram, FaLinkedin, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaDatabase, FaFacebook, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaInstagram, FaLinkedin, FaReact, FaYoutube } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiJavascript, SiRedux, SiTypescript } from "react-icons/si";
+import { SiJavascript, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
 import ReactCertificate from '../assets/certificate/React.jpg'
 import DSACertificate from '../assets/certificate/DSA.jpg'
 import client1 from '../assets/images/clients/client1.png'
@@ -140,59 +140,193 @@ export const details = {
     skills: [
         {
             name: "JavaScript",
-            icon: <SiJavascript />
+            icon: <SiJavascript />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [75, 25],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "TypeScript",
-            icon: <SiTypescript />
+            icon: <SiTypescript />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [60, 40],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "React",
-            icon: <FaReact />
+            icon: <FaReact />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+                {
+                    name : "Udemy",
+                    icon : <SiUdemy />
+                },
+            ],
+            data: [70, 30],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "Redux",
-            icon: <SiRedux />
+            icon: <SiRedux />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [60, 40],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "HTML",
-            icon: <FaHtml5 />
+            icon: <FaHtml5 />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [90, 10],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "CSS",
-            icon: <FaCss3Alt />
+            icon: <FaCss3Alt />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [85, 15],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "jQuery",
-            icon: <DiJqueryLogo />
+            icon: <DiJqueryLogo />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [70, 30],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "Bootstrap",
-            icon: <FaBootstrap />
+            icon: <FaBootstrap />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [75, 25],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "Tailwind",
-            icon: <RiTailwindCssFill />
+            icon: <RiTailwindCssFill />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [70, 30],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "C language",
-            icon: <i className="fa-solid fa-c"></i>
+            icon: <i className="fa-solid fa-c"></i>,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [75, 25],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "DSA",
-            icon: <FaDatabase />
+            icon: <FaDatabase />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+                {
+                    name : "Udemy",
+                    icon : <SiUdemy />
+                },
+            ],
+            data: [50, 50],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "Figma",
-            icon: <FaFigma />
+            icon: <FaFigma />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [70, 30],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "Git",
-            icon: <FaGitAlt />
+            icon: <FaGitAlt />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [85, 15],
+            title: "skills",
+            iconOut : true
         },
         {
             name: "GitHub",
-            icon: <FaGithub />
+            icon: <FaGithub />,
+            learn : [
+                {
+                    name : "YouTube",
+                    icon : <FaYoutube />
+                },
+            ],
+            data: [85, 15],
+            title: "skills",
+            iconOut : true
         },
     ],
     projects: [
@@ -308,11 +442,13 @@ export const details = {
     certificates: [
         {
             name: "React certificate",
+            title : "React",
             image: ReactCertificate,
             link: "https://www.udemy.com/certificate/UC-a659684c-d9ec-43f9-b844-dc79bbf27405/"
         },
         {
             name: "DSA certificate",
+            title : "DSA",
             image: DSACertificate,
             link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/"
         },

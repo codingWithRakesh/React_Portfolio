@@ -1022,7 +1022,17 @@
     gap: .2rem;
     color: var(--headerColor);
     background-color: var(--componentBG);
+    text-decoration: none;
     transition: all .5s ease-out;
+    position: relative;
+    text-align: center;
+}
+
+.skillBox .goOutSide{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.4rem;
 }
 
 .skillBox:hover {
@@ -1039,7 +1049,193 @@
     color: var(--paragraphColor);
 }
 
+/* showSkill */
 
+.showSkill{
+    /* border: 1px solid black; */
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showmain{
+    width: 65%;
+    min-height: 67vh;
+    /* border: 1px solid black; */
+    padding-left: 1rem;
+}
+
+.chartRow{
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    color: var(--headerColor);
+    /* border: 1px solid black; */
+}
+
+.boxChartBox{
+    width: 80%;
+    min-height: 0;
+    border-radius: 5px;
+    padding: 1.2rem 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.titleChartBox{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.4rem;
+    color: var(--headerColor);
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.titleChartBox span{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainChart{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backRow{
+    width: 100%;
+    /* border: 1px solid ; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+    background-color: var(--componentBG) !important;
+    border: 1px solid var(--componentBGhover) !important; 
+    /* gap: 5px; */
+}
+
+.back:hover{
+    background-color: var(--componentBGhover) !important;
+    border: 1px solid var(--componentBG) !important;
+}
+
+.back span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.learnForm{
+    width: 100%;
+    min-height: 10rem;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.learnForm p{
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--headerColor);
+}
+
+.certifickteRow{
+    width: 100%;
+    min-height: 10rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.certifickteRow p{
+    font-size: 1.4rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: var(--headerColor);
+}
+
+.mainShowCertifickets{
+    width: 85%;
+}
+
+.showSkillWithProject{
+    width: 100%;
+    min-height: 10rem;
+    padding: 0 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.showSkillWithProject p{
+    font-size: 1.4rem;
+    width: 100%;
+    color: var(--headerColor);
+    margin-bottom: 2rem;
+}
+
+.mainshowproject{
+    /* border: 1px solid black; */
+    width: 80%;
+    min-height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.showSkillClassSk{
+    width: 100% !important;
+}
+
+.showsuggason{
+    width: 35%;
+    min-height: 0;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.showsuggason h1{
+    width: 100%;
+    color: var(--headerColor);
+}
 
 /* projects */
 .projects {

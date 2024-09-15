@@ -9,6 +9,7 @@ const Skills = lazy(() => import('./pages/Skills'))
 const Projects = lazy(() => import('./pages/Projects'))
 const Certificates = lazy(() => import('./pages/Certificates'))
 const Contact = lazy(() => import('./pages/Contact'))
+const SkillDetails = lazy(() => import('./pages/SkillDetails.jsx'))
 import Error from './pages/Error.jsx'
 import UserContextProvider from './contexts/context.jsx'
 import ModalContextProvider from './contexts/modalProvider.jsx'
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/skills',
         element: <Skills />
+      },
+      {
+        path: '/:skill',
+        element: <SkillDetails/>
       },
       {
         path: '/projects',
