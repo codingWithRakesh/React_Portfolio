@@ -1662,3 +1662,29 @@
 .searchIcon{
     display: none;
 }
+
+/* .error */
+.errorNext{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--componentBG);
+    z-index: 9999999;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorNext p{
+    color: var(--headerColor);
+    font-size: 1.5rem;
+}
+
+.pogisan{
+    position: fixed;
+    left: 5rem;
+    top: 5rem;
+}

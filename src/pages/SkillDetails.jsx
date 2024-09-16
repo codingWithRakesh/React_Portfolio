@@ -10,6 +10,8 @@ import ChartBoxSkill from '../component/ChartBoxSkill.jsx';
 import LearnFrom from '../component/LearnFrom.jsx';
 import ShowSkillcertificate from '../component/ShowSkillcertificate.jsx';
 import ShowProjectsInSkill from '../component/ShowProjectsInSkill.jsx';
+import Error from '../pages/Error.jsx'
+import ErrorPage from './ErrorPage.jsx';
 
 const SkillDetails = () => {
     const [[sidebar]] = useContext(UserContext);
@@ -43,6 +45,12 @@ const SkillDetails = () => {
             navigate(-1);
         }, 20);
     };
+
+    if (!nameSkill) {
+        return (
+            <ErrorPage/>
+        )
+    }
 
     return (
         <div className={`mainContainer showSkill ${sidebar ? "mainContainerSmall" : ""}`}>

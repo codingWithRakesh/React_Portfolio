@@ -480,4 +480,9 @@
         color: var(--headerColor);
         border: 1px solid var(--componentBGhover);
     }
+
+    .pogisan{
+        top: 3rem;
+        left: 3rem;
+    }
 }
