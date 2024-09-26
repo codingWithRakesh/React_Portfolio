@@ -10,6 +10,7 @@ import MyImage from '../assets/images/TARAPADA.jpg'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 import workExperience from '../assets/certificate/work_experience.pdf'
 import workExperienceIMG from '../assets/certificate/work_experience_image.jpg'
+import hackathonImg from '../assets/images/hackathon.png'
 
 import ComputerCenter from '../assets/videos/Computer Center Webside.mp4'
 import YouTubeClone from '../assets/videos/YouTube.mp4'
@@ -87,7 +88,7 @@ export const details = {
         expenses: [
             {
                 durationWork: "Jan,2024 - Jun,2024",
-                work: "Front end Devolaper",
+                work: "Frontend Developer",
                 peragraph: "I was working first in a Birsingha RGCSA company. It was in a computer coaching center. That's where I was working as a front end developer. Where I was working with a team. At that place we were making total 2 big websites which means we were working on 2 projects. I used technology like HTML, CSS, JavaScript, jQuery, Flex Box, Figma to make its website, the back end of its website was PHP, SQL, MySQL.",
                 link: "https://computerwebside.netlify.app/",
                 name: "link",
@@ -139,330 +140,623 @@ export const details = {
     },
     skills: [
         {
+            name: "React",
+            icon: <FaReact />,
+            learn: [
+                {
+                    name: "YouTube",
+                    icon: <FaYoutube />
+                },
+                {
+                    name: "Udemy",
+                    icon: <SiUdemy />
+                },
+            ],
+            data: [70, 30],
+            title: "skills",
+            iconOut: true
+        },
+        {
             name: "JavaScript",
             icon: <SiJavascript />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [75, 25],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "TypeScript",
             icon: <SiTypescript />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [60, 40],
             title: "skills",
-            iconOut : true
-        },
-        {
-            name: "React",
-            icon: <FaReact />,
-            learn : [
-                {
-                    name : "YouTube",
-                    icon : <FaYoutube />
-                },
-                {
-                    name : "Udemy",
-                    icon : <SiUdemy />
-                },
-            ],
-            data: [70, 30],
-            title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "Redux",
             icon: <SiRedux />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [60, 40],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "HTML",
             icon: <FaHtml5 />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [90, 10],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "CSS",
             icon: <FaCss3Alt />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [85, 15],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "jQuery",
             icon: <DiJqueryLogo />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [70, 30],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "Bootstrap",
             icon: <FaBootstrap />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [75, 25],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "Tailwind",
             icon: <RiTailwindCssFill />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [70, 30],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "C language",
             icon: <i className="fa-solid fa-c"></i>,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [75, 25],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "DSA",
             icon: <FaDatabase />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
                 {
-                    name : "Udemy",
-                    icon : <SiUdemy />
+                    name: "Udemy",
+                    icon: <SiUdemy />
                 },
             ],
             data: [50, 50],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "Figma",
             icon: <FaFigma />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [70, 30],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "Git",
             icon: <FaGitAlt />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [85, 15],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
         {
             name: "GitHub",
             icon: <FaGithub />,
-            learn : [
+            learn: [
                 {
-                    name : "YouTube",
-                    icon : <FaYoutube />
+                    name: "YouTube",
+                    icon: <FaYoutube />
                 },
             ],
             data: [85, 15],
             title: "skills",
-            iconOut : true
+            iconOut: true
         },
     ],
     projects: [
         {
             name: "YouTube Clone",
             link: "https://tarapada-projects.netlify.app/project/youtube/home/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Flex Box"],
-            video: YouTubeClone
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            video: YouTubeClone,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/youtube",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [75, 15, 10],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "October 2023 - November 2023"
         },
         {
             name: "Instagram Clone",
             link: "https://tarapada-projects.netlify.app/project/instagram/home/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management","Flex Box"],
-            video: instagramClone
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            video: instagramClone,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/instagram",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [65, 20, 15],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "September 2023 - October 2023"
+        },
+        {
+            name: "Hackathon Project",
+            link: "https://bw-hackathon-undefined.netlify.app/",
+            skills: ["React", "HTML", "CSS", "React Router Dom", "API", "Flexbox", "Figma", "GitHub", "Git"],
+            image: hackathonImg,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/-BWU-Hackathon-Project-",
+            labels: ['HTML', 'CSS', 'React'],
+            data: [2, 20, 78],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "6 September 2024 - 8 September 2024"
         },
         {
             name: "Batting Game",
             link: "https://batting.netlify.app/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management","Flex Box"],
-            image: BattingGame
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            image: BattingGame,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/Batting-Game",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [20, 30, 50],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "3 August 2024 - 5 August 2024"
         },
         {
             name: "Netflix Clone",
             link: "https://tarapada-projects.netlify.app/project/netflix/",
-            skills: ["HTML", "CSS","Flex Box"],
-            video: NetflixClone
+            skills: ["HTML", "CSS", "Flexbox", "GitHub", "Git"],
+            video: NetflixClone,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/netflix",
+            labels: ['HTML', 'CSS'],
+            data: [40, 60],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+            ],
+            Timeframe : "November 2023 - November 2023"
         },
         {
             name: "Computer Coaching Website",
             link: "https://computerwebside.netlify.app/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Flex Box", "Figma"],
-            video: ComputerCenter
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "Figma", "GitHub", "Git"],
+            video: ComputerCenter,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/computer-coaching-website",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [35, 20, 45],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "August 2023 - September 2023"
         },
         {
             name: "Ecommerce Website",
             link: "https://tarapada-projects.netlify.app/project/ecommercewebsite/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Figma", "Flex Box"],
-            video: eCommerceWebsite
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma", "Flexbox", "GitHub", "Git"],
+            video: eCommerceWebsite,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/EcommerceWebsite",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [45, 45, 10],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "November 2023 - December 2023"
         },
         {
             name: "Online Exam",
             link: "https://tarapada-projects.netlify.app/project/online%20exam/index.html",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Flex Box", "Figma"],
-            image: examonline
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "Figma", "GitHub", "Git"],
+            image: examonline,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/online-exam",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [10, 30, 60],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "November 2023 - December 2023"
         },
         {
             name: "Travel Websites",
             link: "https://tarapada-projects.netlify.app/project/travel/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Figma", "Flex Box"],
-            video: travel_website
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma", "Flexbox", "GitHub", "Git"],
+            video: travel_website,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/Travel-Websites",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [45, 45, 10],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "May 2024 - June 2024"
         },
         {
             name: "File Downloader",
             link: "https://tarapada-projects.netlify.app/project/file%20downloader%20new/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Figma", "Flex Box"],
-            image: fileDownloder
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma", "Flexbox", "GitHub", "Git"],
+            image: fileDownloder,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/File-Downloader",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [20, 35, 45],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "23 June 2024 - 28 June 2024"
         },
         {
             name: "Portfolio",
             link: "https://tarapada-projects.netlify.app/project/portfolio%2001/index.html",
-            skills: ["Figma", "JavaScript", "HTML", "CSS", "Flex Box"],
-            video: portfolio
+            skills: ["Figma", "HTML", "CSS", "Flexbox", "GitHub", "Git"],
+            video: portfolio,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/Portfolio",
+            labels: ['HTML', 'CSS'],
+            data: [65, 35],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+            ],
+            Timeframe : "February 2024 - March 2024"
         },
         {
             name: "First Portfolio",
             link: "https://tarapada-projects.netlify.app/project/personal%20webside/index.html",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Figma", "Flex Box", "jQuery"],
-            video: firstPortfolio
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma", "Flexbox", "jQuery", "GitHub", "Git"],
+            video: firstPortfolio,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/First-First-Portfolio",
+            labels: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
+            data: [30, 30, 20, 20],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 206, 86, 1)',
+            ],
+            Timeframe : "June 2023 - July 2023"
         },
         {
             name: "Second Portfolio",
             link: "https://tarapada-projects.netlify.app/project/portfolio/",
-            skills: ["Figma", "JavaScript", "HTML", "CSS", "Dom Management", "Flex Box", "API"],
-            video: secondPortfolio
+            skills: ["Figma", "JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "API", "GitHub", "Git"],
+            video: secondPortfolio,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/First-Portfolio",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [30, 30, 40],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "December 2023 - January 2024"
         },
         {
             name: "Blogging Website",
             link: "https://tarapada-projects.netlify.app/project/bloging%20webside/index.html",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Bootstrap", "Flex Box", "Grid"],
-            video: iCoder
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Bootstrap", "Flexbox", "Grid", "GitHub", "Git"],
+            video: iCoder,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/first-Bootstrap-webside",
+            labels: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+            data: [13, 12, 6, 69],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 206, 86, 1)',
+            ],
+            Timeframe : "October 2023 - November 2023"
         },
         {
             name: "Shopping Website",
             link: "https://tarapada-projects.netlify.app/project/shopping_webside/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Bootstrap",  "Flex Box", "Grid"],
-            video: shopping
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Bootstrap", "Flexbox", "Grid", "GitHub", "Git"],
+            video: shopping,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/shopping_Webside",
+            labels: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+            data: [23, 12, 35, 30],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 206, 86, 1)',
+            ],
+            Timeframe : "November 2023 - December 2023"
         },
         {
             name: "Calculator",
             link: "https://tarapada-projects.netlify.app/project/calculator/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Figma", "Flex Box"],
-            image: calcluter
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma", "Flexbox", "GitHub", "Git"],
+            image: calcluter,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/Calculator",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [20, 30, 50],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "18 December 2023 - 22 December 2023"
         },
         {
             name: "Currency Converter",
             link: "https://tarapada-projects.netlify.app/project/currencyconverter/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "API", "Figma", "Flex Box"],
-            image: curancyChange
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "API", "Figma", "Flexbox", "GitHub", "Git"],
+            image: curancyChange,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/CurrencyConverter",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [20, 10, 70],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "14 December 2023 - 16 December 2023"
         },
         {
             name: "Stone Paper Scissors Game",
             link: "https://tarapada-projects.netlify.app/project/stone%20paper%20scissors/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Flex Box"],
-            image: stonepapersesar
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            image: stonepapersesar,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/Stone-Paper-Scissors",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [17, 10, 73],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "6 December 2023 - 9 December 2023"
         },
         {
             name: "Tic Tac Toe Game",
             link: "https://tarapada-projects.netlify.app/project/tictactoe/",
-            skills: ["JavaScript", "HTML", "CSS", "Dom Management", "Flex Box"],
-            image: tictacto
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            image: tictacto,
+            title: "projects",
+            gitHub: "https://github.com/codingWithRakesh/TicTacToe",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [15, 10, 75],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe : "2 December 2023 - 5 December 2023"
         },
     ],
     certificates: [
         {
             name: "React certificate",
-            title : "React",
+            title: "React",
             image: ReactCertificate,
             link: "https://www.udemy.com/certificate/UC-a659684c-d9ec-43f9-b844-dc79bbf27405/"
         },
         {
             name: "DSA certificate",
-            title : "DSA",
+            title: "DSA",
             image: DSACertificate,
             link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/"
         },
         {
-            name : "Teaching Experience certificate",
-            image : workExperienceIMG,
-            link : workExperience
+            name: "Teaching Experience certificate",
+            image: workExperienceIMG,
+            link: workExperience
         }
     ],
     profile: {
         home: {
             image: MyImage,
             name: "Tarapada Garai",
-            job: "Front end Devolaper"
+            job: "Frontend Developer"
         },
         contacts: [
             {

@@ -6,9 +6,11 @@ import { MdContacts } from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 import { useModal } from '../contexts/modalProvider'
 import { GoX } from 'react-icons/go'
+import { useShowDetails } from '../contexts/showDetailsContext'
 
 const Bottombar = ({ menuCheck, setMenuCheck }) => {
     const [[closeModal, setCloseModal]] = useModal()
+    const [[typeData, setTypeData]] = useShowDetails()
     const sidebarFun = () => {
         setCloseModal(!closeModal)
     }
@@ -32,6 +34,7 @@ const Bottombar = ({ menuCheck, setMenuCheck }) => {
             behavior: 'smooth'
         });
         setMenuCheck(!menuCheck)
+        setTypeData("")
     };
 
     return (
@@ -68,7 +71,7 @@ const Bottombar = ({ menuCheck, setMenuCheck }) => {
                         src: <MdContacts />,
                         name: "Contact"
                     }
-                ].map((value, index) => (<NavLink to={value.href} onClick={scrollToTop} key={index} title={value.name} className={`bottomBox`}>
+                ].map((value, index) => (<NavLink to={value.href} onClick={scrollToTop} key={index} title={value.name} className={`bottomBox ${value.name === typeData ? "currentPageSidebar" : ""}`}>
                     <span className='bottomF'>
                         {value.src}
                     </span>

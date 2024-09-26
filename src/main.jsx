@@ -19,6 +19,7 @@ import FontContextProvider from './contexts/fontContext.jsx'
 import CroseFontContextProvider from './contexts/croseFontContext.jsx'
 import TopLoderProvider from './contexts/topLoderContext.jsx'
 import SearchContextProvider from './contexts/searchContext.jsx'
+import ShowDetailsContextProvider from './contexts/showDetailsContext.jsx'
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/:skill',
-        element: <SkillDetails/>
+        element: <SkillDetails />
       },
       {
         path: '/projects',
@@ -59,23 +60,25 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <SearchContextProvider>
-    <TopLoderProvider>
-      <CroseFontContextProvider>
-        <FontContextProvider>
-          <ModeContextProvider>
-            <BorderContextProvider>
-              <ModalContextProvider>
-                <UserContextProvider>
-                  <React.StrictMode>
-                    <RouterProvider router={router} />
-                  </React.StrictMode>
-                </UserContextProvider>
-              </ModalContextProvider>
-            </BorderContextProvider>
-          </ModeContextProvider>
-        </FontContextProvider>
-      </CroseFontContextProvider>
-    </TopLoderProvider>
-  </SearchContextProvider>
+  <ShowDetailsContextProvider>
+    <SearchContextProvider>
+      <TopLoderProvider>
+        <CroseFontContextProvider>
+          <FontContextProvider>
+            <ModeContextProvider>
+              <BorderContextProvider>
+                <ModalContextProvider>
+                  <UserContextProvider>
+                    <React.StrictMode>
+                      <RouterProvider router={router} />
+                    </React.StrictMode>
+                  </UserContextProvider>
+                </ModalContextProvider>
+              </BorderContextProvider>
+            </ModeContextProvider>
+          </FontContextProvider>
+        </CroseFontContextProvider>
+      </TopLoderProvider>
+    </SearchContextProvider>
+  </ShowDetailsContextProvider>
 )

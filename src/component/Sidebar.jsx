@@ -12,18 +12,20 @@ import { MdContacts } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
 import { useModal } from '../contexts/modalProvider';
 import { useBorder } from '../contexts/borderContext';
+import { useShowDetails } from '../contexts/showDetailsContext';
 
 const Sidebar = () => {
+    const [[sidebar]] = useContext(UserContext)
+    const [[closeModal, setCloseModal]] = useModal()
+    const [[navBorder]] = useBorder()
+    const [[typeData, setTypeData]] = useShowDetails()
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
+        setTypeData("")
     };
-
-    const [[sidebar]] = useContext(UserContext)
-    const [[closeModal, setCloseModal]] = useModal()
-    const [[navBorder]] = useBorder()
 
     const sidebarFun = () => {
         setCloseModal(!closeModal)
@@ -36,7 +38,7 @@ const Sidebar = () => {
                     <img src={MyImage} alt="tarapada garai" />
                 </div>
                 {!sidebar && <p className='nameSide'>Tarapada Garai</p>}
-                {!sidebar && <p className='nameJob'>Front end Devolaper</p>}
+                {!sidebar && <p className='nameJob'>Frontend Developer</p>}
             </div>
             <div className={`sidebuttons ${sidebar ? "sidebuttonsSmall" : ""}`}>
                 {
@@ -71,7 +73,7 @@ const Sidebar = () => {
                             src: <MdContacts />,
                             name: "Contact Us"
                         }
-                    ].map((value, index) => (<NavLink onClick={scrollToTop} to={value.href} key={index} title={value.name} className={`navigator settingnavigator ${sidebar ? "navigatorSmall" : ""}`}>
+                    ].map((value, index) => (<NavLink onClick={scrollToTop} to={value.href} key={index} title={value.name} className={`navigator settingnavigator ${sidebar ? "navigatorSmall" : ""} ${typeData === value.name ? "currentPageSidebar" : ""}`}>
                         <span className='settingClass '>
                             {value.src}
                         </span>

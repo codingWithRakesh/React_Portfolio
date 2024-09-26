@@ -125,6 +125,7 @@
     align-items: center;
     justify-content: flex-start;
     color: var(--paragraphColor);
+    text-decoration: none;
 }
 
 .showBox span {
@@ -381,6 +382,20 @@
 }
 
 [aria-current="page"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: .5rem;
+    background-color: var(--smallColor);
+}
+
+.currentPageSidebar{
+    background-color: var(--hover);
+}
+
+.currentPageSidebar::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1056,6 +1071,7 @@
     padding: 1rem 2rem;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 3rem;
 }
 
 .showmain{
@@ -1129,6 +1145,7 @@
     align-items: center;
     justify-content: center;
     margin-right: 3rem;
+    height: 3rem !important;
     background-color: var(--componentBG) !important;
     border: 1px solid var(--componentBGhover) !important; 
     /* gap: 5px; */
@@ -1258,6 +1275,7 @@
     flex-direction: column;
     overflow: hidden;
     border-radius: 5px;
+    text-decoration: none;
     transition: all .5s ease-out;
 }
 
@@ -1319,6 +1337,261 @@
 
 .linkShow span {
     font-size: 1.5rem;
+}
+
+/* shoeProject */
+.showProject{
+    /* border: 1px solid black; */
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-first-project{
+    width: 60%;
+    min-height: 10vh;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.title-video{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.title-video p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--headerColor);
+    /* font-weight: 800; */
+}
+
+.video-project-box{
+    width: 100%;
+    min-height: 0;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem ;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.video-box{
+    width: 100%;
+    min-height: 0;
+    /* border: 1px solid black; */
+}
+
+.video-box video,img{
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.peragraph-video{
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+.peragraph-video p{
+    min-width: 0;
+    min-height: 0;
+    padding: 1rem 0;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: var(--headerColor);
+}
+
+.buttons-shows{
+    width: 100%;
+    min-height: 0;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    /* border: 1px solid black; */
+}
+
+.linkS{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    padding: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+.linkS span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-skills{
+    width: 100%;
+    min-height: 0;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.current-skills p{
+    width: 100%;
+    min-height: 0;
+    font-size: 1.4rem;
+    color: var(--headerColor);
+    margin-bottom: 1rem;
+}
+
+.show-project-skill{
+    width: 95%;
+    min-height: 0;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.skillShowPro{
+    padding: .5rem 1rem;
+    /* border: 1px solid black; */
+    min-width: 0;
+    min-height: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--hover);
+    color: var(--headerColor);
+}
+
+.chart-for-allSkill{
+    width: 100%;
+    min-height: 0;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.chart-for-allSkill p{
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--headerColor);
+    margin-bottom: 1rem;
+}
+
+.skillUseChart{
+    width: 90%;
+    /* border: 1px solid black; */
+    min-height: 25rem;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.this-skills{
+    width: 100%;
+    min-height: 0;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.this-skills p{
+    font-size: 1.4rem;
+    color: var(--headerColor);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.show-skills-chart{
+    width: 95%;
+    min-height: 0;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.col-second-project{
+    width: 40%;
+    min-height: 10vh;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+}
+
+.col-second-project h1{
+    margin-bottom: 1rem;
+    color: var(--headerColor);
+}
+
+.containAllProject{
+    width: 100%;
+    min-height: 10vh;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.side-box-project{
+    width: 100%;
+    min-height: 1rem;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: var(--headerColor);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.side-box-project:hover{
+    scale: 1.05;
+}
+
+.side-box-project video,img{
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.perProject{
+    display: flex;
+    padding: .8rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perProject span{
+    font-size: 1.3rem;
 }
 
 /* about page */

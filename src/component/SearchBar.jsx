@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { IoMdSearch } from 'react-icons/io';
 import { details } from '../details/details.jsx';
 import { useSearch } from '../contexts/searchContext.jsx';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { GoArrowLeft } from 'react-icons/go';
 
 const SearchBar = ({setshowInput, setSetshowInput}) => {
@@ -123,8 +123,9 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         }, [showCount, index]);
 
         return (
-            <div 
-                id={`search-item-${index}`} 
+            <Link 
+                id={`search-item-${index}`}
+                to={`/${item}`}
                 onClick={() => {
                     setQuery(item);
                     setsearchQu(item.toLowerCase());
@@ -141,7 +142,7 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
                     <IoMdSearch />
                 </span>
                 <p>{item}</p>
-            </div>
+            </Link>
         );
     });
 

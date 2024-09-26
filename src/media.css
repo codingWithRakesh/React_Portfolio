@@ -210,6 +210,48 @@
         display: none;
     }
 
+    /* video page */
+    .containAllProject{
+        padding: 0;
+        padding-right: .5rem;
+    }
+
+    .perProject {
+        padding: .5rem 1rem;
+    }
+
+    .back {
+        margin-bottom: .8rem;
+    }
+
+    .title-video p {
+        font-size: 1.2rem;
+    }
+
+    .backRow{
+        margin-bottom: 0;
+    }
+
+    .video-project-box{
+        padding: .8rem;
+        margin-bottom: 0;
+    }
+
+    .buttons-shows{
+        margin-bottom: 0;
+    }
+
+    .skillUseChart {
+        min-height: 5rem;
+    }
+
+    .skillUseChart {
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -395,8 +437,8 @@
     }
 
     .back-to-top{
-        bottom: 5rem;
-        right: 1rem;
+        bottom: 6.5rem;
+        right: 2.2rem;
     }
 
     /* bottom bar */
@@ -466,23 +508,63 @@
         background-color: transparent;
     }
 
+    .currentPageSidebar{
+        border: 2px solid var(--smallColor);
+        background-color: transparent;
+    }
+
+    .currentPageSidebar::before {
+        content: "";
+        position: static;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 0;
+        background-color: transparent;
+    }
+
     .menu{
-        height: 3rem;
-        width: 3rem;
+        height: 3.5rem;
+        width: 3.5rem;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         position: fixed;
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 2rem;
+        right: 2rem;
         z-index: 8;
         color: var(--headerColor);
         border: 1px solid var(--componentBGhover);
+        font-size: 1.5rem;
     }
 
     .pogisan{
         top: 3rem;
         left: 3rem;
+    }
+
+    /* video page */
+    .col-first-project{
+        width: 100%;
+    }
+
+    .skillUseChart{
+        width: 100%;
+        min-height: 15rem;
+    }
+
+    .col-second-project{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .containAllProject{
+        padding: 0;
+    }
+
+    .peragraph-video p{
+        padding: 1rem 0;
+        padding-top: 1.5rem;
     }
 }
