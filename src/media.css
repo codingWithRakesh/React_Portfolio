@@ -375,7 +375,8 @@
     }
 
     .backRow{
-        padding-left: 1rem;
+        padding-left: 0;
+        margin-bottom: .5rem;
     }
 
     .mainChart {
@@ -563,8 +564,26 @@
         padding: 0;
     }
 
+    .peragraph-video{
+        padding-left: 0;
+    }
+
     .peragraph-video p{
         padding: 1rem 0;
         padding-top: 1.5rem;
     }
+
+    .buttons-shows{
+        padding-left: 0;
+    }
+
+    .current-skills{
+        padding: 0;
+    }
+
+    .chart-for-allSkill{
+        padding: 0;
+    }
+
+    
 }

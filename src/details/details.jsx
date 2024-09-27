@@ -10,7 +10,6 @@ import MyImage from '../assets/images/TARAPADA.jpg'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 import workExperience from '../assets/certificate/work_experience.pdf'
 import workExperienceIMG from '../assets/certificate/work_experience_image.jpg'
-import hackathonImg from '../assets/images/hackathon.png'
 
 import ComputerCenter from '../assets/videos/Computer Center Webside.mp4'
 import YouTubeClone from '../assets/videos/YouTube.mp4'
@@ -23,6 +22,7 @@ import travel_website from '../assets/videos/Travel_website.mp4'
 import portfolio from '../assets/videos/portpolio.mp4'
 import firstPortfolio from '../assets/videos/first_portfolio.mp4'
 import secondPortfolio from '../assets/videos/second_portfolio.mp4'
+import hackathonVideo from '../assets/videos/hackathon.mp4'
 
 import calcluter from '../assets/images/calcluter.png'
 import curancyChange from '../assets/images/curancyChange.png'
@@ -377,7 +377,7 @@ export const details = {
             name: "Hackathon Project",
             link: "https://bw-hackathon-undefined.netlify.app/",
             skills: ["React", "HTML", "CSS", "React Router Dom", "API", "Flexbox", "Figma", "GitHub", "Git"],
-            image: hackathonImg,
+            video: hackathonVideo,
             title: "projects",
             gitHub: "https://github.com/codingWithRakesh/-BWU-Hackathon-Project-",
             labels: ['HTML', 'CSS', 'React'],
