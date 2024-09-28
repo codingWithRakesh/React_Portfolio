@@ -1277,12 +1277,22 @@
     border-radius: 5px;
     text-decoration: none;
     transition: all .5s ease-out;
+    position: relative;
 }
 
 .project:hover {
     scale: 1.08;
     cursor: pointer;
 
+}
+
+.iconGoo{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    /* border: 1px solid black; */
+    color: var(--smallColor);
+    font-size: 2.5rem;
 }
 
 .videoShow {
@@ -1571,6 +1581,7 @@
     border-radius: 5px;
     overflow: hidden;
     transition: all .2s;
+    position: relative;
 }
 
 .side-box-project:hover{
@@ -1960,4 +1971,27 @@
     position: fixed;
     left: 5rem;
     top: 5rem;
+}
+
+/* video show .certificate */
+.certifickteRowProject{
+    /* border: 1px solid black; */
+    width: 100%;
+    min-height: 0;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+}
+
+.certifickteRowProject p{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--headerColor);
+}
+
+.mainShowCertificketsProject{
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

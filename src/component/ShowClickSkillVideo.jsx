@@ -5,7 +5,7 @@ const ShowClickSkillVideo = ({ relevantSkills }) => {
     return (
         <div className="this-skills">
             <p>
-                Popular Skills Used
+                Clickable Skills
             </p>
             <div className="show-skills-chart">
                 {relevantSkills.map((data, index) => (

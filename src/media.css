@@ -224,6 +224,10 @@
         margin-bottom: .8rem;
     }
 
+    .SB{
+        margin-left: 1rem !important;
+    }
+
     .title-video p {
         font-size: 1.2rem;
     }
@@ -372,6 +376,7 @@
 
     .showsuggason{
         width: 100%;
+        margin-top: 1rem;
     }
 
     .backRow{
@@ -552,7 +557,9 @@
 
     .skillUseChart{
         width: 100%;
-        min-height: 15rem;
+        min-height: 23rem;
+        padding: 1.5rem;
+        padding-bottom: 2rem;
     }
 
     .col-second-project{
@@ -585,5 +592,16 @@
         padding: 0;
     }
 
+    .this-skills{
+        padding: 0;
+    }
+
+    .certifickteRowProject{
+        padding: 0;
+    }
+
+    .mainShowCertificketsProject{
+        padding: 0;
+    }
     
 }

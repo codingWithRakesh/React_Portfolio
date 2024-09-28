@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useState } from 'react'
+import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { IoMenuOutline } from "react-icons/io5";
 import '../App.css'
 import MyImage from "../assets/images/TARAPADA.jpg"
@@ -20,22 +20,48 @@ const Navbar = () => {
     setShowProfile(!showProfile)
   }
 
-  window.addEventListener("click",() => {
+  useEffect(() => {
+    const preventScroll = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    };
+  
+    if (showProfile) {
+      window.addEventListener('wheel', preventScroll, { passive: false });
+      window.addEventListener('touchmove', preventScroll, { passive: false });
+      window.addEventListener('scroll', preventScroll, { passive: false });
+    } else {
+      window.removeEventListener('wheel', preventScroll);
+      window.removeEventListener('touchmove', preventScroll);
+      window.removeEventListener('scroll', preventScroll);
+    }
+    return () => {
+      window.removeEventListener('wheel', preventScroll);
+      window.removeEventListener('touchmove', preventScroll);
+      window.removeEventListener('scroll', preventScroll);
+    };
+  }, [showProfile]);
+  
+  
+
+
+  window.addEventListener("click", () => {
     setShowProfile(false)
   })
 
-  const [[sidebar,setsidebar]] = useContext(UserContext)
+  const [[sidebar, setsidebar]] = useContext(UserContext)
   const liteNav = useCallback(() => {
     setsidebar(screen.width > 1050 ? (!sidebar) : true)
   })
   const [[navBorder, setNavBorder]] = useBorder()
 
 
-  window.addEventListener('scroll',changeBorderNav)
-  function changeBorderNav (){
-    if(window.scrollY >= 20){
+  window.addEventListener('scroll', changeBorderNav)
+  function changeBorderNav() {
+    if (window.scrollY >= 20) {
       setNavBorder(true)
-    }else{
+    } else {
       setNavBorder(false)
     }
   }
@@ -47,9 +73,9 @@ const Navbar = () => {
       <TopLoadingBar progress={progress} setProgress={setProgress} />
       <nav className={navBorder ? 'nav navShadow' : 'nav'}>
         {screen.width >= 500 && <div className='navigaror' onClick={liteNav}>
-          {screen.width < 1050 ?  <FaCode /> : <IoMenuOutline />}
+          {screen.width < 1050 ? <FaCode /> : <IoMenuOutline />}
         </div>}
-        {(screen.width >= 500 ? true : setshowInput) ? <SearchBar setshowInput={setshowInput} setSetshowInput={setSetshowInput} /> : <SearchIcon setshowInput={setshowInput} setSetshowInput={setSetshowInput}/>}
+        {(screen.width >= 500 ? true : setshowInput) ? <SearchBar setshowInput={setshowInput} setSetshowInput={setSetshowInput} /> : <SearchIcon setshowInput={setshowInput} setSetshowInput={setSetshowInput} />}
         {!setshowInput && <div className='uesrNav' onClick={changeProfile}>
           <img src={MyImage} alt="tarapada garai" />
         </div>}

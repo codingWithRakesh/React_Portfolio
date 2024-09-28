@@ -10,6 +10,8 @@ import MyImage from '../assets/images/TARAPADA.jpg'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 import workExperience from '../assets/certificate/work_experience.pdf'
 import workExperienceIMG from '../assets/certificate/work_experience_image.jpg'
+import HackathonImg from '../assets/certificate/Hackathon.jpg'
+import HackathonPdf from '../assets/certificate/Hackathon_pdf.pdf'
 
 import ComputerCenter from '../assets/videos/Computer Center Webside.mp4'
 import YouTubeClone from '../assets/videos/YouTube.mp4'
@@ -350,7 +352,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "October 2023 - November 2023"
+            Timeframe : "October 2023 - November 2023",
+            isGood : false
         },
         {
             name: "Instagram Clone",
@@ -371,10 +374,11 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "September 2023 - October 2023"
+            Timeframe : "September 2023 - October 2023",
+            isGood : false
         },
         {
-            name: "Hackathon Project",
+            name: "Dev Innov8+ Hackathon Project",
             link: "https://bw-hackathon-undefined.netlify.app/",
             skills: ["React", "HTML", "CSS", "React Router Dom", "API", "Flexbox", "Figma", "GitHub", "Git"],
             video: hackathonVideo,
@@ -392,7 +396,9 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "6 September 2024 - 8 September 2024"
+            Timeframe : "6 September 2024 - 8 September 2024",
+            isGood : true,
+            checkCertificket: "DevInnov8Hackathon"
         },
         {
             name: "Batting Game",
@@ -413,7 +419,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "3 August 2024 - 5 August 2024"
+            Timeframe : "3 August 2024 - 5 August 2024",
+            isGood : false
         },
         {
             name: "Netflix Clone",
@@ -432,7 +439,8 @@ export const details = {
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 99, 132, 1)',
             ],
-            Timeframe : "November 2023 - November 2023"
+            Timeframe : "November 2023 - November 2023",
+            isGood : false
         },
         {
             name: "Computer Coaching Website",
@@ -453,7 +461,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "August 2023 - September 2023"
+            Timeframe : "August 2023 - September 2023",
+            isGood : false
         },
         {
             name: "Ecommerce Website",
@@ -474,7 +483,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "November 2023 - December 2023"
+            Timeframe : "November 2023 - December 2023",
+            isGood : false
         },
         {
             name: "Online Exam",
@@ -495,7 +505,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "November 2023 - December 2023"
+            Timeframe : "November 2023 - December 2023",
+            isGood : false
         },
         {
             name: "Travel Websites",
@@ -516,7 +527,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "May 2024 - June 2024"
+            Timeframe : "May 2024 - June 2024",
+            isGood : false
         },
         {
             name: "File Downloader",
@@ -537,7 +549,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "23 June 2024 - 28 June 2024"
+            Timeframe : "23 June 2024 - 28 June 2024",
+            isGood : false
         },
         {
             name: "Portfolio",
@@ -556,7 +569,8 @@ export const details = {
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 99, 132, 1)',
             ],
-            Timeframe : "February 2024 - March 2024"
+            Timeframe : "February 2024 - March 2024",
+            isGood : false
         },
         {
             name: "First Portfolio",
@@ -579,7 +593,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe : "June 2023 - July 2023"
+            Timeframe : "June 2023 - July 2023",
+            isGood : false
         },
         {
             name: "Second Portfolio",
@@ -600,7 +615,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "December 2023 - January 2024"
+            Timeframe : "December 2023 - January 2024",
+            isGood : false
         },
         {
             name: "Blogging Website",
@@ -623,7 +639,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe : "October 2023 - November 2023"
+            Timeframe : "October 2023 - November 2023",
+            isGood : false
         },
         {
             name: "Shopping Website",
@@ -646,7 +663,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe : "November 2023 - December 2023"
+            Timeframe : "November 2023 - December 2023",
+            isGood : false
         },
         {
             name: "Calculator",
@@ -667,7 +685,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "18 December 2023 - 22 December 2023"
+            Timeframe : "18 December 2023 - 22 December 2023",
+            isGood : false
         },
         {
             name: "Currency Converter",
@@ -688,7 +707,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "14 December 2023 - 16 December 2023"
+            Timeframe : "14 December 2023 - 16 December 2023",
+            isGood : false
         },
         {
             name: "Stone Paper Scissors Game",
@@ -709,7 +729,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "6 December 2023 - 9 December 2023"
+            Timeframe : "6 December 2023 - 9 December 2023",
+            isGood : false
         },
         {
             name: "Tic Tac Toe Game",
@@ -730,26 +751,33 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "2 December 2023 - 5 December 2023"
+            Timeframe : "2 December 2023 - 5 December 2023",
+            isGood : false
         },
     ],
     certificates: [
         {
-            name: "React certificate",
+            name: "React Certificate",
             title: "React",
             image: ReactCertificate,
             link: "https://www.udemy.com/certificate/UC-a659684c-d9ec-43f9-b844-dc79bbf27405/"
         },
         {
-            name: "DSA certificate",
+            name: "DSA Certificate",
             title: "DSA",
             image: DSACertificate,
             link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/"
         },
         {
-            name: "Teaching Experience certificate",
+            name: "Teaching Experience Certificate",
             image: workExperienceIMG,
             link: workExperience
+        },
+        {
+            name: "Dev Innov8+ Hackathon Certificate",
+            image: HackathonImg,
+            link: HackathonPdf,
+            checkProject : "DevInnov8Hackathon"
         }
     ],
     profile: {

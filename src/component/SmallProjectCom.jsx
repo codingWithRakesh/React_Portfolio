@@ -2,6 +2,7 @@ import React from 'react'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTopLoader } from '../contexts/topLoderContext';
+import { FaAward } from 'react-icons/fa';
 
 const SmallProjectCom = ({data}) => {
     const [[progress, setProgress]] = useTopLoader();
@@ -21,6 +22,9 @@ const SmallProjectCom = ({data}) => {
     }
     return (
         <Link onClick={handleSkillClick} to={`/${data.name}`} className="side-box-project boxShadows ">
+            {data.isGood && <div className="iconGoo">
+                <FaAward />
+            </div>}
             {data.video ? (
                 <video src={data.video} autoPlay muted loop></video>
             ) : (

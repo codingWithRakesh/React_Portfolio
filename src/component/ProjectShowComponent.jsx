@@ -10,6 +10,8 @@ import TimeLine from './TimeLine.jsx';
 import HostLinkVideo from './HostLinkVideo.jsx';
 import ShowSkillProjectVideo from './ShowSkillProjectVideo.jsx';
 import ShowClickSkillVideo from './ShowClickSkillVideo.jsx';
+import CertificateCom from './CertificateCom.jsx';
+import ShowCertificketProject from './ShowCertificketProject.jsx';
 
 const ProjectShowComponent = ({ handleBackButtonClick }) => {
     const [[sidebar]] = useContext(UserContext);
@@ -17,6 +19,7 @@ const ProjectShowComponent = ({ handleBackButtonClick }) => {
     const [nameProject] = details.projects.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
     const projectSkills = nameProject.skills;
     const relevantSkills = details.skills.filter(skill => projectSkills.includes(skill.name));
+    const filteredCertificates = nameProject.checkCertificket ? details.certificates.filter(certificate => certificate.checkProject === nameProject.checkCertificket) : [];
 
     return (
         <div className={`mainContainer showProject ${sidebar ? "mainContainerSmall" : ""}`}>
@@ -32,15 +35,17 @@ const ProjectShowComponent = ({ handleBackButtonClick }) => {
 
                 <VideoPlay nameProject={nameProject} />
 
-                <TimeLine nameProject={nameProject}/>
+                <TimeLine nameProject={nameProject} />
 
-                <HostLinkVideo nameProject={nameProject}/>
+                <HostLinkVideo nameProject={nameProject} />
 
-                <ShowSkillProjectVideo nameProject={nameProject}/>
+                <ShowSkillProjectVideo nameProject={nameProject} />
 
                 <ProjectChart nameProject={nameProject} />
 
-                <ShowClickSkillVideo relevantSkills={relevantSkills}/>
+                <ShowClickSkillVideo relevantSkills={relevantSkills} />
+
+                <ShowCertificketProject filteredCertificates={filteredCertificates} />
 
             </div>
             <div className="col-second-project">

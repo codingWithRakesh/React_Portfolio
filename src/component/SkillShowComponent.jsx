@@ -22,7 +22,7 @@ const SkillShowComponent = ({handleBackButtonClick}) => {
         <div className={`mainContainer showSkill ${sidebar ? "mainContainerSmall" : ""}`}>
             <div className="showmain">
                 <div className="backRow">
-                    <button className='button-60 back' onClick={handleBackButtonClick}>
+                    <button className='button-60 back SB' onClick={handleBackButtonClick}>
                         <span>
                             <IoCaretBackOutline />
                         </span>

@@ -2,8 +2,9 @@ import React, { memo } from 'react'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTopLoader } from '../contexts/topLoderContext';
+import { FaAward } from 'react-icons/fa';
 
-const ProjectCom = ({ data , classProject }) => {
+const ProjectCom = ({ data, classProject }) => {
     const [[progress, setProgress]] = useTopLoader();
     const navigate = useNavigate();
 
@@ -21,6 +22,9 @@ const ProjectCom = ({ data , classProject }) => {
     }
     return (
         <Link onClick={handleSkillClick} to={`/${data.name}`} className={`project boxShadows ${classProject ? classProject : ""}`}>
+            {data.isGood && <div className="iconGoo">
+                <FaAward />
+            </div>}
             <div className="videoShow">
                 {data.video ? (
                     <video src={data.video} autoPlay muted loop></video>
