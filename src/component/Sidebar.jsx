@@ -13,18 +13,21 @@ import { NavLink } from 'react-router-dom';
 import { useModal } from '../contexts/modalProvider';
 import { useBorder } from '../contexts/borderContext';
 import { useShowDetails } from '../contexts/showDetailsContext';
+import { useSearch } from '../contexts/searchContext';
 
 const Sidebar = () => {
     const [[sidebar]] = useContext(UserContext)
     const [[closeModal, setCloseModal]] = useModal()
     const [[navBorder]] = useBorder()
     const [[typeData, setTypeData]] = useShowDetails()
+    const [[searchQu, setsearchQu]] = useSearch();
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
         setTypeData("")
+        setsearchQu("")
     };
 
     const sidebarFun = () => {

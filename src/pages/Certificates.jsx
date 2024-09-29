@@ -3,7 +3,7 @@ import '../App.css'
 import { UserContext } from '../contexts/context'
 import CertificateCom from '../component/CertificateCom'
 import { useTopLoader } from '../contexts/topLoderContext'
-import {details} from '../details/details.jsx'
+import { details } from '../details/details.jsx'
 
 const Certificates = () => {
   const [[sidebar]] = useContext(UserContext)
@@ -16,8 +16,13 @@ const Certificates = () => {
   }, [])
 
   return (
-    <div className={`mainContainer certificate ${sidebar ? "mainContainerSmall" : ""}`}>
-      {details.certificates.map((data,index) => (<CertificateCom key={index} data={data}/>))}
+    <div className={`mainContainer certificateShow ${sidebar ? "mainContainerSmall" : ""}`}>
+      <h1 className="titleSkill certiti">
+        Certificates
+      </h1>
+      <div className="certificate">
+        {details.certificates.map((data, index) => (<CertificateCom key={index} data={data} />))}
+      </div>
     </div>
   )
 }

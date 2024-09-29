@@ -4,6 +4,7 @@ import { details } from '../details/details.jsx';
 import { useSearch } from '../contexts/searchContext.jsx';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { GoArrowLeft } from 'react-icons/go';
+import { useTopLoader } from '../contexts/topLoderContext.jsx';
 
 const SearchBar = ({setshowInput, setSetshowInput}) => {
     const [query, setQuery] = useState("");
@@ -12,6 +13,7 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
     const inputSelect = useRef();
     const [searchP, setSearchP] = useSearchParams({ q: "" });
     const q = searchP.get("q");
+    const [[progress, setProgress]] = useTopLoader();
 
     const count = useRef(-1);
     const [showCount, setShowCount] = useState(-1);
@@ -31,7 +33,6 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         }
     };
 
-    // Clean up window event listener for click
     useEffect(() => {
         const handleClick = () => {
             setCheck(false);
@@ -111,7 +112,6 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         };
     }, [topFun, downFun, enterFun]);
 
-    // Scroll selected item into view
     const ShowSearchResult = React.memo(({ index, showCount, item }) => {
         useEffect(() => {
             if (index === showCount) {
@@ -126,15 +126,26 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
             <Link 
                 id={`search-item-${index}`}
                 to={`/${item}`}
-                onClick={() => {
+                onClick={(e) => {
+                    e.preventDefault()
+                    setProgress(20);
+                    setTimeout(() => {
+                        setProgress(100);
+                    }, 20);
                     setQuery(item);
                     setsearchQu(item.toLowerCase());
                     setSearchP((prev) => {
                         prev.set("q", item);
                         return prev;
                     });
-                    navigate('/projects');
+                    setTimeout(() => {
+                        navigate(`/${item}`);
+                    }, 10);
                     setCheck(false);
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
                 }} 
                 className={`showBox ${index === showCount ? "selectedIn" : ""}`}
             >

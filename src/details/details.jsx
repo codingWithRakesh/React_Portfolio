@@ -42,7 +42,6 @@ export const details = {
     home: {
         titlesHome: [
             {
-                big: "15+",
                 normal: "Decent Projects"
             },
             {

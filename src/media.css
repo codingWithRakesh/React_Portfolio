@@ -409,6 +409,16 @@
     }
 
     /* .certificate */
+
+    .certificateShow {
+        padding: 0;
+    }
+
+    .certiti{
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    
     .certificate {
         padding: 1rem;
         padding-top: 0;

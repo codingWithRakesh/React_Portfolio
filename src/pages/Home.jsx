@@ -18,7 +18,7 @@ const Home = () => {
 
   const InsideBox = ({ data }) => {
     return <div className="insideBox boxShadows">
-      <span className='bigName'>{data.big}</span> {data.normal} <br /> {data.extra}
+      <span className='bigName'>{data.big ? data.big: details.projects.length - 1 + "+" }</span> {data.normal} <br /> {data.extra}
     </div>
   }
 
