@@ -254,6 +254,11 @@
         padding-bottom: 1.5rem;
     }
 
+    .isisCertified{
+        top: .8rem;
+        left: .5rem;
+        font-size: 1.8rem;
+    }
 
 
 }

@@ -156,7 +156,8 @@ export const details = {
             ],
             data: [70, 30],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: true
         },
         {
             name: "JavaScript",
@@ -169,7 +170,8 @@ export const details = {
             ],
             data: [75, 25],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "TypeScript",
@@ -182,7 +184,8 @@ export const details = {
             ],
             data: [60, 40],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "Redux",
@@ -195,7 +198,8 @@ export const details = {
             ],
             data: [60, 40],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "HTML",
@@ -208,7 +212,8 @@ export const details = {
             ],
             data: [90, 10],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "CSS",
@@ -221,7 +226,8 @@ export const details = {
             ],
             data: [85, 15],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "jQuery",
@@ -234,7 +240,8 @@ export const details = {
             ],
             data: [70, 30],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "Bootstrap",
@@ -247,7 +254,8 @@ export const details = {
             ],
             data: [75, 25],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "Tailwind",
@@ -260,7 +268,8 @@ export const details = {
             ],
             data: [70, 30],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "C language",
@@ -273,7 +282,8 @@ export const details = {
             ],
             data: [75, 25],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "DSA",
@@ -290,7 +300,8 @@ export const details = {
             ],
             data: [50, 50],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: true
         },
         {
             name: "Figma",
@@ -303,7 +314,8 @@ export const details = {
             ],
             data: [70, 30],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "Git",
@@ -316,7 +328,8 @@ export const details = {
             ],
             data: [85, 15],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
         {
             name: "GitHub",
@@ -329,7 +342,8 @@ export const details = {
             ],
             data: [85, 15],
             title: "skills",
-            iconOut: true
+            iconOut: true,
+            isCertified: false
         },
     ],
     projects: [
@@ -757,6 +771,12 @@ export const details = {
     ],
     certificates: [
         {
+            name: "Dev Innov8+ Hackathon Certificate",
+            image: HackathonImg,
+            link: HackathonPdf,
+            checkProject : "DevInnov8Hackathon"
+        },
+        {
             name: "React Certificate",
             title: "React",
             image: ReactCertificate,
@@ -772,12 +792,6 @@ export const details = {
             name: "Teaching Experience Certificate",
             image: workExperienceIMG,
             link: workExperience
-        },
-        {
-            name: "Dev Innov8+ Hackathon Certificate",
-            image: HackathonImg,
-            link: HackathonPdf,
-            checkProject : "DevInnov8Hackathon"
         }
     ],
     profile: {

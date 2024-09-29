@@ -1995,3 +1995,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.isisCertified{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--smallColor);
+    font-size: 2rem;
+}

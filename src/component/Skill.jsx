@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { LiaExternalLinkAltSolid } from 'react-icons/lia';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTopLoader } from '../contexts/topLoderContext';
+import { FaAward } from 'react-icons/fa';
 
 const Skill = ({ data }) => {
     const [[progress, setProgress]] = useTopLoader();
@@ -23,6 +24,9 @@ const Skill = ({ data }) => {
     return (
         data.iconOut ? (
             <Link onClick={handleSkillClick} to={`/${data.name}`} className="skillBox boxShadows">
+                {data.isCertified && <div className="isisCertified">
+                    <FaAward />
+                </div>}
                 {data.iconOut && (
                     <span className='goOutSide'>
                         <LiaExternalLinkAltSolid />
