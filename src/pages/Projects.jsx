@@ -6,6 +6,7 @@ import ProjectCom from '../component/ProjectCom';
 import { details } from '../details/details.jsx';
 import { useSearch } from '../contexts/searchContext.jsx';
 import { useSearchParams } from 'react-router-dom';
+import { useShowDetails } from '../contexts/showDetailsContext.jsx';
 
 const Projects = () => {
   const [[sidebar]] = useContext(UserContext);
@@ -13,6 +14,10 @@ const Projects = () => {
   const [[searchQu, setsearchQu]] = useSearch();
   const [searchP] = useSearchParams();
   const q = searchP.get("q") || "";
+  const [[typeData, setTypeData]] = useShowDetails();
+  useEffect(() => {
+    setTypeData("")
+  }, [])
 
   useEffect(() => {
     setProgress(20);

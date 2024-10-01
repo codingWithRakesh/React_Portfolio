@@ -4,11 +4,13 @@ import { UserContext } from '../contexts/context'
 import ExpensesCom from '../component/ExpensesCom'
 import { useTopLoader } from '../contexts/topLoderContext'
 import AboutCom from '../component/AboutCom'
-import {details} from '../details/details.jsx'
+import { details } from '../details/details.jsx'
+import { useShowDetails } from '../contexts/showDetailsContext.jsx'
 
 const About = () => {
   const [[sidebar]] = useContext(UserContext)
   const [[progress, setProgress]] = useTopLoader()
+  const [[typeData, setTypeData]] = useShowDetails();
 
   useEffect(() => {
     setProgress(20)
@@ -16,6 +18,11 @@ const About = () => {
       setProgress(100)
     }, 20)
   }, [setProgress])
+
+  useEffect(() => {
+    setTypeData("")
+  }, [])
+
 
   return (
     <div className={`mainContainer about ${sidebar ? "mainContainerSmall" : ""}`}>

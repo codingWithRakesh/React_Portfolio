@@ -37,7 +37,7 @@ const ProjectCom = ({ data, classProject }) => {
                     <div className='skillShowP' key={index}>{skill}</div>
                 ))}
             </div>
-            <div target='_blank' rel='noopener noreferrer' href={data.link} className="linkShow">
+            <div className="linkShow">
                 <h2>{data.name} </h2> <span><LiaExternalLinkAltSolid /></span>
             </div>
         </Link>

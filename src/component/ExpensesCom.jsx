@@ -1,7 +1,16 @@
-import React from 'react'
-import { LiaExternalLinkAltSolid } from 'react-icons/lia'
+import React from 'react';
+import { LiaExternalLinkAltSolid } from 'react-icons/lia';
+import { Link } from 'react-router-dom';
 
 const ExpensesCom = ({ data }) => {
+
+    const handleLinkClick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <div className="box">
             <h4>{data.durationWork}</h4>
@@ -9,9 +18,13 @@ const ExpensesCom = ({ data }) => {
             <p>
                 {data.peragraph}
             </p>
-            {data.isTrue && <a href={data.link} target='_blank' className='linkTag'>{data.name} <LiaExternalLinkAltSolid /></a>}
+            {data.isTrue && (
+                <Link to={`/${data.link}`} className='linkTag' onClick={handleLinkClick}>
+                    {data.name} <LiaExternalLinkAltSolid />
+                </Link>
+            )}
         </div>
-    )
-}
+    );
+};
 
-export default ExpensesCom
+export default ExpensesCom;

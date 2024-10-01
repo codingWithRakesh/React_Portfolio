@@ -4,11 +4,15 @@ import { UserContext } from '../contexts/context'
 import SwiperCom from '../component/SwiperCom'
 import { useTopLoader } from '../contexts/topLoderContext'
 import {details} from '../details/details.jsx'
+import { useShowDetails } from '../contexts/showDetailsContext.jsx'
 
 const Home = () => {
   const [[sidebar]] = useContext(UserContext)
-
   const [[progress, setProgress]] = useTopLoader()
+  const [[typeData, setTypeData]] = useShowDetails();
+  useEffect(() => {
+    setTypeData("")
+  }, [])
   useEffect(() => {
     setProgress(20)
     setTimeout(() => {

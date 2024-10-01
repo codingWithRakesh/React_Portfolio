@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import MyImage from '../assets/images/TARAPADA.jpg'
 import { IoSettingsSharp } from "react-icons/io5";
 import '../App.css'

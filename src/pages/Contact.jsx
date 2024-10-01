@@ -6,10 +6,15 @@ import { FiSend } from 'react-icons/fi'
 import { useTopLoader } from '../contexts/topLoderContext'
 import { SlCheck } from 'react-icons/sl'
 import loadingGif from '../assets/images/loading.gif'
+import { useShowDetails } from '../contexts/showDetailsContext'
 
 const Contact = () => {
   const [[sidebar]] = useContext(UserContext)
   const [[progress, setProgress]] = useTopLoader()
+  const [[typeData, setTypeData]] = useShowDetails();
+  useEffect(() => {
+    setTypeData("")
+  }, [])
 
   useEffect(() => {
     setProgress(20)

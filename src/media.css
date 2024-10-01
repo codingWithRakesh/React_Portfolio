@@ -123,28 +123,31 @@
 
 
     /* show all skills */
-    .showmain{
-        width: 70%;
+    .showmain {
+        width: 100%;
+        padding: 0 2rem;
     }
 
-    .showsuggason{
-        width: 30%;
+    .showsuggason {
+        width: 100%;
+        margin: 1.5rem 0;
+        padding: 0 1.5rem;
     }
 
-    .boxChartBox{
+    .boxChartBox {
         width: 90%;
     }
 
-    .mainshowproject{
+    .mainshowproject {
         width: 100%;
     }
 
-    .titleChartBox{
+    .titleChartBox {
         height: 2rem;
         margin-bottom: 0;
     }
 
-    .mainShowCertifickets{
+    .mainShowCertifickets {
         width: 100%;
         display: flex;
         align-items: center;
@@ -152,11 +155,19 @@
     }
 
     .mainShowCertifickets .CertificateComClass {
-        width: 100%;
+        width: 95%;
+    }
+
+    .showSkillWithProject p {
+        margin: 2rem 0;
     }
 
     .showSkill {
-        padding-bottom: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .project {
+        width: 95% !important;
     }
 
     /* projects */
@@ -164,7 +175,7 @@
         padding: 1rem 2rem;
     }
 
-    .project:hover{
+    .project:hover {
         scale: 1;
     }
 
@@ -202,46 +213,67 @@
         width: 85%;
     }
 
-    .searchIcon{
+    .searchIcon {
         display: none;
     }
 
-    .bottomBar{
+    .bottomBar {
         display: none;
     }
 
     /* video page */
-    .containAllProject{
-        padding: 0;
-        padding-right: .5rem;
+    .showProject {
+        padding: 1.5rem;
+    }
+
+    .col-first-project {
+        width: 100%;
+    }
+
+    .containAllProject {
+        padding: 0 1rem;
+        row-gap: 2rem;
+    }
+
+    .col-second-project h1 {
+        margin-bottom: 1.5rem;
     }
 
     .perProject {
         padding: .5rem 1rem;
+        font-size: 1.5rem;
     }
 
     .back {
         margin-bottom: .8rem;
     }
 
-    .SB{
+    .SB {
         margin-left: 1rem !important;
+        margin-bottom: 1.5rem;
     }
 
     .title-video p {
         font-size: 1.2rem;
     }
 
-    .backRow{
+    .backRow {
         margin-bottom: 0;
     }
 
-    .video-project-box{
+    .video-project-box {
         padding: .8rem;
         margin-bottom: 0;
+        margin-top: 1rem;
     }
 
-    .buttons-shows{
+    .col-second-project {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+
+    .buttons-shows {
         margin-bottom: 0;
     }
 
@@ -250,43 +282,79 @@
     }
 
     .skillUseChart {
-        padding: 1rem;
-        padding-bottom: 1.5rem;
+        padding: 5rem;
     }
 
-    .isisCertified{
+    .isisCertified {
         top: .8rem;
         left: .5rem;
         font-size: 1.8rem;
     }
 
+    .showAnother {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .boxCerHH {
+        margin-top: 1rem;
+    }
+
+    .showCertificate {
+        /* border: 1px solid black; */
+        padding: 1rem;
+    }
+
+    .ifProject {
+        width: 90%;
+    }
+
+    .font1_1 {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+    .certifi-col1 {
+        width: 100%;
+    }
+
+    .certifi-col2 {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
 
 }
 
 @media only screen and (max-width: 500px) {
+
     /* navbar */
-    .navShadow{
+    .navShadow {
         box-shadow: none;
         background-color: transparent;
     }
 
-    .nav{
+    .nav {
         justify-content: flex-end;
         gap: 5px;
         background-color: transparent;
         height: 9vh;
     }
 
-    .searchBar{
+    .searchBar {
         width: 95%;
     }
 
-    .showSarchResult{
+    .showSarchResult {
         max-height: none;
         height: 90vh;
     }
 
-    .searchIcon{
+    .searchIcon {
         height: 6vh;
         width: 6vh;
         border-radius: 50%;
@@ -301,17 +369,19 @@
     }
 
     /* home */
-    .sideNavSmall{
+    .sideNavSmall {
         display: none;
     }
+
     .mainContainerSmall {
         width: 100% !important;
     }
-    .mainContainer{
+
+    .mainContainer {
         top: 9vh;
     }
 
-    .home{
+    .home {
         padding: .5rem;
         padding-top: 0;
         flex-direction: column;
@@ -326,11 +396,11 @@
         width: 60%;
     }
 
-    .titleClient h1{
+    .titleClient h1 {
         font-size: 1.5rem;
     }
 
-    .swiperClass{
+    .swiperClass {
         height: 28rem;
         width: 100%;
     }
@@ -349,26 +419,26 @@
     }
 
     /* about */
-    .about{
+    .about {
         padding-top: 0;
     }
 
-    .firstAb{
+    .firstAb {
         width: 80%;
     }
 
-    .titleAbout{
+    .titleAbout {
         margin: 1rem;
     }
 
     /* skills */
-    .skills{
+    .skills {
         padding: 1rem;
         padding-top: 0;
         gap: 1.5rem;
     }
 
-    .titleSkill{
+    .titleSkill {
         font-size: 1.5rem;
     }
 
@@ -379,25 +449,29 @@
         padding: 0;
     }
 
-    .showsuggason{
+    .showsuggason {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
-    .backRow{
+    .backRow {
         padding-left: 0;
-        margin-bottom: .5rem;
+        margin-bottom: 0;
+    }
+
+    .showSkillWithProject p {
+        margin: 1rem 0;
     }
 
     .mainChart {
         height: 23rem;
     }
 
-    .showsuggason h1{
+    .showsuggason h1 {
         margin-left: 1rem;
     }
 
-    .certifickteRow{
+    .certifickteRow {
         margin-bottom: 1rem;
     }
 
@@ -408,37 +482,43 @@
         gap: 1rem;
     }
 
+    .project {
+        width: 100% !important;
+    }
+
     /* .certificate */
 
     .certificateShow {
         padding: 0;
     }
 
-    .certiti{
+    .certiti {
         padding-left: 1rem;
         margin-bottom: 1rem;
     }
-    
+
     .certificate {
         padding: 1rem;
         padding-top: 0;
         align-content: flex-start;
         gap: 1rem;
     }
-    .CertificateComClass{
-        width: 100%;
+
+    .CertificateComClass {
+        width: 100% !important;
     }
 
     /* contact us */
-    .contact{
+    .contact {
         padding: 1rem;
         padding-top: 0;
     }
-    .showGIF{
+
+    .showGIF {
         width: 100%;
     }
 
-    .inputContact{
+    .inputContact {
         width: 100%;
     }
 
@@ -457,13 +537,13 @@
         white-space: nowrap;
     }
 
-    .back-to-top{
+    .back-to-top {
         bottom: 6.5rem;
         right: 2.2rem;
     }
 
     /* bottom bar */
-    .bottomBar{
+    .bottomBar {
         width: 100%;
         min-height: 0;
         background-color: var(--componentBG);
@@ -480,8 +560,8 @@
         border-top: 1px solid var(--componentBGhover);
     }
 
-    .bottomBox{
-        width: 5rem ;
+    .bottomBox {
+        width: 5rem;
         height: 4rem;
         border: 2px solid var(--componentBGhover);
         border-radius: 5px;
@@ -495,26 +575,26 @@
         line-height: 1.1;
     }
 
-    .croseBottom{
+    .croseBottom {
         position: absolute;
         bottom: 1rem;
         right: 1rem;
         color: var(--headerColor);
     }
 
-    .bottomBox .bottomF{
+    .bottomBox .bottomF {
         font-size: 1.5rem;
         color: var(--headerColor);
     }
 
-    .bottomBox span{
+    .bottomBox span {
         color: var(--headerColor);
         text-align: center;
         font-size: .8rem;
         color: var(--paragraphColor);
     }
 
-    [aria-current="page"]{
+    [aria-current="page"] {
         border: 2px solid var(--smallColor);
         background-color: transparent;
     }
@@ -529,7 +609,7 @@
         background-color: transparent;
     }
 
-    .currentPageSidebar{
+    .currentPageSidebar {
         border: 2px solid var(--smallColor);
         background-color: transparent;
     }
@@ -544,7 +624,7 @@
         background-color: transparent;
     }
 
-    .menu{
+    .menu {
         height: 3.5rem;
         width: 3.5rem;
         border-radius: 50%;
@@ -560,63 +640,117 @@
         font-size: 1.5rem;
     }
 
-    .pogisan{
+    .pogisan {
         top: 3rem;
         left: 3rem;
     }
 
     /* video page */
-    .col-first-project{
+    .col-first-project {
         width: 100%;
     }
 
-    .skillUseChart{
+    .skillUseChart {
         width: 100%;
         min-height: 23rem;
         padding: 1.5rem;
         padding-bottom: 2rem;
     }
 
-    .col-second-project{
+    .col-second-project {
         width: 100%;
         margin: 2rem 0;
+        padding: 0 1rem;
     }
 
-    .containAllProject{
+    .containAllProject {
         padding: 0;
     }
 
-    .peragraph-video{
+    .peragraph-video {
         padding-left: 0;
     }
 
-    .peragraph-video p{
+    .peragraph-video p {
         padding: 1rem 0;
         padding-top: 1.5rem;
     }
 
-    .buttons-shows{
+    .buttons-shows {
         padding-left: 0;
     }
 
-    .current-skills{
+    .showSkill {
         padding: 0;
     }
 
-    .chart-for-allSkill{
+    .current-skills {
         padding: 0;
     }
 
-    .this-skills{
+    .chart-for-allSkill {
         padding: 0;
     }
 
-    .certifickteRowProject{
+    .this-skills {
         padding: 0;
     }
 
-    .mainShowCertificketsProject{
+    .certifickteRowProject {
         padding: 0;
     }
-    
+
+    .mainShowCertificketsProject {
+        padding: 0;
+    }
+
+
+    .certifi-col2 {
+        width: 100%;
+        margin: .5rem 0;
+        padding: 0;
+    }
+
+    .boxCerHH {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .GotFrom {
+        padding: 0;
+    }
+
+    .showButtonCer {
+        padding: 0;
+    }
+
+    .summaryCer {
+        padding: 0;
+    }
+
+    .ifProject {
+        width: 100%;
+    }
+
+    .showCertificate {
+        padding: 1rem 1.2rem;
+        padding-top: 0;
+    }
+
+    .showProject {
+        padding: 0;
+    }
+
+    .video-project-box {
+        margin-top: 0;
+    }
+
+    .boxChartBox {
+        width: 92%;
+    }
+
+    .button-66 {
+            
+            padding: .9rem;
+        }
 }

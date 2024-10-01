@@ -7,6 +7,7 @@ import ErrorPage from './ErrorPage.jsx';
 import SkillShowComponent from '../component/SkillShowComponent.jsx';
 import ProjectShowComponent from '../component/ProjectShowComponent.jsx';
 import { useShowDetails } from '../contexts/showDetailsContext.jsx';
+import CertificatesShowComponent from '../component/CertificatesShowComponent.jsx';
 
 const SkillDetails = () => {
     const [[typeData, setTypeData]] = useShowDetails();
@@ -16,6 +17,7 @@ const SkillDetails = () => {
     const Paramsdata = useParams();
     const [nameSkill] = details.skills.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
     const [nameProject] = details.projects.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
+    const [nameCertificate] = details.certificates.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
 
     useEffect(() => {
         setProgress(20);
@@ -23,14 +25,6 @@ const SkillDetails = () => {
             setProgress(100);
         }, 20);
     }, [setProgress]);
-
-    useEffect(() => {
-        if (nameSkill?.title === "skills") {
-            setTypeData('Skills');
-        } else if (nameProject?.title === "projects") {
-            setTypeData('Projects');
-        }
-    }, [nameSkill, nameProject, setTypeData]);
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -41,24 +35,41 @@ const SkillDetails = () => {
 
     const handleBackButtonClick = () => {
         setProgress(20);
-        scrollToTop(); 
+        scrollToTop();
         setTimeout(() => {
-            setProgress(100); 
+            setProgress(100);
             navigate(-1);
         }, 20);
     };
 
-    if ((!nameSkill) && (!nameProject)) {
+
+    useEffect(() => {
+        if (nameSkill?.checkName === "skills") {
+            setTypeData('Skills');
+        } else if (nameProject?.checkName === "projects") {
+            setTypeData('Projects');
+        } else if (nameCertificate?.checkName === "certificates") {
+            setTypeData('Certificates');
+        }
+    }, [nameSkill, nameProject, setTypeData]);
+
+    if ((!nameSkill) && (!nameProject) && (!nameCertificate)) {
         return <ErrorPage />;
     }
 
-    if (nameSkill?.title === "skills") {
+    if (nameSkill?.checkName === "skills") {
         return <SkillShowComponent handleBackButtonClick={handleBackButtonClick} />;
     }
 
-    if (nameProject?.title === "projects") {
+    if (nameProject?.checkName === "projects") {
         return <ProjectShowComponent handleBackButtonClick={handleBackButtonClick} />;
     }
+
+    if (nameCertificate?.checkName === "certificates") {
+        return <CertificatesShowComponent handleBackButtonClick={handleBackButtonClick} />
+    }
+
+
 };
 
 export default SkillDetails;
