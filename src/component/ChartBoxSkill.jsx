@@ -4,7 +4,7 @@ import { Pie, Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const ChartBoxSkill = ({nameSkill}) => {
+const ChartBoxSkill = ({nameSkill,classCer}) => {
     const data = {
         labels: [nameSkill.name, 'Remaining'],
         datasets: [
@@ -39,7 +39,7 @@ const ChartBoxSkill = ({nameSkill}) => {
 
     return (
         <div className="chartRow">
-            <div className="boxChartBox boxShadows">
+            <div className={`boxChartBox boxShadows ${classCer ? classCer : ""}`}>
                 <p className="titleChartBox">
                     <span>
                         {nameSkill.icon}

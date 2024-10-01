@@ -6,7 +6,7 @@ const CertificateChartSkill = ({ matchingSkill }) => {
     return (
         matchingSkill && <div className="ifSkill">
             <div className="showProCerhdj">
-                <ChartBoxSkill nameSkill={matchingSkill} />
+                <ChartBoxSkill  classCer="forCerti88" nameSkill={matchingSkill} />
                 {[matchingSkill].map((data, index) => (
                     <Skill data={data} key={index} />
                 ))}
