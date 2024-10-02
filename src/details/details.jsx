@@ -775,7 +775,7 @@ export const details = {
             link: HackathonPdf,
             checkProject : "DevInnov8Hackathon",
             checkName : "certificates",
-            gotDate : "I Received the Certificate on September 28th 2024.",
+            gotDate : "I received the Certificate on September 28th, 2024.",
             summary : "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition."
         },
         {
@@ -784,14 +784,14 @@ export const details = {
             image: ReactCertificate,
             link: "https://www.udemy.com/certificate/UC-a659684c-d9ec-43f9-b844-dc79bbf27405/",
             checkName : "certificates",
-            gotDate : "I Received the Certificate on March 25th 2024.",
+            gotDate : "I received the Certificate on March 25th, 2024.",
             summary : ""
         },
         {
             name: "DSA Certificate",
             title: "DSA",
             image: DSACertificate,
-            gotDate : "I Received the Certificate on June 20th 2024.",
+            gotDate : "I received the Certificate on June 20th, 2024.",
             link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/",
             checkName : "certificates",
             summary : ""
@@ -801,7 +801,7 @@ export const details = {
             image: workExperienceIMG,
             link: workExperience,
             checkName : "certificates",
-            gotDate : "I Received the Certificate on July 5th 2024.",
+            gotDate : "I received the Certificate on July 5th, 2024.",
             summary : "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there"
         }
     ],

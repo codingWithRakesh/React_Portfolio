@@ -9,7 +9,7 @@ const CertificateOperButton = ({ nameCertificate }) => {
                 <span>
                     <TbView360 />
                 </span>
-                Visit Certificate
+                View Certificate
                 <span>
                     <LiaExternalLinkAltSolid />
                 </span>
