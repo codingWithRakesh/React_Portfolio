@@ -5,13 +5,11 @@ import { TbView360 } from 'react-icons/tb'
 const CertificateOperButton = ({ nameCertificate }) => {
     return (
         <div className="showButtonCer">
-            <a href={nameCertificate.link} target='_blank' className='button-66'>
+            <a href={nameCertificate.link} target='_blank' className='button-60 back linkS'>
                 <span>
                     <TbView360 />
                 </span>
-                <p>
-                    {nameCertificate.name}
-                </p>
+                Visit Certificate
                 <span>
                     <LiaExternalLinkAltSolid />
                 </span>
