@@ -74,7 +74,7 @@ const Sidebar = () => {
                         {
                             href: '/contact',
                             src: <MdContacts />,
-                            name: "Contact Us"
+                            name: "Contact Me"
                         }
                     ].map((value, index) => (<NavLink onClick={scrollToTop} to={value.href} key={index} title={value.name} className={`navigator settingnavigator ${sidebar ? "navigatorSmall" : ""} ${typeData === value.name ? "currentPageSidebar" : ""}`}>
                         <span className='settingClass '>
