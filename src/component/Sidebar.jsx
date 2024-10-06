@@ -36,53 +36,55 @@ const Sidebar = () => {
 
     return (
         <div className={`sideNav ${navBorder ? "sideNavBorderRight" : ""} ${sidebar ? "sideNavSmall" : ""}`}>
-            <div className={`sideProfile ${sidebar ? "sideProfileSmall" : ""}`}>
-                <div className={`profileImage ${sidebar ? "profileImageSmall" : ""}`}>
-                    <img src={MyImage} alt="tarapada garai" />
+            <div className={`sideTopjdd ${sidebar ? "sideTopjddSmall" : ""}`}>
+                <div className={`sideProfile ${sidebar ? "sideProfileSmall" : ""}`}>
+                    <div className={`profileImage ${sidebar ? "profileImageSmall" : ""}`}>
+                        <img src={MyImage} alt="tarapada garai" />
+                    </div>
+                    {!sidebar && <p className='nameSide'>Tarapada Garai</p>}
+                    {!sidebar && <p className='nameJob'>Frontend Developer</p>}
                 </div>
-                {!sidebar && <p className='nameSide'>Tarapada Garai</p>}
-                {!sidebar && <p className='nameJob'>Frontend Developer</p>}
-            </div>
-            <div className={`sidebuttons ${sidebar ? "sidebuttonsSmall" : ""}`}>
-                {
-                    [
-                        {
-                            href: '/',
-                            src: <AiFillHome />,
-                            name: "Home"
-                        },
-                        {
-                            href: '/about',
-                            src: <FaUserCircle />,
-                            name: "About"
-                        },
-                        {
-                            href: '/skills',
-                            src: <FaCogs />,
-                            name: "Skills"
-                        },
-                        {
-                            href: '/projects',
-                            src: <FaFileCode />,
-                            name: "Projects"
-                        },
-                        {
-                            href: '/certificates',
-                            src: <FaAward />,
-                            name: "Certificates"
-                        },
-                        {
-                            href: '/contact',
-                            src: <MdContacts />,
-                            name: "Contact Me"
-                        }
-                    ].map((value, index) => (<NavLink onClick={scrollToTop} to={value.href} key={index} title={value.name} className={`navigator settingnavigator ${sidebar ? "navigatorSmall" : ""} ${typeData === value.name ? "currentPageSidebar" : ""}`}>
-                        <span className='settingClass '>
-                            {value.src}
-                        </span>
-                        {!sidebar && <span>{value.name}</span>}
-                    </NavLink>))
-                }
+                <div className={`sidebuttons ${sidebar ? "sidebuttonsSmall" : ""}`}>
+                    {
+                        [
+                            {
+                                href: '/',
+                                src: <AiFillHome />,
+                                name: "Home"
+                            },
+                            {
+                                href: '/about',
+                                src: <FaUserCircle />,
+                                name: "About"
+                            },
+                            {
+                                href: '/skills',
+                                src: <FaCogs />,
+                                name: "Skills"
+                            },
+                            {
+                                href: '/projects',
+                                src: <FaFileCode />,
+                                name: "Projects"
+                            },
+                            {
+                                href: '/certificates',
+                                src: <FaAward />,
+                                name: "Certificates"
+                            },
+                            {
+                                href: '/contact',
+                                src: <MdContacts />,
+                                name: "Contact Me"
+                            }
+                        ].map((value, index) => (<NavLink onClick={scrollToTop} to={value.href} key={index} title={value.name} className={`navigator settingnavigator ${sidebar ? "navigatorSmall" : ""} ${typeData === value.name ? "currentPageSidebar" : ""}`}>
+                            <span className='settingClass '>
+                                {value.src}
+                            </span>
+                            {!sidebar && <span>{value.name}</span>}
+                        </NavLink>))
+                    }
+                </div>
             </div>
             <div className={`setting ${sidebar ? "settingSmall" : ""}`}>
                 <div className={`navigator settingnavigator ${sidebar ? "settingnavigatorSmall" : ""}`} onClick={sidebarFun}>

@@ -310,9 +310,27 @@
     top: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     z-index: 9;
     transition: all .4s ease-in;
+    /* border: 1px solid black; */
+    overflow: auto;
+}
+
+.sideTopjdd{
+    width: 100%;
+    height: 33rem;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+
+.sideTopjddSmall{
+    /* border: 1px solid blue; */
+    height: 25rem;
 }
 
 .sideNavBorderRight {
@@ -321,12 +339,13 @@
 
 .sideProfile {
     width: 100%;
-    height: 35%;
+    height: 13rem;
     /*35*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    /* border: 1px solid black; */
 }
 
 .profileImage {
@@ -357,9 +376,9 @@
 
 .sidebuttons {
     width: 100%;
-    min-height: 30%;
+    min-height: 1rem;
     padding: .5rem 0;
-    /* border: 1px solid black; */
+    /* border: 1px solid blue; */
 }
 
 .navigator {
@@ -418,14 +437,12 @@
 
 .setting {
     width: 100%;
-    height: 10%;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
-    position: absolute;
-    left: 0;
-    bottom: 1.5rem;
+    /* border: 1px solid green; */
+    margin-bottom: 1.5rem;
 }
 
 .settingnavigator {
@@ -472,9 +489,9 @@
 }
 
 .settingSmall {
-    position: absolute !important;
+    /* position: absolute !important;
     left: 0 !important;
-    bottom: 2rem !important;
+    bottom: 2rem !important; */
 }
 
 .settingnavigatorSmall {
