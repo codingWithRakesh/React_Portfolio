@@ -26,6 +26,7 @@ import firstPortfolio from '../assets/videos/first_portfolio.mp4'
 import secondPortfolio from '../assets/videos/second_portfolio.mp4'
 import hackathonVideo from '../assets/videos/hackathon.mp4'
 
+import game_2048 from '../assets/images/G2048.png';
 import calcluter from '../assets/images/calcluter.png'
 import curancyChange from '../assets/images/curancyChange.png'
 import examonline from '../assets/images/examonline.png'
@@ -388,6 +389,30 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
             ],
             Timeframe : "September 2023 - October 2023",
+            isGood : false
+        },
+        {
+            name: "2048 Game",
+            link: "https://2048gameproject.netlify.app/",
+            skills: ["TypeScript" ,"JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            image: game_2048,
+            checkName: "projects",
+            gitHub: "https://github.com/codingWithRakesh/game2048",
+            labels: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
+            data: [7, 18, 35, 40],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 206, 86, 1)',
+            ],
+            Timeframe : "11 October 2024 - 12 October 2024",
             isGood : false
         },
         {
