@@ -36,6 +36,13 @@ const About = () => {
       </section>
 
       <section className="col">
+        <h1 className="titleAbout">Hackathon</h1>
+        <div className="contents">
+          {details.about.hackathon.map((data, index) => (<ExpensesCom data={data} key={index} />))}
+        </div>
+      </section>
+
+      <section className="col">
         <h1 className="titleAbout">Education</h1>
         <div className="contents">
           {details.about.education.map((data, index) => (<ExpensesCom data={data} key={index} />))}

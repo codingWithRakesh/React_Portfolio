@@ -113,6 +113,16 @@ export const details = {
                 isTrue: true
             }
         ],
+        hackathon: [
+            {
+                durationWork: "28 Sep, 2024",
+                work: "Dev Innov8+ Hackathon",
+                peragraph: "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition.",
+                link: "Dev Innov8+ Hackathon Certificate",
+                name: "Certificate",
+                isTrue: true
+            },
+        ],
         education: [
             {
                 durationWork: "2024 - 2027",
