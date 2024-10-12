@@ -758,4 +758,8 @@
         width: 100%;
     }
 
+    .mr{
+        margin: .8rem 0;
+    }
+
 }

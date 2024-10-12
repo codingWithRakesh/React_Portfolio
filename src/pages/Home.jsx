@@ -33,7 +33,7 @@ const Home = () => {
           <InsideBox data={data} key={index} />
         ))}
       </div>
-      <div className="boxes boxShadows summary">
+      <div className="boxes boxShadows summary mr">
         <h2>
           Summary 
         </h2>

@@ -36,7 +36,7 @@ const About = () => {
       </section>
 
       <section className="col">
-        <h1 className="titleAbout">Hackathon</h1>
+        <h1 className="titleAbout">Additional Participation</h1>
         <div className="contents">
           {details.about.hackathon.map((data, index) => (<ExpensesCom data={data} key={index} />))}
         </div>

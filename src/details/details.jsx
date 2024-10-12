@@ -358,53 +358,9 @@ export const details = {
     ],
     projects: [
         {
-            name: "YouTube Clone",
-            link: "https://tarapada-projects.netlify.app/project/youtube/home/",
-            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
-            video: YouTubeClone,
-            checkName: "projects",
-            gitHub: "https://github.com/codingWithRakesh/youtube",
-            labels: ['HTML', 'CSS', 'JavaScript'],
-            data: [75, 15, 10],
-            backgroundColor: [
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-            ],
-            borderColor: [
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(75, 192, 192, 1)',
-            ],
-            Timeframe : "October 2023 - November 2023",
-            isGood : false
-        },
-        {
-            name: "Instagram Clone",
-            link: "https://tarapada-projects.netlify.app/project/instagram/home/",
-            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
-            video: instagramClone,
-            checkName: "projects",
-            gitHub: "https://github.com/codingWithRakesh/instagram",
-            labels: ['HTML', 'CSS', 'JavaScript'],
-            data: [65, 20, 15],
-            backgroundColor: [
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-            ],
-            borderColor: [
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(75, 192, 192, 1)',
-            ],
-            Timeframe : "September 2023 - October 2023",
-            isGood : false
-        },
-        {
             name: "2048 Game",
             link: "https://2048gameproject.netlify.app/",
-            skills: ["TypeScript" ,"JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            skills: ["TypeScript", "JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
             image: game_2048,
             checkName: "projects",
             gitHub: "https://github.com/codingWithRakesh/game2048",
@@ -422,8 +378,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe : "11 October 2024 - 12 October 2024",
-            isGood : false
+            Timeframe: "11 October 2024 - 12 October 2024",
+            isGood: false
         },
         {
             name: "Dev Innov8+ Hackathon Project",
@@ -444,8 +400,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "6 September 2024 - 8 September 2024",
-            isGood : true,
+            Timeframe: "6 September 2024 - 8 September 2024",
+            isGood: true,
             checkCertificket: "DevInnov8Hackathon"
         },
         {
@@ -467,8 +423,52 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "3 August 2024 - 5 August 2024",
-            isGood : false
+            Timeframe: "3 August 2024 - 5 August 2024",
+            isGood: false
+        },
+        {
+            name: "YouTube Clone",
+            link: "https://tarapada-projects.netlify.app/project/youtube/home/",
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            video: YouTubeClone,
+            checkName: "projects",
+            gitHub: "https://github.com/codingWithRakesh/youtube",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [75, 15, 10],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe: "October 2023 - November 2023",
+            isGood: false
+        },
+        {
+            name: "Instagram Clone",
+            link: "https://tarapada-projects.netlify.app/project/instagram/home/",
+            skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            video: instagramClone,
+            checkName: "projects",
+            gitHub: "https://github.com/codingWithRakesh/instagram",
+            labels: ['HTML', 'CSS', 'JavaScript'],
+            data: [65, 20, 15],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            Timeframe: "September 2023 - October 2023",
+            isGood: false
         },
         {
             name: "Netflix Clone",
@@ -487,8 +487,8 @@ export const details = {
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 99, 132, 1)',
             ],
-            Timeframe : "November 2023 - November 2023",
-            isGood : false
+            Timeframe: "November 2023 - November 2023",
+            isGood: false
         },
         {
             name: "Computer Coaching Website",
@@ -509,8 +509,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "August 2023 - September 2023",
-            isGood : false
+            Timeframe: "August 2023 - September 2023",
+            isGood: false
         },
         {
             name: "Ecommerce Website",
@@ -531,8 +531,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "November 2023 - December 2023",
-            isGood : false
+            Timeframe: "November 2023 - December 2023",
+            isGood: false
         },
         {
             name: "Online Exam",
@@ -553,8 +553,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "November 2023 - December 2023",
-            isGood : false
+            Timeframe: "November 2023 - December 2023",
+            isGood: false
         },
         {
             name: "Travel Websites",
@@ -575,8 +575,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "May 2024 - June 2024",
-            isGood : false
+            Timeframe: "May 2024 - June 2024",
+            isGood: false
         },
         {
             name: "File Downloader",
@@ -597,8 +597,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "23 June 2024 - 28 June 2024",
-            isGood : false
+            Timeframe: "23 June 2024 - 28 June 2024",
+            isGood: false
         },
         {
             name: "Portfolio",
@@ -617,8 +617,8 @@ export const details = {
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 99, 132, 1)',
             ],
-            Timeframe : "February 2024 - March 2024",
-            isGood : false
+            Timeframe: "February 2024 - March 2024",
+            isGood: false
         },
         {
             name: "First Portfolio",
@@ -641,8 +641,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe : "June 2023 - July 2023",
-            isGood : false
+            Timeframe: "June 2023 - July 2023",
+            isGood: false
         },
         {
             name: "Second Portfolio",
@@ -663,8 +663,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "December 2023 - January 2024",
-            isGood : false
+            Timeframe: "December 2023 - January 2024",
+            isGood: false
         },
         {
             name: "Blogging Website",
@@ -687,8 +687,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe : "October 2023 - November 2023",
-            isGood : false
+            Timeframe: "October 2023 - November 2023",
+            isGood: false
         },
         {
             name: "Shopping Website",
@@ -711,8 +711,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe : "November 2023 - December 2023",
-            isGood : false
+            Timeframe: "November 2023 - December 2023",
+            isGood: false
         },
         {
             name: "Calculator",
@@ -733,8 +733,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "18 December 2023 - 22 December 2023",
-            isGood : false
+            Timeframe: "18 December 2023 - 22 December 2023",
+            isGood: false
         },
         {
             name: "Currency Converter",
@@ -755,8 +755,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "14 December 2023 - 16 December 2023",
-            isGood : false
+            Timeframe: "14 December 2023 - 16 December 2023",
+            isGood: false
         },
         {
             name: "Stone Paper Scissors Game",
@@ -777,8 +777,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "6 December 2023 - 9 December 2023",
-            isGood : false
+            Timeframe: "6 December 2023 - 9 December 2023",
+            isGood: false
         },
         {
             name: "Tic Tac Toe Game",
@@ -799,8 +799,8 @@ export const details = {
                 'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-            Timeframe : "2 December 2023 - 5 December 2023",
-            isGood : false
+            Timeframe: "2 December 2023 - 5 December 2023",
+            isGood: false
         },
     ],
     certificates: [
@@ -808,36 +808,36 @@ export const details = {
             name: "Dev Innov8+ Hackathon Certificate",
             image: HackathonImg,
             link: HackathonPdf,
-            checkProject : "DevInnov8Hackathon",
-            checkName : "certificates",
-            gotDate : "I received the Certificate on September 28th, 2024.",
-            summary : "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition."
+            checkProject: "DevInnov8Hackathon",
+            checkName: "certificates",
+            gotDate: "I received the Certificate on September 28th, 2024.",
+            summary: "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition."
         },
         {
             name: "React Certificate",
             title: "React",
             image: ReactCertificate,
             link: "https://www.udemy.com/certificate/UC-a659684c-d9ec-43f9-b844-dc79bbf27405/",
-            checkName : "certificates",
-            gotDate : "I received the Certificate on March 25th, 2024.",
-            summary : ""
+            checkName: "certificates",
+            gotDate: "I received the Certificate on March 25th, 2024.",
+            summary: ""
         },
         {
             name: "DSA Certificate",
             title: "DSA",
             image: DSACertificate,
-            gotDate : "I received the Certificate on June 20th, 2024.",
+            gotDate: "I received the Certificate on June 20th, 2024.",
             link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/",
-            checkName : "certificates",
-            summary : ""
+            checkName: "certificates",
+            summary: ""
         },
         {
             name: "Teaching Experience Certificate",
             image: workExperienceIMG,
             link: workExperience,
-            checkName : "certificates",
-            gotDate : "I received the Certificate on July 5th, 2024.",
-            summary : "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there"
+            checkName: "certificates",
+            gotDate: "I received the Certificate on July 5th, 2024.",
+            summary: "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there"
         }
     ],
     profile: {
