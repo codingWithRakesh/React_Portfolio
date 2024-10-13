@@ -26,6 +26,7 @@ import firstPortfolio from '../assets/videos/first_portfolio.mp4'
 import secondPortfolio from '../assets/videos/second_portfolio.mp4'
 import hackathonVideo from '../assets/videos/hackathon.mp4'
 
+import do_you_love_me from '../assets/images/do_you_love_me.png'
 import game_2048 from '../assets/images/G2048.png';
 import calcluter from '../assets/images/calcluter.png'
 import curancyChange from '../assets/images/curancyChange.png'
@@ -403,6 +404,30 @@ export const details = {
             Timeframe: "6 September 2024 - 8 September 2024",
             isGood: true,
             checkCertificket: "DevInnov8Hackathon"
+        },
+        {
+            name: "Do You Love Me",
+            link: "https://do-you-love-me-project.netlify.app/",
+            skills: ["TypeScript", "JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
+            image: do_you_love_me,
+            checkName: "projects",
+            gitHub: "https://github.com/codingWithRakesh/do_you_love_me",
+            labels: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
+            data: [25, 2, 35, 37],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 206, 86, 1)',
+            ],
+            Timeframe: "13 October 2024 - 14 October 2024",
+            isGood: false,
         },
         {
             name: "Batting Game",
