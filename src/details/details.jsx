@@ -406,7 +406,7 @@ export const details = {
             checkCertificket: "DevInnov8Hackathon"
         },
         {
-            name: "Do You Love Me",
+            name: "Funny Project",
             link: "https://do-you-love-me-project.netlify.app/",
             skills: ["TypeScript", "JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "GitHub", "Git"],
             image: do_you_love_me,
