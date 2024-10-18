@@ -172,7 +172,7 @@
 /* card profile */
 .cardProfile {
     position: fixed;
-    top: 10vh;
+    top: 4rem;
     right: 0;
     width: 20rem;
     min-height: 0;
