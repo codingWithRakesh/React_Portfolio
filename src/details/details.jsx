@@ -94,7 +94,7 @@ export const details = {
                 work: "Frontend Developer",
                 peragraph: "I was working first in a Birsingha RGCSA company. It was in a computer coaching center. That's where I was working as a front end developer. Where I was working with a team. At that place we were making total 2 big websites which means we were working on 2 projects. I used technology like HTML, CSS, JavaScript, jQuery, Flex Box, Figma to make its website, the back end of its website was PHP, SQL, MySQL.",
                 link: "Computer Coaching Website",
-                name: "link",
+                name: "Visit Project",
                 isTrue: true
             },
             {
@@ -102,7 +102,7 @@ export const details = {
                 work: "Teaching",
                 peragraph: "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there",
                 link: "Teaching Experience Certificate",
-                name: "Experience Certificate",
+                name: "View Experience Certificate",
                 isTrue: true
             },
             {
@@ -110,7 +110,7 @@ export const details = {
                 work: "freelancing",
                 peragraph: "Besides I did freelancing which I am still doing.  I did a lot of freelancing work, mostly in our village.  I have worked in cafes, coaching centers where I have used HTML, CSS, JavaScript, jQuery, React, Tailwind",
                 link: "Online Exam",
-                name: "link",
+                name: "Visit Project",
                 isTrue: true
             }
         ],
@@ -120,7 +120,7 @@ export const details = {
                 work: "Dev Innov8+ Hackathon",
                 peragraph: "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition.",
                 link: "Dev Innov8+ Hackathon Certificate",
-                name: "Certificate",
+                name: "View Certificate",
                 isTrue: true
             },
         ],

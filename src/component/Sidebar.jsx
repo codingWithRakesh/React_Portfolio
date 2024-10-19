@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import MyImage from '../assets/images/TARAPADA.jpg'
 import { IoSettingsSharp } from "react-icons/io5";
 import '../App.css'
@@ -20,7 +20,7 @@ const Sidebar = () => {
     const [[closeModal, setCloseModal]] = useModal()
     const [[navBorder]] = useBorder()
     const [[typeData, setTypeData]] = useShowDetails()
-    const [[searchQu, setsearchQu]] = useSearch();
+    const [[, setsearchQu]] = useSearch();
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
