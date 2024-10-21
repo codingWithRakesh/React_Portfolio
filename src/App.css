@@ -1400,7 +1400,7 @@
 }
 
 .col-first-project {
-    width: 60%;
+    width: 70%;
     min-height: 10vh;
     /* border: 1px solid black; */
     padding: 0 1rem;
@@ -1591,7 +1591,7 @@ img {
 }
 
 .col-second-project {
-    width: 40%;
+    width: 30%;
     min-height: 10vh;
     /* border: 1px solid black; */
     padding: 0 1rem;
@@ -1605,7 +1605,7 @@ img {
 .containAllProject {
     width: 100%;
     min-height: 10vh;
-    padding: 0 1rem;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
