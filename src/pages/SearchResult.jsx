@@ -67,23 +67,19 @@ const SearchResult = () => {
         <div className={`mainContainer searchResult ${sidebar ? "mainContainerSmall" : ""}`}>
             <div className="titleSearch">
                 {onlySkills
-                    ? `Skills results (${filteredSkills.length})`
+                    ? `Skills Results (${filteredSkills.length})`
                     : onlyProjects
-                    ? `Project results (${filteredProjects.length})`
-                    : onlyCertificates
-                    ? `Certificate results (${filteredCertificates.length})`
-                    : `All results (${totalResults})`}
+                        ? `Project Results (${filteredProjects.length})`
+                        : onlyCertificates
+                            ? `Certificate Results (${filteredCertificates.length})`
+                            : `All Results (${totalResults})`}
             </div>
             <div className={`showSearchResult ${filteredSkills.length === 1 && totalResults === 1 ? "colum1" : ""}`}>
-                <div className="forSkill">
-                    {filteredSkills.length > 0 && (
-                        <>
-                            {filteredSkills.map((data, index) => (
-                                <Skill data={data} key={index} />
-                            ))}
-                        </>
-                    )}
-                </div>
+                {filteredSkills.length > 0 && <div className="forSkill">
+                    {filteredSkills.map((data, index) => (
+                        <Skill data={data} key={index} />
+                    ))}
+                </div>}
                 {filteredProjects.length > 0 && (
                     <>
                         {filteredProjects.map((data, index) => (
