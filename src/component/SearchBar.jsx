@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { IoMdSearch } from 'react-icons/io';
 import { details } from '../details/details.jsx';
@@ -6,17 +7,18 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { GoArrowLeft } from 'react-icons/go';
 import { useTopLoader } from '../contexts/topLoderContext.jsx';
 
-const SearchBar = ({setshowInput, setSetshowInput}) => {
+const SearchBar = ({ setshowInput, setSetshowInput }) => {
     const [query, setQuery] = useState("");
     const [check, setCheck] = useState(false);
-    const [[searchQu, setsearchQu]] = useSearch();
+    const [[, setsearchQu]] = useSearch();
     const inputSelect = useRef();
-    const [searchP, setSearchP] = useSearchParams({ q: "" });
-    const q = searchP.get("q");
-    const [[progress, setProgress]] = useTopLoader();
+    const [, setSearchP] = useSearchParams({ q: "" });
+    const [[, setProgress]] = useTopLoader();
 
     const count = useRef(-1);
     const [showCount, setShowCount] = useState(-1);
+
+    const allNames = [...details.skills, ...details.projects, ...details.certificates]
 
     const inputFun = (e) => {
         setQuery(e.target.value);
@@ -50,10 +52,10 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
     };
 
     const filteredItems = useMemo(() => {
-        return details.projects.map((data) => data.name).filter(item => {
-            return item.toLowerCase().includes(query.toLowerCase());
+        return allNames.filter(item => {
+            return item.name.toLowerCase().includes(query.toLowerCase());
         });
-    }, [query]);
+    }, [query, allNames]);
 
     const itemLength = filteredItems.length;
 
@@ -70,18 +72,23 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
 
     const enterFun = useCallback(() => {
         let searchQuery;
-        if (count.current === -1) {
-            searchQuery = query;
+    if (count.current === -1) {
+        searchQuery = query;
+    } else {
+        const selectedItem = filteredItems[count.current];
+        if (selectedItem) {
+            searchQuery = selectedItem.name; 
         } else {
-            searchQuery = filteredItems[count.current];
+            return;
         }
+    }
         setSearchP((prev) => {
             prev.set("q", searchQuery);
             return prev;
         });
         setQuery(searchQuery);
         setsearchQu(searchQuery.toLowerCase());
-        navigate('/projects');
+        navigate('/search');
         setCheck(false);
     }, [filteredItems, query, setSearchP, setsearchQu, navigate]);
 
@@ -123,36 +130,37 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
         }, [showCount, index]);
 
         return (
-            <Link 
+            <Link
                 id={`search-item-${index}`}
-                to={`/${item}`}
+                to={`/${item.name}`}
                 onClick={(e) => {
                     e.preventDefault()
                     setProgress(20);
                     setTimeout(() => {
                         setProgress(100);
                     }, 20);
-                    setQuery(item);
-                    setsearchQu(item.toLowerCase());
+                    setQuery(item.name);
+                    setsearchQu(item.name.toLowerCase());
                     setSearchP((prev) => {
-                        prev.set("q", item);
+                        prev.set("q", item.name);
                         return prev;
                     });
                     setTimeout(() => {
-                        navigate(`/${item}`);
+                        navigate(`/${item.name}`);
                     }, 10);
                     setCheck(false);
                     window.scrollTo({
                         top: 0,
                         behavior: 'smooth'
                     });
-                }} 
+                }}
                 className={`showBox ${index === showCount ? "selectedIn" : ""}`}
             >
                 <span>
                     <IoMdSearch />
                 </span>
-                <p>{item}</p>
+                <p>{item.name}</p>
+                <div className="tellWhat">{item.checkName.slice(0, -1)}</div>
             </Link>
         );
     });
@@ -167,13 +175,13 @@ const SearchBar = ({setshowInput, setSetshowInput}) => {
                 <label htmlFor="inputId" onClick={backHome}>
                     {screen.width <= 500 ? <GoArrowLeft /> : <IoMdSearch />}
                 </label>
-                <input 
-                    type="search" 
-                    placeholder='Search for Projects' 
-                    id='inputId' 
-                    ref={inputSelect} 
-                    value={query} 
-                    onChange={inputFun} 
+                <input
+                    type="search"
+                    placeholder='Search'
+                    id='inputId'
+                    ref={inputSelect}
+                    value={query}
+                    onChange={inputFun}
                 />
             </div>
             {check && <div className="showSarchResult">

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import '../App.css'
 import { UserContext } from '../contexts/context'
 import CertificateCom from '../component/CertificateCom'
@@ -8,11 +8,11 @@ import { useShowDetails } from '../contexts/showDetailsContext.jsx'
 
 const Certificates = () => {
   const [[sidebar]] = useContext(UserContext)
-  const [[progress, setProgress]] = useTopLoader()
-  const [[typeData, setTypeData]] = useShowDetails();
+  const [[, setProgress]] = useTopLoader()
+  const [[, setTypeData]] = useShowDetails();
   useEffect(() => {
     setTypeData("")
-  }, [])
+  }, [setTypeData])
   
   useEffect(() => {
     setProgress(20)

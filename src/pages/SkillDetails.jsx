@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 import '../App.css';
 import { details } from '../details/details.jsx';
 import { useTopLoader } from '../contexts/topLoderContext';
@@ -10,8 +10,8 @@ import { useShowDetails } from '../contexts/showDetailsContext.jsx';
 import CertificatesShowComponent from '../component/CertificatesShowComponent.jsx';
 
 const SkillDetails = () => {
-    const [[typeData, setTypeData]] = useShowDetails();
-    const [[progress, setProgress]] = useTopLoader();
+    const [[, setTypeData]] = useShowDetails();
+    const [[, setProgress]] = useTopLoader();
     const navigate = useNavigate();
 
     const Paramsdata = useParams();
@@ -39,6 +39,7 @@ const SkillDetails = () => {
         setTimeout(() => {
             setProgress(100);
             navigate(-1);
+            // history.back()
         }, 20);
     };
 

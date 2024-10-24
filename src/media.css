@@ -328,6 +328,17 @@
         padding: 0 1rem;
     }
 
+    /* search result page */
+    .showSearchResult {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .searchResult {
+        padding: 1rem 3rem;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -754,12 +765,30 @@
         padding: .9rem;
     }
 
-    .forCerti88{
+    .forCerti88 {
         width: 100%;
     }
 
-    .mr{
+    .mr {
         margin: .8rem 0;
+    }
+
+    /* show search result */
+
+    .showSearchResult{
+        gap: 1rem;
+    }
+
+    .searchResult{
+        padding: 1rem;
+    }
+
+    .width100{
+        margin-bottom: 0;
+    }
+
+    .forSkill{
+        gap: 1.5rem;
     }
 
 }

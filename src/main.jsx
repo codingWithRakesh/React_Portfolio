@@ -4,12 +4,15 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
-const About = lazy(() => import('./pages/About'))
-const Skills = lazy(() => import('./pages/Skills'))
-const Projects = lazy(() => import('./pages/Projects'))
-const Certificates = lazy(() => import('./pages/Certificates'))
-const Contact = lazy(() => import('./pages/Contact'))
-const SkillDetails = lazy(() => import('./pages/SkillDetails.jsx'))
+
+export const About = lazy(() => import('./pages/About'))
+export const Skills = lazy(() => import('./pages/Skills'))
+export const Projects = lazy(() => import('./pages/Projects'))
+export const Certificates = lazy(() => import('./pages/Certificates'))
+export const Contact = lazy(() => import('./pages/Contact'))
+export const SkillDetails = lazy(() => import('./pages/SkillDetails.jsx'))
+export const SearchResult = lazy(() => import('./pages/SearchResult.jsx'))
+
 import Error from './pages/Error.jsx'
 import UserContextProvider from './contexts/context.jsx'
 import ModalContextProvider from './contexts/modalProvider.jsx'
@@ -54,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />
+      },
+      {
+        path: '/search',
+        element: <SearchResult/>
       }
     ]
   },

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import '../App.css'
 import { UserContext } from '../contexts/context'
 import ExpensesCom from '../component/ExpensesCom'
@@ -9,8 +9,8 @@ import { useShowDetails } from '../contexts/showDetailsContext.jsx'
 
 const About = () => {
   const [[sidebar]] = useContext(UserContext)
-  const [[progress, setProgress]] = useTopLoader()
-  const [[typeData, setTypeData]] = useShowDetails();
+  const [[, setProgress]] = useTopLoader()
+  const [[, setTypeData]] = useShowDetails();
 
   useEffect(() => {
     setProgress(20)
@@ -21,7 +21,7 @@ const About = () => {
 
   useEffect(() => {
     setTypeData("")
-  }, [])
+  }, [setTypeData])
 
 
   return (

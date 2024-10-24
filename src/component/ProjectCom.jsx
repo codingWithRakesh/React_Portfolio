@@ -1,11 +1,11 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTopLoader } from '../contexts/topLoderContext';
 import { FaAward } from 'react-icons/fa';
 
 const ProjectCom = ({ data, classProject }) => {
-    const [[progress, setProgress]] = useTopLoader();
+    const [[, setProgress]] = useTopLoader();
     const navigate = useNavigate();
 
     const handleSkillClick = (e) => {
