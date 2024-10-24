@@ -72,16 +72,16 @@ const SearchBar = ({ setshowInput, setSetshowInput }) => {
 
     const enterFun = useCallback(() => {
         let searchQuery;
-    if (count.current === -1) {
-        searchQuery = query;
-    } else {
-        const selectedItem = filteredItems[count.current];
-        if (selectedItem) {
-            searchQuery = selectedItem.name; 
+        if (count.current === -1) {
+            searchQuery = query;
         } else {
-            return;
+            const selectedItem = filteredItems[count.current];
+            if (selectedItem) {
+                searchQuery = selectedItem.name;
+            } else {
+                return;
+            }
         }
-    }
         setSearchP((prev) => {
             prev.set("q", searchQuery);
             return prev;
@@ -104,7 +104,9 @@ const SearchBar = ({ setshowInput, setSetshowInput }) => {
             } else if (event.key === 'ArrowDown') {
                 downFun();
             } else if (event.key === "Enter") {
-                enterFun();
+                if (query !== "") {
+                    enterFun();
+                }
             }
         };
 
