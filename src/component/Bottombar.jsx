@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { AiFillHome } from 'react-icons/ai'
 import { FaAward, FaCogs, FaFileCode, FaUserCircle } from 'react-icons/fa'
 import { IoSettingsSharp } from 'react-icons/io5'
@@ -25,7 +25,7 @@ const Bottombar = ({ menuCheck, setMenuCheck }) => {
                 setMenuCheck(!menuCheck)
             })
         }
-    }, [setMenuCheck])
+    }, [setMenuCheck, menuCheck])
 
 
     const scrollToTop = () => {

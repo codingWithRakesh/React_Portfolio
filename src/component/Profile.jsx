@@ -1,4 +1,3 @@
-import React from 'react'
 import '../App.css'
 import { FaHandshake } from "react-icons/fa";
 import { Link } from 'react-router-dom';

@@ -1,11 +1,10 @@
-import React from 'react'
 import ReactCertificate from '../assets/certificate/React.jpg'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTopLoader } from '../contexts/topLoderContext'
 
-const CertificateCom = ({data,font1_1}) => {
-  const [[progress, setProgress]] = useTopLoader();
+const CertificateCom = ({data,font1_1,marginH}) => {
+  const [[, setProgress]] = useTopLoader();
     const navigate = useNavigate();
 
     const handleSkillClick = (e) => {
@@ -21,7 +20,7 @@ const CertificateCom = ({data,font1_1}) => {
         navigate(`/${data.name}`);
     };
   return (
-    <Link to={`/${data.name}`} onClick={handleSkillClick} className='CertificateComClass boxShadows'>
+    <Link to={`/${data.name}`} onClick={handleSkillClick} className={`CertificateComClass boxShadows ${marginH ? marginH : ""}`}>
         <div className="imageCerti">
             <img src={data.image} alt={ReactCertificate} />
         </div>

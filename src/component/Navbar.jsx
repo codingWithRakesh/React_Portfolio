@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useState } from 'react'
+import { useCallback, useContext, useEffect, useState } from 'react'
 import { IoMenuOutline } from "react-icons/io5";
 import '../App.css'
 import MyImage from "../assets/images/TARAPADA.jpg"

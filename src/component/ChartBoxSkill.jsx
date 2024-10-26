@@ -1,8 +1,8 @@
-import React from 'react'
 
-import { Pie, Doughnut } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
+import PropTypes from 'prop-types';
 
 const ChartBoxSkill = ({nameSkill,classCer}) => {
     const data = {
@@ -52,6 +52,15 @@ const ChartBoxSkill = ({nameSkill,classCer}) => {
             </div>
         </div>
     )
+}
+
+ChartBoxSkill.propTypes = {
+    nameSkill : PropTypes.shape({
+        name: PropTypes.string,
+        data : PropTypes.array,
+        icon : PropTypes.object
+    }),
+    classCer : PropTypes.string
 }
 
 export default ChartBoxSkill

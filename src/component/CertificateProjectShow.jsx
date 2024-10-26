@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectCom from './ProjectCom'
 
 const CertificateProjectShow = ({ matchingProject }) => {

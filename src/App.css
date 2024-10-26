@@ -2288,3 +2288,22 @@ img {
     justify-content: center;
     margin-bottom: 2rem;
 }
+
+.min-height{
+    min-height: 18rem !important;
+    height: inherit;
+    padding: 1rem;
+}
+
+.min-height h2{
+    color: var(--headerColor);
+    margin-bottom: 1rem;
+}
+
+.width100N{
+    width: 100%;
+}
+
+.margin0{
+    margin-bottom: 0;
+}

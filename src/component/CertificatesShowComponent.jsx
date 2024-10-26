@@ -1,14 +1,9 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { useParams } from 'react-router-dom';
 import { UserContext } from '../contexts/context';
 import { details } from '../details/details';
 import { IoCaretBackOutline } from 'react-icons/io5';
 import CertificateCom from './CertificateCom';
-import { TbView360 } from 'react-icons/tb';
-import { LiaExternalLinkAltSolid } from 'react-icons/lia';
-import ChartBoxSkill from './ChartBoxSkill';
-import Skill from './Skill';
-import ProjectCom from './ProjectCom';
 import ShowCertificateName from './ShowCertificateName';
 import CertificateGot from './CertificateGot';
 import CertificateOperButton from './CertificateOperButton';

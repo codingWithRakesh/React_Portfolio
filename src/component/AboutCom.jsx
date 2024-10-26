@@ -1,5 +1,5 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 const AboutCom = ({aboutBox}) => {
     return (
@@ -27,5 +27,17 @@ const AboutCom = ({aboutBox}) => {
         </div>
     )
 }
+
+AboutCom.propTypes = {
+    aboutBox: PropTypes.arrayOf(
+        PropTypes.shape({
+            image: PropTypes.string,
+            CV: PropTypes.string,
+            about: PropTypes.arrayOf(PropTypes.string),
+            hobbies: PropTypes.arrayOf(PropTypes.string),
+            languages: PropTypes.arrayOf(PropTypes.string),
+        })
+    ).isRequired,
+};
 
 export default AboutCom

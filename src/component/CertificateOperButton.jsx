@@ -1,4 +1,3 @@
-import React from 'react'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia'
 import { TbView360 } from 'react-icons/tb'
 

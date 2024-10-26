@@ -1,4 +1,3 @@
-import React from 'react';
 import { useFonts } from '../contexts/fontContext';
 import { IoIosArrowDown } from "react-icons/io";
 import { useCroseFont } from '../contexts/croseFontContext';

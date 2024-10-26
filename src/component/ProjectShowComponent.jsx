@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { UserContext } from '../contexts/context';
 import { IoCaretBackOutline } from 'react-icons/io5';
 import { details } from '../details/details.jsx';
@@ -10,7 +10,6 @@ import TimeLine from './TimeLine.jsx';
 import HostLinkVideo from './HostLinkVideo.jsx';
 import ShowSkillProjectVideo from './ShowSkillProjectVideo.jsx';
 import ShowClickSkillVideo from './ShowClickSkillVideo.jsx';
-import CertificateCom from './CertificateCom.jsx';
 import ShowCertificketProject from './ShowCertificketProject.jsx';
 
 const ProjectShowComponent = ({ handleBackButtonClick }) => {

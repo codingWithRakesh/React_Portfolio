@@ -1,4 +1,3 @@
-import React from 'react'
 import ChartBoxSkill from './ChartBoxSkill'
 import Skill from './Skill'
 

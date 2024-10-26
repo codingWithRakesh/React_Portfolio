@@ -1,4 +1,3 @@
-import React from 'react'
 import '../App.css'
 import { useModal } from '../contexts/modalProvider'
 import { useCroseFont } from '../contexts/croseFontContext'
