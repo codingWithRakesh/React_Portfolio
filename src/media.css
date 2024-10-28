@@ -179,6 +179,18 @@
         scale: 1;
     }
 
+    .projectShowAll {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .marginBottom{
+        margin-bottom: 0;
+    }
+
     .project {
         width: 100%;
     }
@@ -775,19 +787,19 @@
 
     /* show search result */
 
-    .showSearchResult{
+    .showSearchResult {
         gap: 1rem;
     }
 
-    .searchResult{
+    .searchResult {
         padding: 1rem;
     }
 
-    .width100{
+    .width100 {
         margin-bottom: 0;
     }
 
-    .forSkill{
+    .forSkill {
         gap: 1.5rem;
     }
 

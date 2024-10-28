@@ -27,9 +27,11 @@ const Projects = () => {
       <h1 className="titleSkill">
         Projects
       </h1>
-      {details.projects.map((data, index) => (
-        <ProjectCom key={index} data={data} />
-      ))}
+      <div className="projectShowAll">
+        {details.projects.map((data, index) => (
+          <ProjectCom key={index} data={data} classProject="marginBottom" />
+        ))}
+      </div>
     </div>
   );
 };
