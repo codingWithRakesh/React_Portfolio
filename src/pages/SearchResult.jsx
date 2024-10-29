@@ -20,6 +20,14 @@ const SearchResult = () => {
     const [[, setTypeData]] = useShowDetails();
 
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, [])
+
+
+    useEffect(() => {
         setTypeData("");
     }, [setTypeData]);
 
