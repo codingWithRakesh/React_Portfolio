@@ -406,7 +406,7 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe: "24 October to 2024 - 27 October 2024",
+            Timeframe: "24 October 2024 - 27 October 2024",
             isNew : '27/10/2024 to 02/11/2024',
             isGood: false
         },
