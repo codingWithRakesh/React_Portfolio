@@ -1349,12 +1349,68 @@
 }
 
 .iconGoo {
+    min-height: 2rem;
+    width: 4rem;
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 0;
+    top: 0;
     /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: .8rem .5rem;
+}
+
+.iconGooSmall{
+    min-height: 2rem;
+    width: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: .6rem .3rem;
+}
+
+.forthisNew{
+    width: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--smallColor);
+    color: #fff;
+}
+
+.forthisNewSmall{
+    width: 2.8rem;
+    height: 1.8rem;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--smallColor);
+    color: #fff;
+    font-size: .9rem;
+}
+
+.forCerti{
     color: var(--smallColor);
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+}
+
+.forCertiSmall{
+    color: var(--smallColor);
+    font-size: 2.3rem;
 }
 
 .videoShow {

@@ -25,6 +25,7 @@ import portfolio from '../assets/videos/portpolio.mp4'
 import firstPortfolio from '../assets/videos/first_portfolio.mp4'
 import secondPortfolio from '../assets/videos/second_portfolio.mp4'
 import hackathonVideo from '../assets/videos/hackathon.mp4'
+import diwaliVideo from '../assets/videos/Diwali video.mp4'
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -360,6 +361,31 @@ export const details = {
     ],
     projects: [
         {
+            name: "Diwali Project",
+            link: "https://diwaliproject24.netlify.app/?receiver=bro",
+            skills: ["TypeScript", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+            video: diwaliVideo,
+            checkName: "projects",
+            gitHub: "https://github.com/codingWithRakesh/diwali-project",
+            labels: ['HTML', 'CSS', 'TypeScript', 'JavaScript'],
+            data: [44, 44, 7, 5],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 206, 86, 1)',
+            ],
+            Timeframe: "28 October 2024 - 29 October 2024",
+            isNew : '29/10/2024 to 05/11/2024',
+            isGood: false
+        },
+        {
             name: "Notepad Webapp",
             link: "https://notewebappproject.netlify.app/",
             skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap", "React Router Dom", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
@@ -380,7 +406,8 @@ export const details = {
                 'rgba(75, 192, 192, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            Timeframe: "26 October 2024 - 27 October 2024",
+            Timeframe: "24 October to 2024 - 27 October 2024",
+            isNew : '27/10/2024 to 02/11/2024',
             isGood: false
         },
         {
