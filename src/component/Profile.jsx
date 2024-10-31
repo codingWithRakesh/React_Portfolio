@@ -2,6 +2,7 @@ import '../App.css'
 import { FaHandshake } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { details } from '../details/details.jsx'
+import PropTypes from 'prop-types';
 
 const Profile = ({ setShowProfile }) => {
     const profileFun = (event) => {
@@ -20,18 +21,18 @@ const Profile = ({ setShowProfile }) => {
             <div className="profileSecond">
                 {
                     details.profile.contacts.map((value, index) => (
-                        <div className="showDetails" key={index}>
+                        <a href={value.href} download={value.download} className="showDetails" key={index} >
                             <span>{value.icon}</span>
-                            <a href={value.href} download={value.download}>{value.name}</a>
-                        </div>
+                            <p>{value.name}</p>
+                        </a>
                     ))
                 }
-                <div className="showDetails">
+                <Link onClick={() => setShowProfile(false)} to="/contact" className="showDetails">
                     <span>
                         <FaHandshake />
                     </span>
-                    <Link onClick={() => setShowProfile(false)} to="/contact">Hire Me</Link>
-                </div>
+                    <p>Hire Me</p>
+                </Link>
             </div>
             <div className="profileThird">
                 {
@@ -43,6 +44,10 @@ const Profile = ({ setShowProfile }) => {
             </div>
         </div>
     )
+}
+
+Profile.propTypes = {
+    setShowProfile : PropTypes.func
 }
 
 export default Profile
