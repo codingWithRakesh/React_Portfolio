@@ -11,6 +11,7 @@ import firstPortfolio from '../assets/videos/first_portfolio.mp4'
 import secondPortfolio from '../assets/videos/second_portfolio.mp4'
 import hackathonVideo from '../assets/videos/hackathon.mp4'
 import diwaliVideo from '../assets/videos/Diwali video.mp4'
+import RupsonaIqraMadrasaMission from '../assets/videos/Rupsona Iqra Madrasa Mission.mp4'
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -47,6 +48,29 @@ export const projects = [
         ],
         Timeframe: "28 October 2024 - 29 October 2024",
         isNew : '29/10/2024 to 05/11/2024',
+        isGood: false
+    },
+    {
+        name: "Rupsona Iqra Madrasa Mission",
+        link: "https://rupsonaiqramadrasamission.in/",
+        skills: ["React", "HTML", "CSS", "Bootstrap", "React Router Dom", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
+        video: RupsonaIqraMadrasaMission,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/RUPSONA-IQRA-MADRASA-MISSON-web",
+        labels: ['HTML', 'React', 'Bootstrap'],
+        data: [2, 86, 13],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+        ],
+        Timeframe: "16 October 2024 - 1 November 2024",
+        isNew : '2/11/2024 to 08/11/2024',
         isGood: false
     },
     {
