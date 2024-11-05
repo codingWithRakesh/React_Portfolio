@@ -431,7 +431,11 @@
     .clientBox {
         height: 24rem;
         width: 83%;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .swiper-button-prev,.swiper-button-next{
+        display: none !important;
     }
 
     .clientWrite {
