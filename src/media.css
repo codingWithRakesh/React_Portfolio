@@ -321,6 +321,10 @@
         padding: 1rem;
     }
 
+    .mainShowCertificketsProject{
+        gap: 1.5rem;
+    }
+
     .ifProject {
         width: 90%;
     }

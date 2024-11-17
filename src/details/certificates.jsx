@@ -4,12 +4,23 @@ import workExperience from '../assets/certificate/work_experience.pdf'
 import workExperienceIMG from '../assets/certificate/work_experience_image.jpg'
 import HackathonImg from '../assets/certificate/Hackathon.jpg'
 import HackathonPdf from '../assets/certificate/Hackathon_pdf.pdf'
+import HackathonSimplePdf from '../assets/certificate/hackathonSimple.pdf'
+import HackathonSimpleImg from '../assets/certificate/hackathonSimple.jpg'
 
 export const certificates = [
     {
         name: "Dev Innov8+ Hackathon Certificate",
         image: HackathonImg,
         link: HackathonPdf,
+        checkProject: "DevInnov8Hackathon",
+        checkName: "certificates",
+        gotDate: "I received the Certificate on September 28th, 2024.",
+        summary: "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition."
+    },
+    {
+        name: "Dev Innov8+ Hackathon Participation Certificate",
+        image: HackathonSimpleImg,
+        link: HackathonSimplePdf,
         checkProject: "DevInnov8Hackathon",
         checkName: "certificates",
         gotDate: "I received the Certificate on September 28th, 2024.",
