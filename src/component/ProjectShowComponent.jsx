@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { UserContext } from '../contexts/context';
 import { IoCaretBackOutline } from 'react-icons/io5';
 import { details } from '../details/details.jsx';
@@ -11,6 +11,7 @@ import HostLinkVideo from './HostLinkVideo.jsx';
 import ShowSkillProjectVideo from './ShowSkillProjectVideo.jsx';
 import ShowClickSkillVideo from './ShowClickSkillVideo.jsx';
 import ShowCertificketProject from './ShowCertificketProject.jsx';
+import PropTypes from 'prop-types';
 
 const ProjectShowComponent = ({ handleBackButtonClick }) => {
     const [[sidebar]] = useContext(UserContext);
@@ -19,6 +20,24 @@ const ProjectShowComponent = ({ handleBackButtonClick }) => {
     const projectSkills = nameProject.skills;
     const relevantSkills = details.skills.filter(skill => projectSkills.includes(skill.name));
     const filteredCertificates = nameProject.checkCertificket ? details.certificates.filter(certificate => certificate.checkProject === nameProject.checkCertificket) : [];
+
+    const [visibleProjects, setVisibleProjects] = useState(10);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (
+                window.innerHeight + document.documentElement.scrollTop + 200 >=
+                document.documentElement.scrollHeight
+            ) {
+                setVisibleProjects((prev) => Math.min(prev + 5, details.projects.length));
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <div className={`mainContainer showProject ${sidebar ? "mainContainerSmall" : ""}`}>
@@ -50,13 +69,17 @@ const ProjectShowComponent = ({ handleBackButtonClick }) => {
             <div className="col-second-project">
                 <h1>Projects</h1>
                 <div className="containAllProject">
-                    {details.projects.map((data, index) => (
-                        <SmallProjectCom data={data} key={index} />
+                    {details.projects.slice(0, visibleProjects).map((data, index) => (
+                        <SmallProjectCom key={index} data={data} />
                     ))}
                 </div>
             </div>
         </div>
     )
 }
+
+ProjectShowComponent.propTypes = {
+    handleBackButtonClick: PropTypes.func
+};
 
 export default ProjectShowComponent

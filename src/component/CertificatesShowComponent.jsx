@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { UserContext } from '../contexts/context';
 import { details } from '../details/details';
@@ -10,6 +10,7 @@ import CertificateOperButton from './CertificateOperButton';
 import CertificateSummaryShow from './CertificateSummaryShow';
 import CertificateChartSkill from './CertificateChartSkill';
 import CertificateProjectShow from './CertificateProjectShow';
+import PropTypes from 'prop-types';
 
 const CertificatesShowComponent = ({ handleBackButtonClick }) => {
     const [[sidebar]] = useContext(UserContext);
@@ -17,6 +18,24 @@ const CertificatesShowComponent = ({ handleBackButtonClick }) => {
     const [nameCertificate] = details.certificates.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
     const matchingSkill = details.skills.find(skill => skill.name.toLowerCase() === nameCertificate?.title?.toLowerCase());
     const matchingProject = details.projects.find(project => project.checkCertificket && project.checkCertificket === nameCertificate?.checkProject);
+
+    const [visibleCertificates, setVisiblevisibleCertificates] = useState(5);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (
+                window.innerHeight + document.documentElement.scrollTop + 200 >=
+                document.documentElement.scrollHeight
+            ) {
+                setVisiblevisibleCertificates((prev) => Math.min(prev + 5, details.certificates.length));
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <div className={`mainContainer showCertificate ${sidebar ? "mainContainerSmall" : ""}`}>
@@ -30,9 +49,9 @@ const CertificatesShowComponent = ({ handleBackButtonClick }) => {
                     </button>
                 </div>
 
-                <ShowCertificateName nameCertificate={nameCertificate}/>
+                <ShowCertificateName nameCertificate={nameCertificate} />
 
-                <CertificateGot nameCertificate={nameCertificate}/>
+                <CertificateGot nameCertificate={nameCertificate} />
 
                 <CertificateOperButton nameCertificate={nameCertificate} />
 
@@ -47,11 +66,17 @@ const CertificatesShowComponent = ({ handleBackButtonClick }) => {
                     Certificates
                 </h1>
                 <div className="showAnother">
-                    {details.certificates.map((data, index) => (<CertificateCom font1_1="font1_1" key={index} data={data} />))}
+                    {details.certificates.slice(0, visibleCertificates).map((data, index) => (
+                        <CertificateCom font1_1="font1_1" key={index} data={data} />
+                    ))}
                 </div>
             </div>
         </div>
     )
 }
+
+CertificatesShowComponent.propTypes = {
+    handleBackButtonClick: PropTypes.func
+};
 
 export default CertificatesShowComponent

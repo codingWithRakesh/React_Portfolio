@@ -9,6 +9,7 @@ import ChartBoxSkill from '../component/ChartBoxSkill.jsx';
 import LearnFrom from '../component/LearnFrom.jsx';
 import ShowSkillcertificate from '../component/ShowSkillcertificate.jsx';
 import ShowProjectsInSkill from '../component/ShowProjectsInSkill.jsx';
+import PropTypes from 'prop-types';
 
 const SkillShowComponent = ({handleBackButtonClick}) => {
     const [[sidebar]] = useContext(UserContext);
@@ -47,5 +48,9 @@ const SkillShowComponent = ({handleBackButtonClick}) => {
         </div>
     );
 }
+
+SkillShowComponent.propTypes = {
+    handleBackButtonClick: PropTypes.func
+};
 
 export default SkillShowComponent;
