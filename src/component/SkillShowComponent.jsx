@@ -16,9 +16,11 @@ const SkillShowComponent = ({handleBackButtonClick}) => {
 
     const Paramsdata = useParams();
     const [nameSkill] = details.skills.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
-    const nameSkillcertificate = details.certificates.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
+    const nameSkillcertificate = details.certificates.filter(data => 
+        data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()) || 
+        (data.title && data.title.some(title => title.toLowerCase().includes(Paramsdata.skill.toLowerCase())))
+    );    
     const projectsWithJavaScript = details.projects.filter(project => project.skills.includes(Paramsdata.skill));
-
     return (
         <div className={`mainContainer showSkill ${sidebar ? "mainContainerSmall" : ""}`}>
             <div className="showmain">

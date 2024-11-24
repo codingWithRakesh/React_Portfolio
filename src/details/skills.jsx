@@ -1,12 +1,66 @@
 import { DiJqueryLogo } from "react-icons/di";
-import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaReact, FaYoutube } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact, FaYoutube } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiJavascript, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
+import { SiExpress, SiJavascript, SiMongodb, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
 
 export const skills = [
     {
+        name: "MongoDB",
+        icon: <SiMongodb />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+            {
+                name: "Udemy",
+                icon: <SiUdemy />
+            },
+        ],
+        data: [75, 25],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: true
+    },
+    {
+        name: "Express js",
+        icon: <SiExpress />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+            {
+                name: "Udemy",
+                icon: <SiUdemy />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: true
+    },
+    {
         name: "React",
         icon: <FaReact />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+            {
+                name: "Udemy",
+                icon: <SiUdemy />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: true
+    },
+    {
+        name: "Node js",
+        icon: <FaNodeJs />,
         learn: [
             {
                 name: "YouTube",

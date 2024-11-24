@@ -1,5 +1,6 @@
 import ChartBoxSkill from './ChartBoxSkill'
 import Skill from './Skill'
+import PropTypes from 'prop-types';
 
 const CertificateChartSkill = ({ matchingSkill }) => {
     return (
@@ -13,5 +14,12 @@ const CertificateChartSkill = ({ matchingSkill }) => {
         </div>
     )
 }
+
+CertificateChartSkill.propTypes = {
+    matchingSkill: PropTypes.shape({
+        name: PropTypes.string.isRequired, 
+        level: PropTypes.number, 
+    }).isRequired, 
+};
 
 export default CertificateChartSkill

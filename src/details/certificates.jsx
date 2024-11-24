@@ -6,8 +6,18 @@ import HackathonImg from '../assets/certificate/Hackathon.jpg'
 import HackathonPdf from '../assets/certificate/Hackathon_pdf.pdf'
 import HackathonSimplePdf from '../assets/certificate/hackathonSimple.pdf'
 import HackathonSimpleImg from '../assets/certificate/hackathonSimple.jpg'
+import ExpressMongoDBImg from '../assets/certificate/express-mongoDB.jpg'
 
 export const certificates = [
+    {
+        name: "NodeJs Masterclass Certificate",
+        title: ["Express js","Node js","MongoDB"],
+        image: ExpressMongoDBImg,
+        link: "https://www.udemy.com/certificate/UC-1d44cb71-af45-44a0-b0e5-e570ffd414e9/",
+        checkName: "certificates",
+        gotDate: "I received the Certificate on November 24th, 2024.",
+        summary: ""
+    },
     {
         name: "Dev Innov8+ Hackathon Certificate",
         image: HackathonImg,
@@ -28,7 +38,7 @@ export const certificates = [
     },
     {
         name: "React Certificate",
-        title: "React",
+        title: ["React"],
         image: ReactCertificate,
         link: "https://www.udemy.com/certificate/UC-a659684c-d9ec-43f9-b844-dc79bbf27405/",
         checkName: "certificates",
@@ -37,7 +47,7 @@ export const certificates = [
     },
     {
         name: "DSA Certificate",
-        title: "DSA",
+        title: ["DSA"],
         image: DSACertificate,
         gotDate: "I received the Certificate on June 20th, 2024.",
         link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/",

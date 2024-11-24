@@ -16,9 +16,11 @@ const CertificatesShowComponent = ({ handleBackButtonClick }) => {
     const [[sidebar]] = useContext(UserContext);
     const Paramsdata = useParams();
     const [nameCertificate] = details.certificates.filter(data => data.name.toLowerCase().includes(Paramsdata.skill.toLowerCase()));
-    const matchingSkill = details.skills.find(skill => skill.name.toLowerCase() === nameCertificate?.title?.toLowerCase());
+    const matchingSkill = details.skills.find(skill => 
+        nameCertificate?.title?.some(title => title.toLowerCase() === skill.name.toLowerCase())
+    );
+    console.log(matchingSkill)
     const matchingProject = details.projects.find(project => project.checkCertificket && project.checkCertificket === nameCertificate?.checkProject);
-
     const [visibleCertificates, setVisiblevisibleCertificates] = useState(5);
     useEffect(() => {
         const handleScroll = () => {

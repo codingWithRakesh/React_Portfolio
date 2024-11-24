@@ -1,5 +1,5 @@
-import React from 'react'
 import CertificateCom from './CertificateCom'
+import PropTypes from 'prop-types';
 
 const ShowSkillcertificate = ({ nameSkillcertificate, nameSkill }) => {
     return (
@@ -15,5 +15,12 @@ const ShowSkillcertificate = ({ nameSkillcertificate, nameSkill }) => {
 
     )
 }
+
+ShowSkillcertificate.propTypes = {
+    nameSkillcertificate: PropTypes.arrayOf(PropTypes.object).isRequired,
+    nameSkill: PropTypes.shape({
+        name: PropTypes.string.isRequired, 
+    }).isRequired,
+};
 
 export default ShowSkillcertificate
