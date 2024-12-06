@@ -53,7 +53,7 @@ export const projects = [
     {
         name: "Rupsona Iqra Madrasa Mission",
         link: "https://rupsonaiqramadrasamission.in/",
-        skills: ["React", "HTML", "CSS", "Bootstrap", "React Router Dom", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
+        skills: ["React", "HTML", "CSS", "Bootstrap", "React Router Dom","ChatGPT", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
         video: RupsonaIqraMadrasaMission,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/RUPSONA-IQRA-MADRASA-MISSON-web",
@@ -76,7 +76,7 @@ export const projects = [
     {
         name: "Notepad Webapp",
         link: "https://notewebappproject.netlify.app/",
-        skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap", "React Router Dom", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
+        skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap","ChatGPT", "React Router Dom", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
         image: Notepad,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/Note-Web-app",
@@ -125,7 +125,7 @@ export const projects = [
     {
         name: "Dev Innov8+ Hackathon Project",
         link: "https://bw-hackathon-undefined.netlify.app/",
-        skills: ["React", "HTML", "CSS", "React Router Dom", "API", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["React", "HTML", "CSS", "React Router Dom","ChatGPT", "API", "Flexbox", "Figma", "GitHub", "Git"],
         video: hackathonVideo,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/-BWU-Hackathon-Project-",
@@ -412,7 +412,7 @@ export const projects = [
     {
         name: "Second Portfolio",
         link: "https://tarapada-projects.netlify.app/project/portfolio/",
-        skills: ["Figma", "JavaScript", "HTML", "CSS", "DOM Management", "Flexbox", "API", "GitHub", "Git"],
+        skills: ["Figma", "JavaScript", "HTML", "CSS", "DOM Management","ChatGPT", "Flexbox", "API", "GitHub", "Git"],
         video: secondPortfolio,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/First-Portfolio",
@@ -482,7 +482,7 @@ export const projects = [
     {
         name: "Calculator",
         link: "https://tarapada-projects.netlify.app/project/calculator/",
-        skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma", "Flexbox", "GitHub", "Git"],
+        skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma","ChatGPT", "Flexbox", "GitHub", "Git"],
         image: calcluter,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/Calculator",

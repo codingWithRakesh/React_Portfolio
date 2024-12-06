@@ -1,7 +1,9 @@
 import { DiJqueryLogo } from "react-icons/di";
 import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact, FaYoutube } from "react-icons/fa";
+import { PiFileSql, PiFileSqlLight } from "react-icons/pi";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiJavascript, SiMongodb, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
+import { SiExpress, SiJavascript, SiMongodb, SiOpenai, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
+import { TbBinaryTree, TbFileTypeSql, TbSql } from "react-icons/tb";
 
 export const skills = [
     {
@@ -203,8 +205,36 @@ export const skills = [
         isCertified: false
     },
     {
-        name: "DSA",
+        name: "SQL",
+        icon: <PiFileSqlLight />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [65, 35],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "DBMS",
         icon: <FaDatabase />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [65, 35],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "DSA",
+        icon: <TbBinaryTree />,
         learn: [
             {
                 name: "YouTube",
@@ -230,6 +260,20 @@ export const skills = [
             },
         ],
         data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "ChatGPT",
+        icon: <SiOpenai />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
         checkName: "skills",
         iconOut: true,
         isCertified: false
