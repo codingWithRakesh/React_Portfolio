@@ -12,6 +12,7 @@ import secondPortfolio from '../assets/videos/second_portfolio.mp4'
 import hackathonVideo from '../assets/videos/hackathon.mp4'
 import diwaliVideo from '../assets/videos/Diwali video.mp4'
 import RupsonaIqraMadrasaMission from '../assets/videos/Rupsona Iqra Madrasa Mission.mp4'
+import googleKeep from '../assets/videos/Keep_GoogleClone.mp4'
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -23,8 +24,57 @@ import stonepapersesar from '../assets/images/stonepapersesar.png'
 import tictacto from '../assets/images/tictacto.png'
 import BattingGame from '../assets/images/Batting Game.png'
 import fileDownloder from '../assets/images/file_downloder.png'
+import newYear from '../assets/images/newYear.png'
 
 export const projects = [
+    {
+        name: "Google Keep Clone",
+        link: "https://googlekeepclone-six.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: googleKeep,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/Google-Keep-clon",
+        labels: ['HTML', 'Tailwind', 'JavaScript'],
+        data: [1, 1, 98],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+        ],
+        Timeframe: "16 January 2025 - 03 February 2025",
+        isNew: '03/02/2025 to 17/02/2025',
+        isGood: false
+    },
+    {
+        name: "New Year Project",
+        link: "https://newyearproject.netlify.app/?receiver=Bro",
+        skills: ["React", "React Router Dom", "ChatGPT", "TypeScript", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: newYear,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/newYear",
+        labels: ['HTML', 'CSS', 'TypeScript', 'React'],
+        data: [6, 38, 12, 44],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(255, 206, 86, 1)',
+        ],
+        Timeframe: "01 January 2025 - 01 January 2025",
+        isNew: '03/02/2025 to 10/02/2025',
+        isGood: false
+    },
     {
         name: "Diwali Project",
         link: "https://diwaliproject24.netlify.app/?receiver=bro",
@@ -47,13 +97,13 @@ export const projects = [
             'rgba(255, 206, 86, 1)',
         ],
         Timeframe: "28 October 2024 - 29 October 2024",
-        isNew : '29/10/2024 to 05/11/2024',
+        isNew: '29/10/2024 to 05/11/2024',
         isGood: false
     },
     {
         name: "Rupsona Iqra Madrasa Mission",
         link: "https://rupsonaiqramadrasamission.in/",
-        skills: ["React", "HTML", "CSS", "Bootstrap", "React Router Dom","ChatGPT", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
+        skills: ["React", "HTML", "CSS", "Bootstrap", "React Router Dom", "ChatGPT", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
         video: RupsonaIqraMadrasaMission,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/RUPSONA-IQRA-MADRASA-MISSON-web",
@@ -70,13 +120,13 @@ export const projects = [
             'rgba(75, 192, 192, 1)',
         ],
         Timeframe: "16 October 2024 - 1 November 2024",
-        isNew : '2/11/2024 to 08/11/2024',
+        isNew: '2/11/2024 to 08/11/2024',
         isGood: false
     },
     {
         name: "Notepad Webapp",
         link: "https://notewebappproject.netlify.app/",
-        skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap","ChatGPT", "React Router Dom", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
+        skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap", "ChatGPT", "React Router Dom", "Flexbox", "Grid", "GitHub", "Git", "Figma"],
         image: Notepad,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/Note-Web-app",
@@ -95,7 +145,7 @@ export const projects = [
             'rgba(255, 206, 86, 1)',
         ],
         Timeframe: "24 October 2024 - 27 October 2024",
-        isNew : '27/10/2024 to 02/11/2024',
+        isNew: '27/10/2024 to 02/11/2024',
         isGood: false
     },
     {
@@ -125,7 +175,7 @@ export const projects = [
     {
         name: "Dev Innov8+ Hackathon Project",
         link: "https://bw-hackathon-undefined.netlify.app/",
-        skills: ["React", "HTML", "CSS", "React Router Dom","ChatGPT", "API", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["React", "HTML", "CSS", "React Router Dom", "ChatGPT", "API", "Flexbox", "Figma", "GitHub", "Git"],
         video: hackathonVideo,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/-BWU-Hackathon-Project-",
@@ -412,7 +462,7 @@ export const projects = [
     {
         name: "Second Portfolio",
         link: "https://tarapada-projects.netlify.app/project/portfolio/",
-        skills: ["Figma", "JavaScript", "HTML", "CSS", "DOM Management","ChatGPT", "Flexbox", "API", "GitHub", "Git"],
+        skills: ["Figma", "JavaScript", "HTML", "CSS", "DOM Management", "ChatGPT", "Flexbox", "API", "GitHub", "Git"],
         video: secondPortfolio,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/First-Portfolio",
@@ -482,7 +532,7 @@ export const projects = [
     {
         name: "Calculator",
         link: "https://tarapada-projects.netlify.app/project/calculator/",
-        skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma","ChatGPT", "Flexbox", "GitHub", "Git"],
+        skills: ["JavaScript", "HTML", "CSS", "DOM Management", "Figma", "ChatGPT", "Flexbox", "GitHub", "Git"],
         image: calcluter,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/Calculator",
