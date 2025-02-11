@@ -1,9 +1,10 @@
-import { DiJqueryLogo } from "react-icons/di";
+import { DiJqueryLogo, DiMysql } from "react-icons/di";
 import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact, FaYoutube } from "react-icons/fa";
+import { GrMysql, GrOracle } from "react-icons/gr";
 import { PiFileSql, PiFileSqlLight } from "react-icons/pi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiJavascript, SiMongodb, SiOpenai, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
-import { TbBinaryTree, TbFileTypeSql, TbSql } from "react-icons/tb";
+import { TbBinaryTree, TbFileTypeSql, TbGrain, TbSql } from "react-icons/tb";
 
 export const skills = [
     {
@@ -109,6 +110,34 @@ export const skills = [
     {
         name: "Redux",
         icon: <SiRedux />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "AI",
+        icon: <TbGrain />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "ChatGPT",
+        icon: <SiOpenai />,
         learn: [
             {
                 name: "YouTube",
@@ -265,8 +294,22 @@ export const skills = [
         isCertified: false
     },
     {
-        name: "ChatGPT",
-        icon: <SiOpenai />,
+        name: "Oracle",
+        icon: <GrOracle />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "MySQL",
+        icon: <GrMysql />,
         learn: [
             {
                 name: "YouTube",

@@ -47,7 +47,7 @@ export const projects = [
             'rgba(75, 192, 192, 1)',
         ],
         Timeframe: "16 January 2025 - 03 February 2025",
-        isNew: '03/02/2025 to 17/02/2025',
+        isNew: '03/02/2025 to 28/02/2025',
         isGood: false
     },
     {
