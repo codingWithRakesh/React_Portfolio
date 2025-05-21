@@ -1,5 +1,5 @@
 import {  FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import MyImage from '../assets/images/TARAPADA.jpg'
+import MyImage from '../assets/images/TARAPADA.jpeg'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 import { BiLogoGmail } from "react-icons/bi";
 import { MdLocalPhone } from "react-icons/md";

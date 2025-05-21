@@ -8,7 +8,7 @@ export const home = {
             normal: "Decent Projects"
         },
         {
-            big: "Front end",
+            big: "Full Stack",
             normal: "Expert"
         },
         {

@@ -1,5 +1,5 @@
 import { DiJqueryLogo, DiMysql } from "react-icons/di";
-import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact, FaYoutube } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPython, FaReact, FaYoutube } from "react-icons/fa";
 import { GrMysql, GrOracle } from "react-icons/gr";
 import { PiFileSql, PiFileSqlLight } from "react-icons/pi";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -117,6 +117,20 @@ export const skills = [
             },
         ],
         data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Python",
+        icon: <FaPython />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
         checkName: "skills",
         iconOut: true,
         isCertified: false

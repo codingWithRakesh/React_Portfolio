@@ -2372,3 +2372,7 @@ img {
 .margin0{
     margin-bottom: 0;
 }
+
+.ulFix{
+    padding-left: 1.5rem;
+}

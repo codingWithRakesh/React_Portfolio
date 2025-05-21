@@ -1,7 +1,7 @@
 import { useCallback, useContext, useEffect, useState } from 'react'
 import { IoMenuOutline } from "react-icons/io5";
 import '../App.css'
-import MyImage from "../assets/images/TARAPADA.jpg"
+import MyImage from "../assets/images/TARAPADA.jpeg"
 import Profile from './Profile';
 import { UserContext } from '../contexts/context';
 import SearchBar from './SearchBar';

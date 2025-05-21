@@ -1,4 +1,4 @@
-import MyImage from '../assets/images/TARAPADA.jpg'
+import MyImage from '../assets/images/TARAPADA.jpeg'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 
 export const about = {
@@ -8,7 +8,15 @@ export const about = {
             CV: CV
         },
         {
-            about: ["I am tarapada garai a dedicated front-end developer with six months of professional experience in creating dynamic, responsive, and user-friendly web applications. My journey into web development began with a passion for blending creativity with technology, and I have since developed a keen eye for detail and a commitment to deliver high-quality digital solutions.", "As a front-end developer, I specialize in transforming design concepts into functional and visually appealing websites. I prioritize understanding user needs to create intuitive interfaces that enhance user engagement and satisfaction. I am continually updating my skills and knowledge to stay at the forefront of industry trends and best practices.", "I am enthusiastic about taking on new challenges and collaborating on innovative projects. If you're looking for a developer who is committed to excellence and driven by a passion for web development, I would love to connect with you."],
+            about: [
+                <>I’m <b>Tarapada Garai</b>, a dedicated <b>full-stack developer</b> with six months of experience in building responsive, user-friendly web applications. I began as a <b> front-end developer </b>, creating clean and engaging UIs, and have since expanded into <b> backend development </b> to build complete, scalable solutions.</>,
+                <>What sets me apart is my ability to <b>integrate AI features</b> into real-world projects. I’ve built:</>,
+                <ul className='ulFix'>
+                    <li>A <b>Google Keep Clone</b> where AI generates smart note titles based on your content.</li>
+                    <li>An <b>Instagram Clone</b> where AI helps users generate bios and write captions after selecting a post or story—making content creation easier and faster.</li>
+                </ul>,
+                <>I know how to use AI effectively in <b>full-stack</b> projects to improve user experience and productivity. I'm always excited to take on new challenges and collaborate on innovative ideas.</>
+            ],
             hobbies: ["Coding", "Painting", "Photography", "Learning", "Cycling", "Video Game"],
             languages: ["English", "Hindi", "Bengali"]
         }

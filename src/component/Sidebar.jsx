@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import MyImage from '../assets/images/TARAPADA.jpg'
+import MyImage from '../assets/images/TARAPADA.jpeg'
 import { IoSettingsSharp } from "react-icons/io5";
 import '../App.css'
 import { UserContext } from '../contexts/context'
@@ -42,7 +42,7 @@ const Sidebar = () => {
                         <img src={MyImage} alt="tarapada garai" />
                     </div>
                     {!sidebar && <p className='nameSide'>Tarapada Garai</p>}
-                    {!sidebar && <p className='nameJob'>Frontend Developer</p>}
+                    {!sidebar && <p className='nameJob'>Full Stack Developer</p>}
                 </div>
                 <div className={`sidebuttons ${sidebar ? "sidebuttonsSmall" : ""}`}>
                     {

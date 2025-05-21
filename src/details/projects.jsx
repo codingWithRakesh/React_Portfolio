@@ -28,9 +28,9 @@ import newYear from '../assets/images/newYear.png'
 
 export const projects = [
     {
-        name: "Google Keep Clone",
+        name: "Google Keep Clone AI",
         link: "https://googlekeepclone-six.vercel.app/",
-        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: googleKeep,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/Google-Keep-clon",
