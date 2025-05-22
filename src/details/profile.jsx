@@ -10,7 +10,7 @@ export const profile = {
     home: {
         image: MyImage,
         name: "Tarapada Garai",
-        job: "Frontend Developer"
+        job: "Full Stack Developer"
     },
     contacts: [
         {

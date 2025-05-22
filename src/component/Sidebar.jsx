@@ -91,7 +91,7 @@ const Sidebar = () => {
                     <span className='settingClass'>
                         <IoSettingsSharp />
                     </span>
-                    {!sidebar && <span>Setting</span>}
+                    {!sidebar && <span>Settings</span>}
                 </div>
             </div>
         </div>
