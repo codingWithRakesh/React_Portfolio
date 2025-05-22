@@ -13,6 +13,7 @@ import hackathonVideo from '../assets/videos/hackathon.mp4'
 import diwaliVideo from '../assets/videos/Diwali video.mp4'
 import RupsonaIqraMadrasaMission from '../assets/videos/Rupsona Iqra Madrasa Mission.mp4'
 import googleKeep from '../assets/videos/Keep_GoogleClone.mp4'
+import instagramCloneAI from "../assets/videos/InstagramClone.mp4"
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -25,8 +26,81 @@ import tictacto from '../assets/images/tictacto.png'
 import BattingGame from '../assets/images/Batting Game.png'
 import fileDownloder from '../assets/images/file_downloder.png'
 import newYear from '../assets/images/newYear.png'
+import smartCanteen from '../assets/images/smartCanteen.png'
+import solveMate from '../assets/images/solveMate.png'
 
 export const projects = [
+    {
+        name: "Instagram Clone AI",
+        link: "https://instagramcloneai.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: instagramCloneAI,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/instagram-clone-AI",
+        labels: ['HTML', 'Tailwind', 'JavaScript'],
+        data: [1, 1, 98],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+        ],
+        Timeframe: "6 March 2025 - 20 May 2025",
+        isNew: '22/05/2025 to 12/08/2025',
+        isGood: false
+    },
+    {
+        name: "InnovoCon Hackathon Project",
+        link: "https://slove-mate.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: solveMate,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/SloveMate",
+        labels: ['HTML', 'CSS', 'JavaScript'],
+        data: [1, 5, 94],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+        ],
+        Timeframe: "27 February 2025 - 28 February 2025",
+        isNew: '22/05/2025 to 12/07/2025',
+        isGood: true,
+        checkCertificket: "InnovoConHackathon"
+    },
+    {
+        name: "XiBit Hackathon Project",
+        link: "https://smart-canteens.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: smartCanteen,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/SmartCanteens",
+        labels: ['HTML', 'Tailwind', 'JavaScript'],
+        data: [2, 15, 83],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+        ],
+        Timeframe: "17 April 2025 - 17 April 2025",
+        isNew: '22/05/2025 to 12/06/2025',
+        isGood: true,
+        checkCertificket: "XiBitHackathon"
+    },
     {
         name: "Google Keep Clone AI",
         link: "https://googlekeepclone-six.vercel.app/",

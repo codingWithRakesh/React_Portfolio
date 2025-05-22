@@ -7,8 +7,39 @@ import HackathonPdf from '../assets/certificate/Hackathon_pdf.pdf'
 import HackathonSimplePdf from '../assets/certificate/hackathonSimple.pdf'
 import HackathonSimpleImg from '../assets/certificate/hackathonSimple.jpg'
 import ExpressMongoDBImg from '../assets/certificate/express-mongoDB.jpg'
+import InnovoConImg from "../assets/certificate/InnovoCon.jpg"
+import InnovoConPdf from "../assets/certificate/InnovoCon.pdf"
+import InternalHackathonImg from "../assets/certificate/Internal Hackathon.jpg"
+import InternalHackathonPdf from "../assets/certificate/Internal Hackathon.pdf"
+import BinaryBattlegroundImg from "../assets/certificate/Binary Battleground.jpg"
+import BinaryBattlegroundPdf from "../assets/certificate/Binary Battleground.pdf"
 
 export const certificates = [
+    {
+        name: "Binary Battleground Hackathon Participation Certificate",
+        image: BinaryBattlegroundImg,
+        link: BinaryBattlegroundPdf,
+        checkName: "certificates",
+        gotDate: "I received the Certificate on February 26th, 2025.",
+        summary: ""
+    },
+    {
+        name: "Internal Hackathon Participation Certificate",
+        image: InternalHackathonImg,
+        link: InternalHackathonPdf,
+        checkName: "certificates",
+        gotDate: "I received the Certificate on September 4th, 2024.",
+        summary: ""
+    },
+    {
+        name: "InnovoCon Hackathon Participation Certificate",
+        image: InnovoConImg,
+        link: InnovoConPdf,
+        checkProject: "InnovoConHackathon",
+        checkName: "certificates",
+        gotDate: "I received the Certificate on February 28th, 2025.",
+        summary: ""
+    },
     {
         name: "NodeJs Masterclass Certificate",
         title: ["Express js","Node js","MongoDB"],
