@@ -4,7 +4,7 @@ export const ImageShowContext = createContext()
 
 const ImageShowContextProvider = ({ children }) => {
     const [imageShow, setImageShow] = useState({
-        isOn : true,
+        isOn : false,
         image : "",
     })
     return (
