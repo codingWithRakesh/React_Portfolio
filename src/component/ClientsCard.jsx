@@ -1,9 +1,11 @@
+import { useImageShow } from "../contexts/imageContext";
 
 const ClientsCard = ({data}) => {
+    const [imageShow, setImageShow] = useImageShow();
     return (
         <div className="clientBox boxShadows">
             <div className="clientImg">
-                <img src={data.image} alt="Tarapada Garai" />
+                <img onClick={()=>setImageShow({ ...imageShow, isOn: true, image: data.image })} src={data.image} alt="Tarapada Garai" />
             </div>
             <div className="clientWrite">
                 <p>

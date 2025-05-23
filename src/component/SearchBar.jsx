@@ -26,7 +26,7 @@ const SearchBar = ({ setshowInput, setSetshowInput }) => {
             prev.set("q", e.target.value);
             return prev;
         });
-        if (e.target.value === "") {
+        if (e.target.value.trim() === "") {
             count.current = -1;
             setShowCount(count.current);
             setCheck(false);
@@ -104,7 +104,7 @@ const SearchBar = ({ setshowInput, setSetshowInput }) => {
             } else if (event.key === 'ArrowDown') {
                 downFun();
             } else if (event.key === "Enter") {
-                if (query !== "") {
+                if (query.trim() !== "") {
                     enterFun();
                 }
             }

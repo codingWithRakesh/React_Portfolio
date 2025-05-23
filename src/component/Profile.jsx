@@ -3,8 +3,10 @@ import { FaHandshake } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { details } from '../details/details.jsx'
 import PropTypes from 'prop-types';
+import { useImageShow } from '../contexts/imageContext.jsx';
 
 const Profile = ({ setShowProfile }) => {
+    const [imageShow, setImageShow] = useImageShow();
     const profileFun = (event) => {
         event.stopPropagation();
     }
@@ -13,7 +15,7 @@ const Profile = ({ setShowProfile }) => {
         <div className='cardProfile' onClick={profileFun}>
             <div className="profileFirst">
                 <div className="imageBoxProfile">
-                    <img src={details.profile.home.image} alt="Tarapada Garai" />
+                    <img onClick={() => setImageShow({ ...imageShow, isOn: true, image: details.profile.home.image })} src={details.profile.home.image} alt="Tarapada Garai" />
                 </div>
                 <p className='nameBox'>{details.profile.home.name}</p>
                 <p className='showNext'>{details.profile.home.job}</p>

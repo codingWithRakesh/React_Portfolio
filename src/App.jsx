@@ -12,6 +12,8 @@ import Bottombar from './component/Bottombar';
 import Menu from './component/Menu';
 import { useFonts } from './contexts/fontContext';
 import { useMode } from './contexts/modeChangeContext';
+import ShowImage from './component/ShowImage';
+import { useImageShow } from './contexts/imageContext';
 
 function App() {
   const [[closeModal]] = useModal();
@@ -19,6 +21,8 @@ function App() {
 
   const [[, setAllFonts]] = useFonts();
   const [[, setGetName]] = useMode();
+
+  const [imageShow, setImageShow] = useImageShow();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -41,6 +45,9 @@ function App() {
       {menuCheck && <Bottombar menuCheck={menuCheck} setMenuCheck={setMenuCheck} />}
       {closeModal && <BlurBackground>
         <Modal />
+      </BlurBackground>}
+      {imageShow.isOn && <BlurBackground>
+        <ShowImage />
       </BlurBackground>}
       <Suspense>
         <Outlet />

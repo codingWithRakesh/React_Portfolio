@@ -14,6 +14,7 @@ import { useModal } from '../contexts/modalProvider';
 import { useBorder } from '../contexts/borderContext';
 import { useShowDetails } from '../contexts/showDetailsContext';
 import { useSearch } from '../contexts/searchContext';
+import { useImageShow } from '../contexts/imageContext';
 
 const Sidebar = () => {
     const [[sidebar]] = useContext(UserContext)
@@ -21,6 +22,7 @@ const Sidebar = () => {
     const [[navBorder]] = useBorder()
     const [[typeData, setTypeData]] = useShowDetails()
     const [[, setsearchQu]] = useSearch();
+    const [imageShow, setImageShow] = useImageShow();
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -39,7 +41,7 @@ const Sidebar = () => {
             <div className={`sideTopjdd ${sidebar ? "sideTopjddSmall" : ""}`}>
                 <div className={`sideProfile ${sidebar ? "sideProfileSmall" : ""}`}>
                     <div className={`profileImage ${sidebar ? "profileImageSmall" : ""}`}>
-                        <img src={MyImage} alt="tarapada garai" />
+                        <img onClick={() => setImageShow({ ...imageShow, isOn: true, image: MyImage })} src={MyImage} alt="tarapada garai" />
                     </div>
                     {!sidebar && <p className='nameSide'>Tarapada Garai</p>}
                     {!sidebar && <p className='nameJob'>Full Stack Developer</p>}

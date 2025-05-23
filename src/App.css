@@ -209,6 +209,7 @@
     width: 6rem;
     border-radius: 50%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .imageBoxProfile img {
@@ -382,6 +383,7 @@
     border-radius: 50%;
     overflow: hidden;
     transition: all .5s;
+    cursor: pointer;
     /* margin-top: .6rem; */
 }
 
@@ -505,6 +507,7 @@
 .profileImageSmall {
     height: 3rem !important;
     width: 3rem !important;
+    cursor: pointer;
 }
 
 .sidebuttonsSmall {
@@ -638,6 +641,26 @@
     position: relative;
     gap: .4rem;
     /* column-gap: 2.4rem; */
+}
+
+.childrenNew{
+    width: 100%;
+    height: 90%;
+    padding: 1.5rem 1rem;
+    /* border: 1px solid black; */
+    /* overflow: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: .4rem;
+}
+
+.childrenNew img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .children::-webkit-scrollbar {

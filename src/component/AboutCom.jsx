@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
+import { useImageShow } from '../contexts/imageContext';
 
 const AboutCom = ({aboutBox}) => {
+    const [imageShow, setImageShow] = useImageShow();
     return (
         <div className='AboutComAA boxShadows'>
             <div className='firstAb'>
                 <div className="imgClassAb">
-                    <img src={aboutBox[0].image} alt="Tarapada Garai" />
+                    <img onClick={() => setImageShow({ ...imageShow, isOn: true, image: aboutBox[0].image })} src={aboutBox[0].image} alt="Tarapada Garai" />
                 </div>
                 <div className="buttonClassAb">
                 <a href={aboutBox[0].CV} download="Tarapada(CV)" className="button-60" role="button">Download CV</a>

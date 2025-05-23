@@ -23,6 +23,7 @@ import CroseFontContextProvider from './contexts/croseFontContext.jsx'
 import TopLoderProvider from './contexts/topLoderContext.jsx'
 import SearchContextProvider from './contexts/searchContext.jsx'
 import ShowDetailsContextProvider from './contexts/showDetailsContext.jsx'
+import ImageShowContextProvider from './contexts/imageContext.jsx';
 
 const router = createBrowserRouter([
   {
@@ -60,32 +61,34 @@ const router = createBrowserRouter([
       },
       {
         path: '/search',
-        element: <SearchResult/>
+        element: <SearchResult />
       }
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ShowDetailsContextProvider>
-    <SearchContextProvider>
-      <TopLoderProvider>
-        <CroseFontContextProvider>
-          <FontContextProvider>
-            <ModeContextProvider>
-              <BorderContextProvider>
-                <ModalContextProvider>
-                  <UserContextProvider>
-                    <React.StrictMode>
-                      <RouterProvider router={router} />
-                    </React.StrictMode>
-                  </UserContextProvider>
-                </ModalContextProvider>
-              </BorderContextProvider>
-            </ModeContextProvider>
-          </FontContextProvider>
-        </CroseFontContextProvider>
-      </TopLoderProvider>
-    </SearchContextProvider>
-  </ShowDetailsContextProvider>
+  <React.StrictMode>
+    <ImageShowContextProvider>
+      <ShowDetailsContextProvider>
+        <SearchContextProvider>
+          <TopLoderProvider>
+            <CroseFontContextProvider>
+              <FontContextProvider>
+                <ModeContextProvider>
+                  <BorderContextProvider>
+                    <ModalContextProvider>
+                      <UserContextProvider>
+                        <RouterProvider router={router} />
+                      </UserContextProvider>
+                    </ModalContextProvider>
+                  </BorderContextProvider>
+                </ModeContextProvider>
+              </FontContextProvider>
+            </CroseFontContextProvider>
+          </TopLoderProvider>
+        </SearchContextProvider>
+      </ShowDetailsContextProvider>
+    </ImageShowContextProvider>
+  </React.StrictMode>
 )
