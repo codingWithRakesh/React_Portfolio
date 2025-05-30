@@ -13,8 +13,19 @@ import InternalHackathonImg from "../assets/certificate/Internal Hackathon.jpg"
 import InternalHackathonPdf from "../assets/certificate/Internal Hackathon.pdf"
 import BinaryBattlegroundImg from "../assets/certificate/Binary Battleground.jpg"
 import BinaryBattlegroundPdf from "../assets/certificate/Binary Battleground.pdf"
+import TEXIBITIONimg from "../assets/certificate/TEXIBITION.jpg";
+import TEXIBITIONpdf from "../assets/certificate/TEXIBITION.pdf";
 
 export const certificates = [
+     {
+        name: "TEXIBITION Hackathon Participation Certificate",
+        image: TEXIBITIONimg,
+        link: TEXIBITIONpdf,
+        checkName: "certificates",
+        checkProject: "XiBitHackathon",
+        gotDate: "I received the Certificate on May 1st, 2025.",
+        summary: ""
+    },
     {
         name: "Binary Battleground Hackathon Participation Certificate",
         image: BinaryBattlegroundImg,
