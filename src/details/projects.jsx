@@ -14,6 +14,7 @@ import diwaliVideo from '../assets/videos/Diwali video.mp4'
 import RupsonaIqraMadrasaMission from '../assets/videos/Rupsona Iqra Madrasa Mission.mp4'
 import googleKeep from '../assets/videos/Keep_GoogleClone.mp4'
 import instagramCloneAI from "../assets/videos/InstagramClone.mp4"
+import Introduce from '../assets/videos/Introduce.mp4'
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -50,6 +51,27 @@ export const projects = [
             'rgba(75, 192, 192, 1)',
         ],
         Timeframe: "6 March 2025 - 20 May 2025",
+        isNew: '22/05/2025 to 12/08/2025',
+        isGood: false
+    },
+    {
+        name: "Introduce Video Calling",
+        link: "https://introduce-fc9n.onrender.com/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: Introduce,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/Introduce",
+        labels: ['Other', 'JavaScript'],
+        data: [2, 98],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+        ],
+        Timeframe: "20 May 2025 - 01 June 2025",
         isNew: '22/05/2025 to 12/08/2025',
         isGood: false
     },
