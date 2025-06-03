@@ -1654,6 +1654,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.githubIconBox{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    font-size: 2rem;
 }
 
 .this-skills {
