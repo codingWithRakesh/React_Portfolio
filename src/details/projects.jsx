@@ -58,7 +58,7 @@ export const projects = [
     {
         name: "Spotify Clone",
         link: "https://spotify-clone-one-alpha.vercel.app/",
-        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["MongoDB", "Express js", "React", "Node js", "TypeScript", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: Spotify,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/spotify-clone",
