@@ -15,6 +15,7 @@ import RupsonaIqraMadrasaMission from '../assets/videos/Rupsona Iqra Madrasa Mis
 import googleKeep from '../assets/videos/Keep_GoogleClone.mp4'
 import instagramCloneAI from "../assets/videos/InstagramClone.mp4"
 import Introduce from '../assets/videos/Introduce.mp4'
+import Spotify from '../assets/videos/Spotify.mp4'
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -52,6 +53,31 @@ export const projects = [
         ],
         Timeframe: "6 March 2025 - 20 May 2025",
         isNew: '22/05/2025 to 12/08/2025',
+        isGood: false
+    },
+    {
+        name: "Spotify Clone",
+        link: "https://spotify-clone-one-alpha.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: Spotify,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/spotify-clone",
+        labels: ['HTML', 'Tailwind', 'JavaScript'],
+        data: [6, 38, 12, 44],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(255, 206, 86, 1)',
+        ],
+        Timeframe: "02 June 2025 - 21 June 2025",
+        isNew: '21/06/2025 to 12/09/2025',
         isGood: false
     },
     {
