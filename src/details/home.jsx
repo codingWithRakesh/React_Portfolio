@@ -1,6 +1,7 @@
 import client1 from '../assets/images/clients/client1.png'
 import client2 from '../assets/images/clients/client2.png'
 import client3 from '../assets/images/clients/client3.jpg'
+import client4 from '../assets/images/clients/client4.jpg'
 
 export const home = {
     titlesHome: [
@@ -23,6 +24,12 @@ export const home = {
     ],
     Summary: "I help business owners and busy web developers to design & develop creative websites that fits their vision and attracts the visitors to stay for ever. Technologies and tools that I use to create such awesome websites.",
     MyClients: [
+        {
+            name: "Animesh Dey",
+            founder: "Founder, KRISHTI",
+            saying: '“Tarapada truly exceeded my expectations. He listened carefully, understood my vision, and brought it to life flawlessly. His professionalism, patience, and talent made the entire process smooth and enjoyable. Highly recommended!”',
+            image: client4
+        },
         {
             name: "Santanu Dutta",
             founder: "Founder, Gumut RGCSA",

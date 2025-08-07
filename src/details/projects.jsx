@@ -16,6 +16,8 @@ import googleKeep from '../assets/videos/Keep_GoogleClone.mp4'
 import instagramCloneAI from "../assets/videos/InstagramClone.mp4"
 import Introduce from '../assets/videos/Introduce.mp4'
 import Spotify from '../assets/videos/Spotify.mp4'
+import krishti from "../assets/videos/Krishti.mp4"
+import dhokra from "../assets/videos/Unick Dhokra Workshop_Brass Handicrafts.mp4"
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -53,6 +55,52 @@ export const projects = [
         ],
         Timeframe: "6 March 2025 - 20 May 2025",
         isNew: '22/05/2025 to 12/08/2025',
+        isGood: false
+    },
+    {
+        name: "Uniquedokraworkshop",
+        link: "https://www.uniquedokraworkshop.com/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: dhokra,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/dhokra",
+        labels: ['HTML', 'Tailwind', 'JavaScript'],
+        data: [1, 1, 98],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+        ],
+        Timeframe: "22 July 2025 - 5 August 2025",
+        isNew: '08/08/2025 to 12/10/2025',
+        isGood: false
+    },
+    {
+        name: "KRISHTI",
+        link: "https://www.animeshdey.in/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: krishti,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/ProjectFile7",
+        labels: ['HTML', 'Tailwind', 'JavaScript'],
+        data: [1, 1, 98],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+        ],
+        Timeframe: "23 June 2025 - 27 July 2025",
+        isNew: '08/08/2025 to 12/10/2025',
         isGood: false
     },
     {
