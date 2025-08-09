@@ -6,7 +6,7 @@ import { TbView360 } from 'react-icons/tb'
 const HostLinkVideo = ({ nameProject }) => {
     return (
         <div className="buttons-shows">
-            <a className='button-60 back linkS' target='_blank' href={nameProject.gitHub}>
+            <button disabled className='button-60 back linkS' style={{cursor : "not-allowed"}} >
                 <span>
                     <FaGithub />
                 </span>
@@ -14,7 +14,7 @@ const HostLinkVideo = ({ nameProject }) => {
                 <span>
                     <LiaExternalLinkAltSolid />
                 </span>
-            </a>
+            </button>
             <a className='button-60 back linkS' target='_blank' href={nameProject.link}>
                 <span>
                     <TbView360 />
