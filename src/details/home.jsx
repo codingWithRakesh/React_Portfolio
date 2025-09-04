@@ -2,6 +2,7 @@ import client1 from '../assets/images/clients/client1.png'
 import client2 from '../assets/images/clients/client2.png'
 import client3 from '../assets/images/clients/client3.jpg'
 import client4 from '../assets/images/clients/client4.jpg'
+import client5 from "../assets/images/clients/client5.jpeg"
 
 export const home = {
     titlesHome: [
@@ -29,6 +30,12 @@ export const home = {
             founder: "Founder, KRISHTI",
             saying: '“Tarapada truly exceeded my expectations. He listened carefully, understood my vision, and brought it to life flawlessly. His professionalism, patience, and talent made the entire process smooth and enjoyable. Highly recommended!”',
             image: client4
+        },
+        {
+            name: "Animesh Maji",
+            founder: "Founder, GI BENGAL DOKRA",
+            saying: '“Tarapada is very creative and professional. He quickly understood my business needs and delivered a website that looks modern, fast, and user-friendly. I am very satisfied with his work and would recommend him to anyone.”',
+            image: client5
         },
         {
             name: "Santanu Dutta",
