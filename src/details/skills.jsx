@@ -1,10 +1,10 @@
 import { DiJqueryLogo, DiMysql } from "react-icons/di";
-import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPython, FaReact, FaYoutube } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact, FaYoutube } from "react-icons/fa";
 import { GrMysql, GrOracle } from "react-icons/gr";
 import { PiFileSql, PiFileSqlLight } from "react-icons/pi";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiJavascript, SiMongodb, SiOpenai, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
-import { TbBinaryTree, TbFileTypeSql, TbGrain, TbSql } from "react-icons/tb";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress, SiJavascript, SiMongodb, SiOpenai, SiPostgresql, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
+import { TbBinaryTree, TbBrandCpp, TbFileTypeSql, TbGrain, TbSql } from "react-icons/tb";
 
 export const skills = [
     {
@@ -80,6 +80,19 @@ export const skills = [
         isCertified: true
     },
     {
+        name: "Next js",
+        icon: <RiNextjsFill />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+    },
+    {
         name: "JavaScript",
         icon: <SiJavascript />,
         learn: [
@@ -117,6 +130,20 @@ export const skills = [
             },
         ],
         data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Java",
+        icon: <FaJava />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
         checkName: "skills",
         iconOut: true,
         isCertified: false
@@ -248,6 +275,20 @@ export const skills = [
         isCertified: false
     },
     {
+        name: "C++",
+        icon: <TbBrandCpp />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [75, 25],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
         name: "SQL",
         icon: <PiFileSqlLight />,
         learn: [
@@ -324,6 +365,20 @@ export const skills = [
     {
         name: "MySQL",
         icon: <GrMysql />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "PostgreSQL",
+        icon: <SiPostgresql />,
         learn: [
             {
                 name: "YouTube",

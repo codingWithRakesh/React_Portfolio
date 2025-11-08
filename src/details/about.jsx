@@ -1,4 +1,4 @@
-import MyImage from '../assets/images/TARAPADA.jpeg'
+import MyImage from '../assets/images/TARAPADA.png'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 
 export const about = {
@@ -23,9 +23,49 @@ export const about = {
     ],
     expenses: [
         {
-            durationWork: "Jan,2024 - Jun,2024",
-            work: "Frontend Developer",
-            peragraph: "I was working first in a Birsingha RGCSA company. It was in a computer coaching center. That's where I was working as a front end developer. Where I was working with a team. At that place we were making total 2 big websites which means we were working on 2 projects. I used technology like HTML, CSS, JavaScript, jQuery, Flex Box, Figma to make its website, the back end of its website was PHP, SQL, MySQL.",
+            durationWork: "Animesh Dey",
+            work: "Founder of KRISHTI",
+            peragraph: '“Tarapada truly exceeded my expectations. He listened carefully, understood my vision, and brought it to life flawlessly. His professionalism, patience, and talent made the entire process smooth and enjoyable. Highly recommended!”',
+            link: "KRISHTI",
+            name: "Visit Project",
+            isTrue: true
+        },
+        {
+            durationWork: "Gobinda Chowdhury",
+            work: "Founder of Teer Results",
+            peragraph: '“Tarapada did an excellent job building my website on short notice. He worked fast, understood my needs, and delivered great results. Highly recommended!”',
+            link: "Real Bhutan",
+            name: "Visit Project",
+            isTrue: true
+        },
+        {
+            durationWork: "Animesh Maji",
+            work: "Founder of GI BENGAL DOKRA",
+            peragraph: '“Tarapada is very creative and professional. He quickly understood my business needs and delivered a website that looks modern, fast, and user-friendly. I am very satisfied with his work and would recommend him to anyone.”',
+            link: "Uniquedokraworkshop",
+            name: "Visit Project",
+            isTrue: true
+        },
+        {
+            durationWork: "Santanu Dutta",
+            work: "Founder of Gumut RGCSA",
+            peragraph: '“I can bet that it\'s too hard to find professional developers like Tarapada. He could peek inside my mind and made the site exactly as I wanted Much appreciated”',
+            link: "Online Exam",
+            name: "Visit Project",
+            isTrue: true
+        },
+        {
+            durationWork: "Alhaj Hafez Ansar Ali Shah",
+            work: "Founder of Rupsona Iqra Madrasa Mission",
+            peragraph: '“Tarapada was a wonderful developer to work with! He anticipated everything I need to consider for my website. He also went the extra mile and added details that I hadn\'t considered! He is helping my business grow, and I will definitely work with him again!”',
+            link: "Rupsona Iqra Madrasa Mission",
+            name: "Visit Project",
+            isTrue: true
+        },
+        {
+            durationWork: "Bhabasindu Garai",
+            work: "Founder of Birsingha RGCSA",
+            peragraph: '“I worked with Tarapada to make my website. I am speechless by looking at his work ethic and dedication. Working with him was the best decision I made.”',
             link: "Computer Coaching Website",
             name: "Visit Project",
             isTrue: true
@@ -36,14 +76,6 @@ export const about = {
             peragraph: "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there",
             link: "Teaching Experience Certificate",
             name: "View Experience Certificate",
-            isTrue: true
-        },
-        {
-            durationWork: "Feb,2023 - Running",
-            work: "freelancing",
-            peragraph: "Besides I did freelancing which I am still doing.  I did a lot of freelancing work, mostly in our village.  I have worked in cafes, coaching centers where I have used HTML, CSS, JavaScript, jQuery, React, Tailwind",
-            link: "Online Exam",
-            name: "Visit Project",
             isTrue: true
         }
     ],

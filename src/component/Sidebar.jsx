@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import MyImage from '../assets/images/TARAPADA.jpeg'
+import MyImage from '../assets/images/TARAPADA.png'
 import { IoSettingsSharp } from "react-icons/io5";
 import '../App.css'
 import { UserContext } from '../contexts/context'

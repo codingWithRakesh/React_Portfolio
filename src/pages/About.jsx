@@ -29,7 +29,7 @@ const About = () => {
       <AboutCom aboutBox={details.about.aboutBox} />
 
       <section className="col">
-        <h1 className="titleAbout">Experience</h1>
+        <h1 className="titleAbout">Experiences and Client Projects</h1>
         <div className="contents">
           {details.about.expenses.map((data, index) => (<ExpensesCom data={data} key={index} />))}
         </div>

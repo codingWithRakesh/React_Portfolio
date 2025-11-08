@@ -2,6 +2,7 @@ import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { useEffect, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
+import { colors } from '../constands/constand.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const ProjectChart = ({ nameProject }) => {
@@ -74,11 +75,13 @@ const ProjectChart = ({ nameProject }) => {
         datasets: [{
             label: 'Skill Proficiency',
             data: nameProject.data,
-            backgroundColor: nameProject.backgroundColor,
-            borderColor: nameProject.borderColor,
+            backgroundColor: colors.backgroundColor,
+            borderColor: colors.borderColor,
             borderWidth: 1,
         }],
     };
+
+    console.log([colors.backgroundColor, colors.borderColor, nameProject, chartData, data]);
 
     const options = {
         responsive: true,

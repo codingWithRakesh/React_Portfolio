@@ -1806,7 +1806,7 @@ img {
     color: var(--headerColor);
 }
 
-.box h1 {
+.box h2 {
     padding: 10px 0px 6px;
     color: var(--headerColor);
 }

@@ -15,9 +15,31 @@ import BinaryBattlegroundImg from "../assets/certificate/Binary Battleground.jpg
 import BinaryBattlegroundPdf from "../assets/certificate/Binary Battleground.pdf"
 import TEXIBITIONimg from "../assets/certificate/TEXIBITION.jpg";
 import TEXIBITIONpdf from "../assets/certificate/TEXIBITION.pdf";
+import nexathonImg from "../assets/certificate/nexathon.jpg";
+import nexathonPdf from "../assets/certificate/nexathon.pdf";
+import makeAthonImg from "../assets/certificate/make-a-thon.jpg";
+import makeAthonPdf from "../assets/certificate/make-a-thon.pdf";
 
 export const certificates = [
-     {
+    {
+        name: "MAKE-A-THON Hackathon Participation Certificate",
+        image: makeAthonImg,
+        link: makeAthonPdf,
+        checkName: "certificates",
+        checkProject: "MAKEATHONHackathon",
+        gotDate: "I received the Certificate on September 7th, 2025.",
+        summary: ""
+    },
+    {
+        name: "NEXATHON 1.0 Hackathon Participation Certificate",
+        image: nexathonImg,
+        link: nexathonPdf,
+        checkName: "certificates",
+        checkProject: "NEXATHONHackathon",
+        gotDate: "I received the Certificate on September 11th, 2025.",
+        summary: ""
+    },
+    {
         name: "TEXIBITION Hackathon Participation Certificate",
         image: TEXIBITIONimg,
         link: TEXIBITIONpdf,

@@ -18,6 +18,8 @@ import Introduce from '../assets/videos/Introduce.mp4'
 import Spotify from '../assets/videos/Spotify.mp4'
 import krishti from "../assets/videos/Krishti.mp4"
 import dhokra from "../assets/videos/Unick Dhokra Workshop_Brass Handicrafts.mp4"
+import roonForCheatVideo from "../assets/videos/roomforcheat.mp4"
+import stdioJOB from "../assets/videos/stdioJOB.mp4"
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -32,8 +34,106 @@ import fileDownloder from '../assets/images/file_downloder.png'
 import newYear from '../assets/images/newYear.png'
 import smartCanteen from '../assets/images/smartCanteen.png'
 import solveMate from '../assets/images/solveMate.png'
+import NEXATHONIMG from "../assets/images/NEXATHON.png"
+import MAKEATHONIMG from "../assets/images/MAKE-A-THON.png"
+import IHBIMG from "../assets/images/IHB.png"
+import xCloneIMG from "../assets/images/x-cloneIMG.png"
+import reatBhutanImg from "../assets/images/realbhutanImg.png"
+import nextJSImgTodoAPP from "../assets/images/nextJSImg.png"
+
+import { colors } from '../constands/constand.js'
 
 export const projects = [
+    {
+        name: "Revox Studio",
+        link: "https://www.revoxstudio.site/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: stdioJOB,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/studio",
+        ...colors,
+        isNew: '08/11/2025 to 11/02/2026',
+        isGood: false,
+    },
+    {
+        name: "Real Bhutan",
+        link: "https://www.realbhutan.in/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: reatBhutanImg,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/lottery-result",
+        ...colors,
+        isNew: '08/11/2025 to 09/02/2026',
+        isGood: false,
+    },
+    {
+        name: "Room For Cheat",
+        link: "https://roomforcheat.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: roonForCheatVideo,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/CheatRoom",
+        ...colors,
+        isNew: '08/11/2025 to 06/02/2026',
+        isGood: false,
+    },
+    {
+        name: "Todo APP Next js",
+        link: "https://next-todoapp-theta.vercel.app/",
+        skills: ["MongoDB", "Next js","Tailwind", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "GitHub", "Git"],
+        image: nextJSImgTodoAPP,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/NextJS-Try",
+        ...colors,
+        isNew: '08/11/2025 to 04/02/2026',
+        isGood: false,
+    },
+    {
+        name: "X clone",
+        link: "https://xprojectclone.vercel.app/login/login.html",
+        skills: ["MongoDB", "Express js", "Node js", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "GitHub", "Git"],
+        image: xCloneIMG,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/x-clone",
+        ...colors,
+        isNew: '08/11/2025 to 02/02/2026',
+        isGood: false,
+    },
+    {
+        name: "IHB HACKATHON Project",
+        link: "https://ihb-xi.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "solidity", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: IHBIMG,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/IHB",
+        ...colors,
+        isNew: '08/11/2025 to 31/01/2026',
+        isGood: false,
+    },
+    {
+        name: "MAKE-A-THON Project",
+        link: "https://state-chain-reporter.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "solidity", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: MAKEATHONIMG,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/StateChain-Reporter",
+        ...colors,
+        isNew: '08/11/2025 to 26/01/2026',
+        isGood: true,
+        checkCertificket: "MAKEATHONHackathon"
+    },
+    {
+        name: "NEXATHON 1.0 Project",
+        link: "https://hackathon-p7fu.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: NEXATHONIMG,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/hackathon",
+        ...colors,
+        isNew: '08/11/2025 to 24/01/2026',
+        isGood: true,
+        checkCertificket: "NEXATHONHackathon"
+    },
     {
         name: "Instagram Clone AI",
         link: "https://instagramcloneai.vercel.app/",

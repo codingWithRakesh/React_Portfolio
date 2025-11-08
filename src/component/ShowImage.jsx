@@ -2,7 +2,7 @@ import React from 'react'
 import { RxCross1 } from 'react-icons/rx';
 import { useModal } from '../contexts/modalProvider';
 import { useCroseFont } from '../contexts/croseFontContext';
-import image from "../assets/images/TARAPADA.jpeg"
+import image from "../assets/images/TARAPADA.png";
 import { useImageShow } from '../contexts/imageContext';
 
 const ShowImage = () => {

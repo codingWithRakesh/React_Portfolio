@@ -14,7 +14,7 @@ const ExpensesCom = ({ data }) => {
     return (
         <div className="box">
             <h4>{data.durationWork}</h4>
-            <h1>{data.work}</h1>
+            <h2>{data.work}</h2>
             <p>
                 {data.peragraph}
             </p>
