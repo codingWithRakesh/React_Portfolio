@@ -462,6 +462,20 @@
         margin: 1rem;
     }
 
+    .clientInfoAbout{
+        flex-wrap: wrap;
+    }
+
+    .imageClinetBox{
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .inforMationAboutWork{
+        width: 100%;
+        text-align: center;
+    }
+
     /* skills */
     .skills {
         padding: 1rem;

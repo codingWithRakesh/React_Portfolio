@@ -16,7 +16,7 @@ const AboutCom = ({aboutBox}) => {
                 </div>
             </div>
             <div className='peraAB'>
-                {aboutBox[1].about.map((data,index) => (<p key={index} className='peragraph8'>{data}</p>))}
+                {aboutBox[1].about.map((data,index) => (<div key={index} className='peragraph8'>{data}</div>))}
                 <div className="hobbies boxAbout">
                     <h2>Hobbies</h2>
                     {aboutBox[1].hobbies.map((data,index) => (<p key={index}>{data}</p>))}
@@ -35,7 +35,7 @@ AboutCom.propTypes = {
         PropTypes.shape({
             image: PropTypes.string,
             CV: PropTypes.string,
-            about: PropTypes.arrayOf(PropTypes.string),
+            about: PropTypes.arrayOf(PropTypes.node),
             hobbies: PropTypes.arrayOf(PropTypes.string),
             languages: PropTypes.arrayOf(PropTypes.string),
         })

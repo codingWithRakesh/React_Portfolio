@@ -1,6 +1,13 @@
 import MyImage from '../assets/images/TARAPADA.png'
 import CV from '../assets/CV/Tarapada Garai (CV).pdf'
 
+import client1 from '../assets/images/clients/client1.png'
+import client2 from '../assets/images/clients/client2.png'
+import client3 from '../assets/images/clients/client3.jpg'
+import client4 from '../assets/images/clients/client4.jpg'
+import client5 from "../assets/images/clients/client5.jpeg"
+import client6 from "../assets/images/clients/client6.jpeg";
+
 export const about = {
     aboutBox: [
         {
@@ -23,6 +30,7 @@ export const about = {
     ],
     expenses: [
         {
+            clientImage: client4,
             durationWork: "Animesh Dey",
             work: "Founder of KRISHTI",
             peragraph: '“Tarapada truly exceeded my expectations. He listened carefully, understood my vision, and brought it to life flawlessly. His professionalism, patience, and talent made the entire process smooth and enjoyable. Highly recommended!”',
@@ -31,14 +39,7 @@ export const about = {
             isTrue: true
         },
         {
-            durationWork: "Gobinda Chowdhury",
-            work: "Founder of Teer Results",
-            peragraph: '“Tarapada did an excellent job building my website on short notice. He worked fast, understood my needs, and delivered great results. Highly recommended!”',
-            link: "Real Bhutan",
-            name: "Visit Project",
-            isTrue: true
-        },
-        {
+            clientImage: client5,
             durationWork: "Animesh Maji",
             work: "Founder of GI BENGAL DOKRA",
             peragraph: '“Tarapada is very creative and professional. He quickly understood my business needs and delivered a website that looks modern, fast, and user-friendly. I am very satisfied with his work and would recommend him to anyone.”',
@@ -47,6 +48,7 @@ export const about = {
             isTrue: true
         },
         {
+            clientImage: client1,
             durationWork: "Santanu Dutta",
             work: "Founder of Gumut RGCSA",
             peragraph: '“I can bet that it\'s too hard to find professional developers like Tarapada. He could peek inside my mind and made the site exactly as I wanted Much appreciated”',
@@ -55,6 +57,7 @@ export const about = {
             isTrue: true
         },
         {
+            clientImage: client3,
             durationWork: "Alhaj Hafez Ansar Ali Shah",
             work: "Founder of Rupsona Iqra Madrasa Mission",
             peragraph: '“Tarapada was a wonderful developer to work with! He anticipated everything I need to consider for my website. He also went the extra mile and added details that I hadn\'t considered! He is helping my business grow, and I will definitely work with him again!”',
@@ -63,10 +66,20 @@ export const about = {
             isTrue: true
         },
         {
+            clientImage: client2,
             durationWork: "Bhabasindu Garai",
             work: "Founder of Birsingha RGCSA",
             peragraph: '“I worked with Tarapada to make my website. I am speechless by looking at his work ethic and dedication. Working with him was the best decision I made.”',
             link: "Computer Coaching Website",
+            name: "Visit Project",
+            isTrue: true
+        },
+        {
+            clientImage: client6,
+            durationWork: "Gobinda Chowdhury",
+            work: "Founder of Teer Results",
+            peragraph: '“Tarapada did an excellent job building my website on short notice. He worked fast, understood my needs, and delivered great results. Highly recommended!”',
+            link: "Real Bhutan",
             name: "Visit Project",
             isTrue: true
         },
