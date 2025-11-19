@@ -3,10 +3,67 @@ import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml
 import { GrMysql, GrOracle } from "react-icons/gr";
 import { PiFileSql, PiFileSqlLight } from "react-icons/pi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiJavascript, SiMongodb, SiOpenai, SiPostgresql, SiRedux, SiTypescript, SiUdemy } from "react-icons/si";
+import { SiExpress, SiJavascript, SiMongodb, SiOpenai, SiPostgresql, SiRedux, SiSpringboot, SiTypescript, SiUdemy } from "react-icons/si";
 import { TbBinaryTree, TbBrandCpp, TbFileTypeSql, TbGrain, TbSql } from "react-icons/tb";
+import { SiSpring } from "react-icons/si";
 
 export const skills = [
+    {
+        name: "Java",
+        icon: <FaJava />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Spring",
+        icon: <SiSpring />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Spring Boot",
+        icon: <SiSpringboot />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "PostgreSQL",
+        icon: <SiPostgresql />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
     {
         name: "MongoDB",
         icon: <SiMongodb />,
@@ -130,20 +187,6 @@ export const skills = [
             },
         ],
         data: [60, 40],
-        checkName: "skills",
-        iconOut: true,
-        isCertified: false
-    },
-    {
-        name: "Java",
-        icon: <FaJava />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            },
-        ],
-        data: [70, 30],
         checkName: "skills",
         iconOut: true,
         isCertified: false
@@ -365,20 +408,6 @@ export const skills = [
     {
         name: "MySQL",
         icon: <GrMysql />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            },
-        ],
-        data: [60, 40],
-        checkName: "skills",
-        iconOut: true,
-        isCertified: false
-    },
-    {
-        name: "PostgreSQL",
-        icon: <SiPostgresql />,
         learn: [
             {
                 name: "YouTube",
