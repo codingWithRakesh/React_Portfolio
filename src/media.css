@@ -54,6 +54,10 @@
         font-size: 1.8rem;
     }
 
+    .skillAllInHome{
+        gap: 3rem;
+    }
+
     /* swiper card */
     .swiperClass {
         width: 98%;
@@ -447,6 +451,10 @@
         padding-top: 0;
         font-size: 1.1rem;
         position: relative;
+    }
+    
+    .skillAllInHome{
+        gap: 1rem;
     }
 
     /* about */

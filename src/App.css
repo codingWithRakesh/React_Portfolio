@@ -1034,6 +1034,54 @@
     font-size: 1.2rem;
 }
 
+.showSkillData{
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleofStack{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    color: var(--headerColor);
+}
+
+.skillAllInHome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.insideSkillAllHome {
+  /* width: 100%; */
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  grid-template-rows: auto;
+  justify-content: center;  
+  align-items: center;
+  padding: 1rem 0rem;
+  gap: 1.5rem;
+  /* margin: auto; */
+}
+
+
+.justifyLeft{
+    justify-content: flex-start !important;
+}
+
+.justifyRight{
+    justify-content: flex-end !important;
+}
+
 
 
 /* swiper js */

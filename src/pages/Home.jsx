@@ -3,8 +3,9 @@ import '../App.css'
 import { UserContext } from '../contexts/context'
 import SwiperCom from '../component/SwiperCom'
 import { useTopLoader } from '../contexts/topLoderContext'
-import {details} from '../details/details.jsx'
+import { details } from '../details/details.jsx'
 import { useShowDetails } from '../contexts/showDetailsContext.jsx'
+import StacksHome from '../component/StacksHome.jsx'
 
 const Home = () => {
   const [[sidebar]] = useContext(UserContext)
@@ -17,12 +18,12 @@ const Home = () => {
     setProgress(20)
     setTimeout(() => {
       setProgress(100)
-    },20)
+    }, 20)
   }, [])
 
   const InsideBox = ({ data }) => {
     return <div className="insideBox boxShadows">
-      <span className='bigName'>{data.big ? data.big: details.projects.length - 1 + "+" }</span> {data.normal} <br /> {data.extra}
+      <span className='bigName'>{data.big ? data.big : details.projects.length - 1 + "+"}</span> {data.normal} <br /> {data.extra}
     </div>
   }
 
@@ -35,12 +36,13 @@ const Home = () => {
       </div>
       <div className="boxes boxShadows summary mr">
         <h2>
-          Summary 
+          Summary
         </h2>
         <p>
           {details.home.Summary}
         </p>
       </div>
+      <StacksHome />
       <div className="titleClient boxShadows">
         <h1>My Clients</h1>
       </div>
