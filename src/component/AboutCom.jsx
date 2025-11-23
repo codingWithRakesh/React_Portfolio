@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useImageShow } from '../contexts/imageContext';
 
 const AboutCom = ({aboutBox}) => {
-    const [imageShow, setImageShow] = useImageShow();
+    const [imageShow, setImageShow] = useImageShow()
     return (
         <div className='AboutComAA boxShadows'>
             <div className='firstAb'>
