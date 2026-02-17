@@ -1,9 +1,9 @@
 import { DiJqueryLogo, DiMysql } from "react-icons/di";
-import { FaBootstrap, FaCss3Alt, FaDatabase, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact, FaYoutube } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaDatabase, FaDocker, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact, FaYoutube } from "react-icons/fa";
 import { GrMysql, GrOracle } from "react-icons/gr";
 import { PiFileSql, PiFileSqlLight } from "react-icons/pi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiJavascript, SiMongodb, SiOpenai, SiPostgresql, SiRedux, SiSpringboot, SiTypescript, SiUdemy } from "react-icons/si";
+import { SiExpress, SiJavascript, SiMongodb, SiNginx, SiOpenai, SiPm2, SiPostgresql, SiRedux, SiSpringboot, SiTypescript, SiUdemy } from "react-icons/si";
 import { TbBinaryTree, TbBrandCpp, TbFileTypeSql, TbGrain, TbSql } from "react-icons/tb";
 import { SiSpring } from "react-icons/si";
 
@@ -51,18 +51,17 @@ export const skills = [
         isCertified: false
     },
     {
-        name: "PostgreSQL",
-        icon: <SiPostgresql />,
+        name: "Docker",
+        icon: <FaDocker />,
         learn: [
             {
                 name: "YouTube",
                 icon: <FaYoutube />
-            },
+            }
         ],
-        data: [60, 40],
+        data: [70, 30],
         checkName: "skills",
         iconOut: true,
-        isCertified: false
     },
     {
         name: "MongoDB",
@@ -139,6 +138,46 @@ export const skills = [
     {
         name: "Next js",
         icon: <RiNextjsFill />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+    },
+    {
+        name: "PostgreSQL",
+        icon: <SiPostgresql />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Nginx",
+        icon: <SiNginx />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+    },
+       {
+        name: "PM2",
+        icon: <SiPm2 />,
         learn: [
             {
                 name: "YouTube",
