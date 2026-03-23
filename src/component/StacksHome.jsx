@@ -4,8 +4,10 @@ import Skill from './Skill.jsx';
 
 const StacksHome = () => {
     const skillData = details.skills;
-    const javaStack = skillData.slice(0, 4);
-    const MERNStack = skillData.slice(4, 8);
+    const javaStack = skillData.slice(1, 5);
+    const database = skillData[15];
+    const nodeStack = skillData.slice(7, 10);
+    const MERNStack = [database, ...nodeStack]
     return (
         <div className='showSkillData'>
             <h2 className='titleofStack bigName boxShadows'>Tech Stack</h2>

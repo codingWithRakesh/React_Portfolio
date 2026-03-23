@@ -1,13 +1,14 @@
 import { DiJqueryLogo, DiMysql } from "react-icons/di";
-import { FaBootstrap, FaCss3Alt, FaDatabase, FaDocker, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact, FaYoutube } from "react-icons/fa";
+import { FaBootstrap, FaBrain, FaCloud, FaCss3Alt, FaDatabase, FaDocker, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact, FaYoutube } from "react-icons/fa";
 import { GrMysql, GrOracle } from "react-icons/gr";
-import { PiFileSql, PiFileSqlLight } from "react-icons/pi";
+import { PiFileSql, PiFileSqlLight, PiVectorThreeFill } from "react-icons/pi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiJavascript, SiMongodb, SiNginx, SiOpenai, SiPm2, SiPostgresql, SiRedux, SiSpringboot, SiTypescript, SiUdemy } from "react-icons/si";
+import { SiExpress, SiFastapi, SiJavascript, SiMongodb, SiNginx, SiOpenai, SiPm2, SiPostgresql, SiRedux, SiSpringboot, SiSpringsecurity, SiTypescript, SiUdemy } from "react-icons/si";
 import { TbBinaryTree, TbBrandCpp, TbFileTypeSql, TbGrain, TbSql } from "react-icons/tb";
 import { SiSpring } from "react-icons/si";
+import { SiGooglegemini } from "react-icons/si";
 
-export const skills = [
+const springStack = [
     {
         name: "Java",
         icon: <FaJava />,
@@ -51,36 +52,64 @@ export const skills = [
         isCertified: false
     },
     {
-        name: "Docker",
-        icon: <FaDocker />,
+        name: "Spring Data",
+        icon: <FaDatabase />,
         learn: [
             {
                 name: "YouTube",
                 icon: <FaYoutube />
-            }
+            },
         ],
         data: [70, 30],
         checkName: "skills",
         iconOut: true,
+        isCertified: false
     },
     {
-        name: "MongoDB",
-        icon: <SiMongodb />,
+        name: "Spring Security",
+        icon: <SiSpringsecurity />,
         learn: [
             {
                 name: "YouTube",
                 icon: <FaYoutube />
             },
-            {
-                name: "Udemy",
-                icon: <SiUdemy />
-            },
         ],
-        data: [75, 25],
+        data: [70, 30],
         checkName: "skills",
         iconOut: true,
-        isCertified: true
+        isCertified: false
     },
+    {
+        name: "Spring Cloud",
+        icon: <FaCloud />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Spring AI",
+        icon: <FaBrain />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+]
+
+const nodeJsStack = [
     {
         name: "Express js",
         icon: <SiExpress />,
@@ -149,46 +178,6 @@ export const skills = [
         iconOut: true,
     },
     {
-        name: "PostgreSQL",
-        icon: <SiPostgresql />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            },
-        ],
-        data: [60, 40],
-        checkName: "skills",
-        iconOut: true,
-        isCertified: false
-    },
-    {
-        name: "Nginx",
-        icon: <SiNginx />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            }
-        ],
-        data: [70, 30],
-        checkName: "skills",
-        iconOut: true,
-    },
-       {
-        name: "PM2",
-        icon: <SiPm2 />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            }
-        ],
-        data: [70, 30],
-        checkName: "skills",
-        iconOut: true,
-    },
-    {
         name: "JavaScript",
         icon: <SiJavascript />,
         learn: [
@@ -216,20 +205,9 @@ export const skills = [
         iconOut: true,
         isCertified: false
     },
-    {
-        name: "Redux",
-        icon: <SiRedux />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            },
-        ],
-        data: [60, 40],
-        checkName: "skills",
-        iconOut: true,
-        isCertified: false
-    },
+]
+
+const pythonStack = [
     {
         name: "Python",
         icon: <FaPython />,
@@ -244,6 +222,100 @@ export const skills = [
         iconOut: true,
         isCertified: false
     },
+    {
+        name: "FastAPI",
+        icon: <SiFastapi />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+]
+
+const databaseStack = [
+    {
+        name: "MongoDB",
+        icon: <SiMongodb />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+            {
+                name: "Udemy",
+                icon: <SiUdemy />
+            },
+        ],
+        data: [75, 25],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: true
+    },
+    {
+        name: "PostgreSQL",
+        icon: <SiPostgresql />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "ChromaDB",
+        icon: <PiVectorThreeFill />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Oracle",
+        icon: <GrOracle />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "MySQL",
+        icon: <GrMysql />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+]
+
+const llmStack = [
     {
         name: "AI",
         icon: <TbGrain />,
@@ -261,6 +333,82 @@ export const skills = [
     {
         name: "ChatGPT",
         icon: <SiOpenai />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+    {
+        name: "Gemini",
+        icon: <SiGooglegemini />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            },
+        ],
+        data: [60, 40],
+        checkName: "skills",
+        iconOut: true,
+        isCertified: false
+    },
+]
+
+export const skills = [
+    ...springStack,
+    ...nodeJsStack,
+    ...pythonStack,
+    ...databaseStack,
+    ...llmStack,
+    {
+        name: "Docker",
+        icon: <FaDocker />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+    },
+    {
+        name: "Nginx",
+        icon: <SiNginx />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+    },
+       {
+        name: "PM2",
+        icon: <SiPm2 />,
+        learn: [
+            {
+                name: "YouTube",
+                icon: <FaYoutube />
+            }
+        ],
+        data: [70, 30],
+        checkName: "skills",
+        iconOut: true,
+    },
+    
+    {
+        name: "Redux",
+        icon: <SiRedux />,
         learn: [
             {
                 name: "YouTube",
@@ -426,34 +574,6 @@ export const skills = [
             },
         ],
         data: [70, 30],
-        checkName: "skills",
-        iconOut: true,
-        isCertified: false
-    },
-    {
-        name: "Oracle",
-        icon: <GrOracle />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            },
-        ],
-        data: [60, 40],
-        checkName: "skills",
-        iconOut: true,
-        isCertified: false
-    },
-    {
-        name: "MySQL",
-        icon: <GrMysql />,
-        learn: [
-            {
-                name: "YouTube",
-                icon: <FaYoutube />
-            },
-        ],
-        data: [60, 40],
         checkName: "skills",
         iconOut: true,
         isCertified: false
