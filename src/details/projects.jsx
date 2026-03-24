@@ -21,6 +21,8 @@ import dhokra from "../assets/videos/Unick Dhokra Workshop_Brass Handicrafts.mp4
 import roonForCheatVideo from "../assets/videos/roomforcheat.mp4"
 import stdioJOB from "../assets/videos/stdioJOB.mp4"
 import omageClone from "../assets/videos/omageClone.mp4"
+import xibit from "../assets/videos/xibit.mp4"
+import binaryV2 from "../assets/videos/binaryV2.mp4"
 
 import Notepad from '../assets/images/noteapp.png'
 import do_you_love_me from '../assets/images/do_you_love_me.png'
@@ -46,9 +48,20 @@ import { colors } from '../constands/constand.js'
 
 export const projects = [
     {
+        name: "RAG Service",
+        link: "https://binary-v2-fz6d.vercel.app/",
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: binaryV2,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/BinaryV2",
+        ...colors,
+        isNew: '17/02/2026 to 06/04/2026',
+        isGood: false,
+    },
+    {
         name: "Omagle Clone",
         link: "https://omegle-clone-taupe.vercel.app/",
-        skills: ["Java", "Spring", "Spring Boot", "Docker", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Docker", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: omageClone,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/omegle-clone",
@@ -59,7 +72,7 @@ export const projects = [
     {
         name: "Room For Cheat",
         link: "https://roomforcheat.vercel.app/",
-        skills: ["Java", "Spring", "Spring Boot", "Docker", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Docker", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: roonForCheatVideo,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/CheatRoom",
@@ -81,7 +94,7 @@ export const projects = [
     {
         name: "Instagram Clone AI",
         link: "https://instagramcloneai.vercel.app/",
-        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: instagramCloneAI,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/instagram-clone-AI",
@@ -104,7 +117,7 @@ export const projects = [
     {
         name: "Google Keep Clone AI",
         link: "https://googlekeepclone-six.vercel.app/",
-        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: googleKeep,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/Google-Keep-clon",
@@ -123,6 +136,28 @@ export const projects = [
         Timeframe: "16 January 2025 - 03 February 2025",
         isNew: '17/02/2026 to 06/04/2026',
         isGood: false
+    },
+    {
+        name: "Binary V2 Hackathon Project",
+        link: "https://binary-v2-fz6d.vercel.app/",
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: binaryV2,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/BinaryV2",
+        ...colors,
+        isNew: '17/02/2026 to 06/04/2026',
+        isGood: false,
+    },
+    {
+        name: "Xibit 2.0 Hackathon Project",
+        link: "https://xibit2026.vercel.app/",
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: xibit,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/Xibit-2026",
+        ...colors,
+        isNew: '17/02/2026 to 06/04/2026',
+        isGood: false,
     },
     {
         name: "Uniquedokraworkshop",

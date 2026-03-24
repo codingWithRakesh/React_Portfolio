@@ -3,7 +3,7 @@ import ProjectCom from './ProjectCom'
 import PropTypes from 'prop-types';
 
 const ShowProjectsInSkill = ({ projectsWithJavaScript, nameSkill }) => {
-    const [visibleProjects, setVisibleProjects] = useState(2);
+    const [visibleProjects, setVisibleProjects] = useState(5);
     useEffect(() => {
         const handleScroll = () => {
             if (
