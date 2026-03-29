@@ -16,11 +16,11 @@ export const about = {
         },
         {
             about: [
-                <>I’m <b>Tarapada Garai</b>, a dedicated <b>full-stack developer</b> with six months of experience in building responsive, user-friendly web applications. I began as a <b> front-end developer </b>, creating clean and engaging UIs, and have since expanded into <b> backend development </b> to build complete, scalable solutions.</>,
+                <>I’m <b>Tarapada Garai</b>, a <b>backend-focused full-stack and microservices developer</b> with hands-on experience in building scalable and production-ready applications. Currently, I’m working as a <b>Backend Developer Intern</b> at <b>MealVersity Technologies Private Limited</b>, where I focus on designing efficient backend systems.</>,
                 <>What sets me apart is my ability to <b>integrate AI features</b> into real-world projects. I’ve built:</>,
                 <ul className='ulFix'>
-                    <li>A <b>Google Keep Clone</b> where AI generates smart note titles based on your content.</li>
-                    <li>An <b>Instagram Clone</b> where AI helps users generate bios and write captions after selecting a post or story—making content creation easier and faster.</li>
+                    <li>A microservices-based <b>RAG service</b>, where the core AI is powered by FastAPI and the full backend ecosystem (authentication, messaging, subscriptions) is built using Spring Boot and Docker.</li>
+                    <li>An <b>Omegle Clone</b>, where I developed real-time user matching using Spring Boot and handled video calls and messaging with Node.js, Socket.io, and peer-to-peer connections in a microservices setup.</li>
                 </ul>,
                 <>I know how to use AI effectively in <b>full-stack</b> projects to improve user experience and productivity. I'm always excited to take on new challenges and collaborate on innovative ideas.</>
             ],
