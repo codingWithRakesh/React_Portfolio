@@ -1,10 +1,12 @@
 import {  FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import MyImage from '../assets/images/TARAPADA.png'
-import CV from '../assets/CV/Tarapada Garai (CV).pdf'
+import {CV} from '../constands/constand.js'
 import { BiLogoGmail } from "react-icons/bi";
 import { MdLocalPhone } from "react-icons/md";
 import { IoMdDownload } from "react-icons/io";
 import { FaSquareThreads, FaXTwitter } from "react-icons/fa6";
+import { IoDocumentAttach } from "react-icons/io5";
+import { SiLeetcode } from "react-icons/si";
 
 export const profile = {
     home: {
@@ -25,8 +27,8 @@ export const profile = {
         },
         {
             href: CV,
-            icon: <IoMdDownload />,
-            name: "Download CV",
+            icon: <IoDocumentAttach />,
+            name: "View CV",
             download: "Tarapada(CV)"
         },
     ],
@@ -42,14 +44,14 @@ export const profile = {
             title: "Linkedin"
         },
         {
+            link: "https://leetcode.com/u/Tarapada_Garai/",
+            icon: <SiLeetcode />,
+            title: "Leetcode"
+        },
+        {
             link: "https://www.instagram.com/tarapada_9679/",
             icon: <FaInstagram />,
             title: "Instagram"
-        },
-        {
-            link: "https://www.facebook.com/tarapada.garai.35",
-            icon: <FaFacebook />,
-            title: "Facebook"
         },
         {
             link: "https://www.threads.net/@tarapada_9679",

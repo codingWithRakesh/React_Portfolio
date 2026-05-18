@@ -1,5 +1,5 @@
 import MyImage from '../assets/images/TARAPADA.png'
-import CV from '../assets/CV/Tarapada Garai (CV).pdf'
+import {CV} from '../constands/constand.js'
 
 import client1 from '../assets/images/clients/client1.png'
 import client2 from '../assets/images/clients/client2.png'

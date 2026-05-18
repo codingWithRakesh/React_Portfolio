@@ -11,8 +11,8 @@ const AboutCom = ({aboutBox}) => {
                     <img onClick={() => setImageShow({ ...imageShow, isOn: true, image: aboutBox[0].image })} src={aboutBox[0].image} alt="Tarapada Garai" />
                 </div>
                 <div className="buttonClassAb">
-                <a href={aboutBox[0].CV} download="Tarapada(CV)" className="button-60" role="button">Download CV</a>
-                <Link to="/contact" className="button-60" role="button">Hire Me</Link>
+                <a href={aboutBox[0].CV} target='_blank' className="button-60" role="button">View CV</a>
+                <Link to="/contact" className="button-60" role="button">Work With Me</Link>
                 </div>
             </div>
             <div className='peraAB'>

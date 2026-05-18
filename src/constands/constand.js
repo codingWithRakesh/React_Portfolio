@@ -26,3 +26,5 @@ export const colors = {
     ],
 
 }
+
+export const CV = "https://ik.imagekit.io/p7adsy5mz/TarapadaGarai_Resume.pdf";

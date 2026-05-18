@@ -23,7 +23,7 @@ const Profile = ({ setShowProfile }) => {
             <div className="profileSecond">
                 {
                     details.profile.contacts.map((value, index) => (
-                        <a href={value.href} download={value.download} className="showDetails" key={index} >
+                        <a href={value.href} target='_blank' className="showDetails" key={index} >
                             <span>{value.icon}</span>
                             <p>{value.name}</p>
                         </a>
@@ -33,7 +33,7 @@ const Profile = ({ setShowProfile }) => {
                     <span>
                         <FaHandshake />
                     </span>
-                    <p>Hire Me</p>
+                    <p>Work With Me</p>
                 </Link>
             </div>
             <div className="profileThird">
