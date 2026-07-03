@@ -38,7 +38,11 @@ const About = () => {
       <section className="col">
         <h1 className="titleAbout">Additional Participation</h1>
         <div className="contents">
-          {details.about.hackathon.map((data, index) => (<ExpensesCom data={data} key={index} />))}
+          {[...details.about.hackathon]
+            .reverse()
+            .map((data, index) => (
+              <ExpensesCom data={data} key={index} />
+            ))}
         </div>
       </section>
 

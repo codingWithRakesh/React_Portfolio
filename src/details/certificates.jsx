@@ -19,8 +19,30 @@ import nexathonImg from "../assets/certificate/nexathon.jpg";
 import nexathonPdf from "../assets/certificate/nexathon.pdf";
 import makeAthonImg from "../assets/certificate/make-a-thon.jpg";
 import makeAthonPdf from "../assets/certificate/make-a-thon.pdf";
+import TEXIBITION2img from "../assets/certificate/TEXIBITION2.jpg";
+import TEXIBITION2pdf from "../assets/certificate/TEXIBITION2.pdf";
+import HackStormImg from "../assets/certificate/HackStorm.jpg";
+import HackStormPdf from "../assets/certificate/HackStorm.pdf";
 
 export const certificates = [
+    {
+        name: "HackStorm Hackathon Participation Certificate",
+        image: HackStormImg,
+        link: HackStormPdf,
+        checkName: "certificates",
+        checkProject: "HackStormHackathon",
+        gotDate: "I received the Certificate on April 11th, 2026.",
+        summary: ""
+    },
+    {
+        name: "TEXIBITION 2.0 Hackathon Participation Certificate",
+        image: TEXIBITION2img,
+        link: TEXIBITION2pdf,
+        checkName: "certificates",
+        checkProject: "TEXIBITION2Hackathon",
+        gotDate: "I received the Certificate on March 12th, 2026.",
+        summary: ""
+    },
     {
         name: "MAKE-A-THON Hackathon Participation Certificate",
         image: makeAthonImg,

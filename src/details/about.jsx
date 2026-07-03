@@ -94,10 +94,114 @@ export const about = {
     ],
     hackathon: [
         {
+            durationWork: "23 Aug, 2024",
+            work: "Smart India Hackathon",
+            peragraph: "A hackathon was held at our college, and our team secured 20th place among 100+ participating teams from across the college.",
+            isTrue: false
+        },
+        {
             durationWork: "28 Sep, 2024",
             work: "Dev Innov8+ Hackathon",
-            peragraph: "A hackathon was held in our college and I secured 4th place in the entire college",
+            peragraph: "A hackathon was held in our college, and our team secured 4th place in the entire college arounding 30+ teams participated in the hackathon. ",
             link: "Dev Innov8+ Hackathon Certificate",
+            name: "View Certificate",
+            isTrue: true
+        },
+        {
+            durationWork: "26 Feb, 2025",
+            work: "Binary Battleground Hackathon",
+            peragraph: "This was a problem-solving hackathon held at our college. The hackathon had three rounds, and I successfully qualified for the first two rounds.",
+            link: "Binary Battleground Hackathon Participation Certificate",
+            name: "View Certificate",
+            isTrue: true
+        },
+        {
+            durationWork: "28 Feb, 2025",
+            work: "InnovoCon Hackathon",
+            peragraph: "This was a hackathon held at JIS College of Engineering, and it was the first hackathon our team participated in outside our college.",
+            link: "InnovoCon Hackathon Participation Certificate",
+            name: "View Certificate",
+            isTrue: true
+        },
+        {
+            durationWork: "26 Apr, 2025",
+            work: "Droid Fest Kolkata",
+            peragraph: "Participated in DroidFest, a developer conference organized by Kotlin User Group Kolkata.",
+            isTrue: false
+        },
+        {
+            durationWork: "01 May, 2025",
+            work: "TEXIBITION Hackathon",
+            peragraph: "This was a hackathon held at our college, and our team also participated in this hackathon.",
+            link: "TEXIBITION Hackathon Participation Certificate",
+            name: "View Certificate",
+            isTrue: true
+        },
+        {
+            durationWork: "07 Sep, 2025",
+            work: "MAKE-A-THON Hackathon",
+            peragraph: "This was a hackathon held at IEM & UEM College of Engineering, and our team also participated in this hackathon.",
+            link: "MAKE-A-THON Hackathon Participation Certificate",
+            name: "View Certificate",
+            isTrue: true
+        },
+        {
+            durationWork: "11 Sep, 2025",
+            work: "NEXATHON 1.0 Hackathon",
+            peragraph: "This was a hackathon held at our college, and our team also participated in this hackathon.",
+            link: "NEXATHON 1.0 Hackathon Participation Certificate",
+            name: "View Certificate",
+            isTrue: true
+        },
+        {
+            durationWork: "18 Oct, 2025",
+            work: "Algorand Build Station Hackathon",
+            peragraph: "This was the only blockchain hackathon and it was held in hotel kolkata. Our team also participated in this hackathon.",
+            isTrue: false
+        },
+        {
+            durationWork: "18 Nov, 2025",
+            work: "DevFest Durgapur",
+            peragraph: "I participated in GDG Durgapur DevFest, a flagship developer conference organized by Google Developer Groups (GDG) Durgapur.",
+            isTrue: false
+        },
+        {
+            durationWork: "22 Feb, 2026",
+            work: "Circuit Craft Hackathon 2026",
+            peragraph: "This was a hackathon organized by our team and hosted at our college, where I led the planning, coordination, and execution of the event.",
+            isTrue: false
+        },
+        {
+            durationWork: "12 Mar, 2026",
+            work: "TEXIBITION 2.0 Hackathon",
+            peragraph: "This was a hackathon held at our college, and our team also participated in this hackathon.",
+            link: "TEXIBITION 2.0 Hackathon Participation Certificate",
+            name: "View Certificate",
+            isTrue: true
+        },
+        {
+            durationWork: "19 Mar, 2026",
+            work: "Binary Battleground Hackathon",
+            peragraph: "This was a hackathon organized by our team and hosted at our college, where I led the planning, coordination, and execution of the event.",
+            isTrue: false
+        },
+        {
+            durationWork: "21 Mar, 2026",
+            work: "Binary V2 Hackathon",
+            peragraph: "This was a hackathon held at Kalyani Government Engineering College, and our team also participated in this hackathon.",
+            isTrue: false
+        },
+        {
+            durationWork: "25 Mar, 2026",
+            work: "Droid Fest Kolkata",
+            peragraph: "Participated in DroidFest, a developer conference organized by Kotlin User Group Kolkata.",
+            isTrue: false
+        },
+        {
+            durationWork: "11 Apr, 2026",
+            work: "HackStorm Hackathon",
+            peragraph: "This was a hackathon held at B.P.Poddar Institute of Management and Technology, and our team secured 5th place in the entire college arounding 30+ teams participated in the hackathon. ",
+            link: "HackStorm Hackathon Participation Certificate",
             name: "View Certificate",
             isTrue: true
         },

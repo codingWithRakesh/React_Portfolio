@@ -43,6 +43,7 @@ import IHBIMG from "../assets/images/IHB.png"
 import xCloneIMG from "../assets/images/x-cloneIMG.png"
 import reatBhutanImg from "../assets/images/realbhutanImg.png"
 import nextJSImgTodoAPP from "../assets/images/nextJSImg.png"
+import HackStorm from "../assets/images/HackStorm.png"
 
 import { colors } from '../constands/constand.js'
 
@@ -138,6 +139,18 @@ export const projects = [
         isGood: false
     },
     {
+        name: "HackStorm Hackathon Project",
+        link: "https://land-chain-nine.vercel.app",
+        skills: ["MongoDB", "Express js", "React", "Node js", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: HackStorm,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/LandChain",
+        ...colors,
+        isNew: '17/04/2026 to 06/07/2026',
+        isGood: false,
+        checkCertificket : "HackStormHackathon"
+    },
+    {
         name: "Binary V2 Hackathon Project",
         link: "https://binary-v2-fz6d.vercel.app/",
         skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
@@ -158,6 +171,7 @@ export const projects = [
         ...colors,
         isNew: '17/02/2026 to 06/04/2026',
         isGood: false,
+        checkCertificket : "TEXIBITION2Hackathon"
     },
     {
         name: "Uniquedokraworkshop",
