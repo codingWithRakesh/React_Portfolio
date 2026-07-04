@@ -51,46 +51,26 @@ export const projects = [
     {
         name: "RAG Service",
         link: "https://binary-v2-fz6d.vercel.app/",
-        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js", "TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: binaryV2,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/BinaryV2",
         ...colors,
         isNew: '17/02/2026 to 06/04/2026',
         isGood: false,
+        type: "best"
     },
     {
         name: "Omagle Clone",
         link: "https://omegle-clone-taupe.vercel.app/",
-        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Docker", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Docker", "MongoDB", "Express js", "React", "Node js", "TypeScript", "AI", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: omageClone,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/omegle-clone",
         ...colors,
         isNew: '17/02/2026 to 06/04/2026',
         isGood: false,
-    },
-    {
-        name: "Room For Cheat",
-        link: "https://roomforcheat.vercel.app/",
-        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Docker", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
-        video: roonForCheatVideo,
-        checkName: "projects",
-        gitHub: "https://github.com/codingWithRakesh/CheatRoom",
-        ...colors,
-        isNew: '17/02/2026 to 06/04/2026',
-        isGood: false,
-    },
-    {
-        name: "Real Bhutan",
-        link: "https://www.realbhutan.in/",
-        skills: ["MongoDB", "Express js", "React", "Node js", "Nginx", "PM2", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
-        image: reatBhutanImg,
-        checkName: "projects",
-        gitHub: "https://github.com/codingWithRakesh/lottery-result",
-        ...colors,
-        isNew: '17/02/2026 to 06/04/2026',
-        isGood: false,
+        type: "best"
     },
     {
         name: "Instagram Clone AI",
@@ -113,7 +93,46 @@ export const projects = [
         ],
         Timeframe: "6 March 2025 - 20 May 2025",
         isNew: '17/02/2026 to 06/04/2026',
-        isGood: false
+        isGood: false,
+        type: "best"
+    },
+    {
+        name: "Room For Cheat",
+        link: "https://roomforcheat.vercel.app/",
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Docker", "MongoDB", "Express js", "React", "Node js", "TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: roonForCheatVideo,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/CheatRoom",
+        ...colors,
+        isNew: '17/02/2026 to 06/04/2026',
+        isGood: false,
+        type: "best"
+    },
+    {
+        name: "Spotify Clone",
+        link: "https://spotify-clone-one-alpha.vercel.app/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "TypeScript", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        video: Spotify,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/spotify-clone",
+        labels: ['HTML', 'Tailwind', 'JavaScript'],
+        data: [6, 38, 12, 44],
+        backgroundColor: [
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+        ],
+        borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(255, 206, 86, 1)',
+        ],
+        Timeframe: "02 June 2025 - 21 June 2025",
+        isNew: '17/02/2026 to 06/04/2026',
+        isGood: false,
+        type: "best"
     },
     {
         name: "Google Keep Clone AI",
@@ -136,7 +155,19 @@ export const projects = [
         ],
         Timeframe: "16 January 2025 - 03 February 2025",
         isNew: '17/02/2026 to 06/04/2026',
-        isGood: false
+        isGood: false,
+        type: "best"
+    },
+    {
+        name: "Real Bhutan",
+        link: "https://www.realbhutan.in/",
+        skills: ["MongoDB", "Express js", "React", "Node js", "Nginx", "PM2", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        image: reatBhutanImg,
+        checkName: "projects",
+        gitHub: "https://github.com/codingWithRakesh/lottery-result",
+        ...colors,
+        isNew: '17/02/2026 to 06/04/2026',
+        isGood: false,
     },
     {
         name: "HackStorm Hackathon Project",
@@ -147,13 +178,13 @@ export const projects = [
         gitHub: "https://github.com/codingWithRakesh/LandChain",
         ...colors,
         isNew: '17/04/2026 to 06/07/2026',
-        isGood: false,
-        checkCertificket : "HackStormHackathon"
+        isGood: true,
+        checkCertificket: "HackStormHackathon"
     },
     {
         name: "Binary V2 Hackathon Project",
         link: "https://binary-v2-fz6d.vercel.app/",
-        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js", "TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: binaryV2,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/BinaryV2",
@@ -164,14 +195,14 @@ export const projects = [
     {
         name: "Xibit 2.0 Hackathon Project",
         link: "https://xibit2026.vercel.app/",
-        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js","TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
+        skills: ["Java", "Spring", "Spring Boot", "Spring Security", "Spring Data", "Spring AI", "Python", "FastAPI", "Docker", "ChromaDB", "MongoDB", "Express js", "React", "Node js", "TypeScript", "AI", "Tailwind", "React Router Dom", "Gemini", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
         video: xibit,
         checkName: "projects",
         gitHub: "https://github.com/codingWithRakesh/Xibit-2026",
         ...colors,
         isNew: '17/02/2026 to 06/04/2026',
         isGood: false,
-        checkCertificket : "TEXIBITION2Hackathon"
+        checkCertificket: "TEXIBITION2Hackathon"
     },
     {
         name: "Uniquedokraworkshop",
@@ -216,31 +247,6 @@ export const projects = [
             'rgba(75, 192, 192, 1)',
         ],
         Timeframe: "23 June 2025 - 27 July 2025",
-        isNew: '17/02/2026 to 06/04/2026',
-        isGood: false
-    },
-    {
-        name: "Spotify Clone",
-        link: "https://spotify-clone-one-alpha.vercel.app/",
-        skills: ["MongoDB", "Express js", "React", "Node js", "TypeScript", "Tailwind", "React Router Dom", "ChatGPT", "JavaScript", "HTML", "CSS", "Flexbox", "Figma", "GitHub", "Git"],
-        video: Spotify,
-        checkName: "projects",
-        gitHub: "https://github.com/codingWithRakesh/spotify-clone",
-        labels: ['HTML', 'Tailwind', 'JavaScript'],
-        data: [6, 38, 12, 44],
-        backgroundColor: [
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-        ],
-        borderColor: [
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 99, 132, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(255, 206, 86, 1)',
-        ],
-        Timeframe: "02 June 2025 - 21 June 2025",
         isNew: '17/02/2026 to 06/04/2026',
         isGood: false
     },

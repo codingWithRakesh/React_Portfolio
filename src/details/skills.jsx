@@ -378,6 +378,7 @@ export const skills = [
         data: [70, 30],
         checkName: "skills",
         iconOut: true,
+        isCertified: true
     },
     {
         name: "Nginx",

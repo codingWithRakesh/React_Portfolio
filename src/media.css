@@ -107,6 +107,12 @@
         padding: 0 5px 0 30px;
     }
 
+    /* about buttons */
+    .aboutButtons {
+        width: 80%;
+        max-width: 80%;
+    }
+
     /* skill */
     .skills {
         padding: 1rem 2rem;
@@ -460,6 +466,18 @@
     /* about */
     .about {
         padding-top: 0;
+    }
+
+    .aboutButtons {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 24px;
+    }
+
+    .aboutSectionButton {
+        width: 100%;
     }
 
     .firstAb {

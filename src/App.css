@@ -1133,9 +1133,35 @@
     gap: 2.5rem;
 }
 
+.tagComponent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .titleSkill {
     width: 100%;
     color: var(--headerColor);
+}
+
+.projectTags{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.projectTag{
+    padding: 0 1rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: var(--componentBG);
+    color: var(--headerColor);
+    margin-left: .7rem;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .skillBox {
@@ -1379,7 +1405,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 3rem 3rem;
 }
 
 .projectShowAll{
@@ -1805,6 +1831,43 @@ img {
     padding: 1rem 2rem 2rem 4rem
 }
 
+.aboutButtons{
+    height: 4.5rem;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    background-color: var(--componentBG);
+    margin: 1.4rem 0 0 0;
+    border-radius: 50px;
+    gap: .5rem;
+}
+
+.aboutSectionButton{
+    height: 3rem;
+    border: none;
+    outline: none;
+    background-color: var(--componentBGhover);
+    color: var(--headerColor);
+    font-size: 1.5rem;
+    width: 100%;
+    border-radius: 50px;
+    padding: .5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.aboutSectionButtonIcon{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .titleAbout {
     margin: 2rem;
     font-size: 2rem;
@@ -2027,6 +2090,33 @@ img {
 
 .certificateShow {
     padding: 0;
+}
+
+.certificateTagComponent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.certificateTags {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.certificatetag {
+    padding: 0 1rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: var(--componentBG);
+    color: var(--headerColor);
+    margin-left: .7rem;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .certificate {
@@ -2481,4 +2571,9 @@ img {
 
 .error h1,p{
     color: var(--headerColor);
+}
+
+.activeTags{
+    background-color: #004A77 !important;
+    color: #C2E7FF;
 }

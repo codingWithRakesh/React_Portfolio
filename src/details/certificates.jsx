@@ -23,6 +23,8 @@ import TEXIBITION2img from "../assets/certificate/TEXIBITION2.jpg";
 import TEXIBITION2pdf from "../assets/certificate/TEXIBITION2.pdf";
 import HackStormImg from "../assets/certificate/HackStorm.jpg";
 import HackStormPdf from "../assets/certificate/HackStorm.pdf";
+import dockerImg from "../assets/certificate/docker.jpg";
+import dockerPdf from "../assets/certificate/docker.pdf";
 
 export const certificates = [
     {
@@ -32,7 +34,8 @@ export const certificates = [
         checkName: "certificates",
         checkProject: "HackStormHackathon",
         gotDate: "I received the Certificate on April 11th, 2026.",
-        summary: ""
+        summary: "",
+        type : "best"
     },
     {
         name: "TEXIBITION 2.0 Hackathon Participation Certificate",
@@ -41,7 +44,8 @@ export const certificates = [
         checkName: "certificates",
         checkProject: "TEXIBITION2Hackathon",
         gotDate: "I received the Certificate on March 12th, 2026.",
-        summary: ""
+        summary: "",
+        type : "best"
     },
     {
         name: "MAKE-A-THON Hackathon Participation Certificate",
@@ -50,7 +54,8 @@ export const certificates = [
         checkName: "certificates",
         checkProject: "MAKEATHONHackathon",
         gotDate: "I received the Certificate on September 7th, 2025.",
-        summary: ""
+        summary: "",
+        type : "best"
     },
     {
         name: "NEXATHON 1.0 Hackathon Participation Certificate",
@@ -59,7 +64,8 @@ export const certificates = [
         checkName: "certificates",
         checkProject: "NEXATHONHackathon",
         gotDate: "I received the Certificate on September 11th, 2025.",
-        summary: ""
+        summary: "",
+        type : "best"
     },
     {
         name: "TEXIBITION Hackathon Participation Certificate",
@@ -68,7 +74,8 @@ export const certificates = [
         checkName: "certificates",
         checkProject: "XiBitHackathon",
         gotDate: "I received the Certificate on May 1st, 2025.",
-        summary: ""
+        summary: "",
+        type : "best"
     },
     {
         name: "Binary Battleground Hackathon Participation Certificate",
@@ -77,6 +84,16 @@ export const certificates = [
         checkName: "certificates",
         gotDate: "I received the Certificate on February 26th, 2025.",
         summary: ""
+    },
+    {
+        name: "Docker Fundamentals Certificate",
+        title: ["Docker"],
+        image: dockerImg,
+        link: "https://www.udemy.com/certificate/UC-d58958b2-25fd-4ec7-8e08-9e8b7ea6ab30/",
+        checkName: "certificates",
+        gotDate: "I received the Certificate on November 24th, 2025.",
+        summary: "",
+        type : "best"
     },
     {
         name: "Internal Hackathon Participation Certificate",
@@ -93,7 +110,8 @@ export const certificates = [
         checkProject: "InnovoConHackathon",
         checkName: "certificates",
         gotDate: "I received the Certificate on February 28th, 2025.",
-        summary: ""
+        summary: "",
+        type : "best"
     },
     {
         name: "NodeJs Masterclass Certificate",
@@ -111,7 +129,8 @@ export const certificates = [
         checkProject: "DevInnov8Hackathon",
         checkName: "certificates",
         gotDate: "I received the Certificate on September 28th, 2024.",
-        summary: "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition."
+        summary: "On the occasion of Engineering Day, our college Brainware University conducted a college-wide hackathon. There were 3 problem statements where we were supposed to choose one or more problem statements. We took all 3 statements as a challenge and completed them in a span of 2 days. The competition included students from 1st, 2nd, 3rd, and 4th years, including BCA, MCA, and BTech courses, and we were from the BCA first year. Despite all that, we have secured 4th rank in the competition.",
+        type : "best"
     },
     {
         name: "Dev Innov8+ Hackathon Participation Certificate",
@@ -138,7 +157,8 @@ export const certificates = [
         gotDate: "I received the Certificate on June 20th, 2024.",
         link: "https://www.udemy.com/certificate/UC-70d1d8e4-8f65-404c-ab95-93157924841e/",
         checkName: "certificates",
-        summary: ""
+        summary: "",
+        type : "best"
     },
     {
         name: "Teaching Experience Certificate",
@@ -146,6 +166,7 @@ export const certificates = [
         link: workExperience,
         checkName: "certificates",
         gotDate: "I received the Certificate on July 5th, 2024.",
-        summary: "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there"
+        summary: "I have 1 year 10 months of experience in Birsingha RGCSA company. It is a computer coaching center where I taught Ms Paint, Bangla Word, Word Pad, Note Pad, MS Office(Word, Excel, PowerPoint), HTML & CSS, C language, Internate there",
+        type : "best"
     }
 ]

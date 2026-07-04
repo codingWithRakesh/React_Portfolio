@@ -12,6 +12,7 @@ const Projects = () => {
   const [[, setTypeData]] = useShowDetails();
 
   const [visibleProjects, setVisibleProjects] = useState(10);
+  const [activeTag, setActiveTag] = useState('Best');
 
   useEffect(() => {
     setTypeData("");
@@ -41,11 +42,30 @@ const Projects = () => {
     };
   }, []);
 
+  const handleTagClick = (tag) => {
+    setActiveTag(tag);
+  };
+
+  const visibleProjectShow = (activeTag === 'Best'
+    ? details.projects.filter((project) => project.type === 'best')
+    : details.projects
+  ).slice(0, visibleProjects);
+
   return (
     <div className={`mainContainer projects ${sidebar ? "mainContainerSmall" : ""}`}>
-      <h1 className="titleSkill">Projects</h1>
+      <div className="tagComponent">
+        <h1 className='titleSkill'>Projects</h1>
+        <div className="projectTags">
+          <div className={`projectTag boxShadows ${activeTag === 'Best' ? 'activeTags' : ''}`} onClick={() => handleTagClick('Best')}>
+            Best Projects
+          </div>
+          <div className={`projectTag boxShadows ${activeTag === 'All' ? 'activeTags' : ''}`} onClick={() => handleTagClick('All')}>
+            All Projects
+          </div>
+        </div>
+      </div>
       <div className="projectShowAll">
-        {details.projects.slice(0, visibleProjects).map((data, index) => (
+        {visibleProjectShow.map((data, index) => (
           <ProjectCom key={index} data={data} classProject="marginBottom" />
         ))}
       </div>

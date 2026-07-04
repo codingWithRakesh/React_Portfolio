@@ -11,6 +11,7 @@ const Certificates = () => {
   const [[, setProgress]] = useTopLoader()
   const [[, setTypeData]] = useShowDetails();
   const [visibleCertificates, setVisiblevisibleCertificates] = useState(10);
+  const [activeTag, setActiveTag] = useState('Best');
 
   useEffect(() => {
     setTypeData("")
@@ -40,13 +41,30 @@ const Certificates = () => {
     };
   }, []);
 
+  const handleTagClick = (tag) => {
+    setActiveTag(tag)
+  }
+
+  const visibleCertificatesShow = (activeTag === 'Best'
+    ? details.certificates.filter((certificate) => certificate.type === 'best')
+    : details.certificates
+  ).slice(0, visibleCertificates);
+
   return (
     <div className={`mainContainer certificateShow ${sidebar ? "mainContainerSmall" : ""}`}>
-      <h1 className="titleSkill certiti">
-        Certificates
-      </h1>
+      <div className="certificateTagComponent">
+        <h1 className='titleSkill certiti'>Certificates</h1>
+        <div className="certificateTags">
+          <div className={`certificatetag boxShadows ${activeTag === 'Best' ? 'activeTags' : ''}`} onClick={() => handleTagClick('Best')}>
+            Best Certificates
+          </div>
+          <div className={`certificatetag boxShadows ${activeTag === 'All' ? 'activeTags' : ''}`} onClick={() => handleTagClick('All')}>
+            All Certificates
+          </div>
+        </div>
+      </div>
       <div className="certificate">
-        {details.certificates.slice(0, visibleCertificates).map((data, index) => (
+        {visibleCertificatesShow.map((data, index) => (
           <CertificateCom key={index} data={data} />
         ))}
       </div>
