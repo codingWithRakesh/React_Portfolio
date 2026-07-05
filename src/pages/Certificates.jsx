@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import '../App.css'
 import { UserContext } from '../contexts/context'
 import CertificateCom from '../component/CertificateCom'
@@ -12,6 +12,7 @@ const Certificates = () => {
   const [[, setTypeData]] = useShowDetails();
   const [visibleCertificates, setVisiblevisibleCertificates] = useState(10);
   const [activeTag, setActiveTag] = useState('Best');
+  const skipNextLoadRef = useRef(false);
 
   useEffect(() => {
     setTypeData("")
@@ -25,12 +26,31 @@ const Certificates = () => {
   }, [])
 
   useEffect(() => {
+    setVisiblevisibleCertificates(10);
+    const animationFrameId = window.requestAnimationFrame(() => {
+      skipNextLoadRef.current = false;
+    });
+
+    return () => {
+      window.cancelAnimationFrame(animationFrameId);
+    };
+  }, [activeTag]);
+
+  const currentCertificates = activeTag === 'Best'
+    ? details.certificates.filter((certificate) => certificate.type === 'best')
+    : details.certificates;
+
+  useEffect(() => {
     const handleScroll = () => {
+      if (skipNextLoadRef.current) {
+        return;
+      }
+
       if (
         window.innerHeight + document.documentElement.scrollTop +200 >=
         document.documentElement.scrollHeight
       ) {
-        setVisiblevisibleCertificates((prev) => Math.min(prev + 5, details.certificates.length));
+        setVisiblevisibleCertificates((prev) => Math.min(prev + 10, currentCertificates.length));
       }
     };
 
@@ -39,16 +59,15 @@ const Certificates = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [currentCertificates.length]);
 
   const handleTagClick = (tag) => {
+    skipNextLoadRef.current = true;
+    setVisiblevisibleCertificates(10);
     setActiveTag(tag)
   }
 
-  const visibleCertificatesShow = (activeTag === 'Best'
-    ? details.certificates.filter((certificate) => certificate.type === 'best')
-    : details.certificates
-  ).slice(0, visibleCertificates);
+  const visibleCertificatesShow = currentCertificates.slice(0, visibleCertificates);
 
   return (
     <div className={`mainContainer certificateShow ${sidebar ? "mainContainerSmall" : ""}`}>

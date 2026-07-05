@@ -81,7 +81,7 @@ const ProjectChart = ({ nameProject }) => {
         }],
     };
 
-    console.log([colors.backgroundColor, colors.borderColor, nameProject, chartData, data]);
+    // console.log([colors.backgroundColor, colors.borderColor, nameProject, chartData, data]);
 
     const options = {
         responsive: true,

@@ -13,7 +13,9 @@ const About = () => {
   const [[sidebar]] = useContext(UserContext)
   const [[, setProgress]] = useTopLoader()
   const [[, setTypeData]] = useShowDetails();
-  const [isShow, setIsShow] = useState("client") //client, hackathon, education
+  const [isShow, setIsShow] = useState(() => {
+    return sessionStorage.getItem('aboutActiveTab') || 'client';
+  }) //client, hackathon, education
 
   useEffect(() => {
     setProgress(20)
@@ -26,9 +28,13 @@ const About = () => {
     setTypeData("")
   }, [setTypeData])
 
+  useEffect(() => {
+    sessionStorage.setItem('aboutActiveTab', isShow);
+  }, [isShow])
+
 
   return (
-    <div className={`mainContainer about ${sidebar ? "mainContainerSmall" : ""}`}>
+    <div className={`mainContainer addFlex about ${sidebar ? "mainContainerSmall" : ""}`}>
       <AboutCom aboutBox={details.about.aboutBox} />
 
       <div className="aboutButtons boxShadows">
@@ -77,7 +83,7 @@ const About = () => {
       )}
 
       {isShow === "education" && (
-        <section className="col">
+        <section className="col educationCol">
           <h1 className="titleAbout">Education</h1>
           <div className="contents">
             {details.about.education.map((data, index) => (<ExpensesCom data={data} key={index} />))}

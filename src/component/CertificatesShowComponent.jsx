@@ -19,7 +19,6 @@ const CertificatesShowComponent = ({ handleBackButtonClick }) => {
     const matchingSkill = details.skills.find(skill => 
         nameCertificate?.title?.some(title => title.toLowerCase() === skill.name.toLowerCase())
     );
-    console.log(matchingSkill)
     const matchingProject = details.projects.find(project => project.checkCertificket && project.checkCertificket === nameCertificate?.checkProject);
     const [visibleCertificates, setVisiblevisibleCertificates] = useState(5);
     useEffect(() => {

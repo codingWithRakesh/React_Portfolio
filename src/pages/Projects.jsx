@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import '../App.css';
 import { UserContext } from '../contexts/context';
 import { useTopLoader } from '../contexts/topLoderContext';
@@ -13,6 +13,7 @@ const Projects = () => {
 
   const [visibleProjects, setVisibleProjects] = useState(10);
   const [activeTag, setActiveTag] = useState('Best');
+  const skipNextLoadRef = useRef(false);
 
   useEffect(() => {
     setTypeData("");
@@ -26,12 +27,31 @@ const Projects = () => {
   }, [setProgress]);
 
   useEffect(() => {
+    setVisibleProjects(10);
+    const animationFrameId = window.requestAnimationFrame(() => {
+      skipNextLoadRef.current = false;
+    });
+
+    return () => {
+      window.cancelAnimationFrame(animationFrameId);
+    };
+  }, [activeTag]);
+
+  const currentProjects = activeTag === 'Best'
+    ? details.projects.filter((project) => project.type === 'best')
+    : details.projects;
+
+  useEffect(() => {
     const handleScroll = () => {
+      if (skipNextLoadRef.current) {
+        return;
+      }
+
       if (
         window.innerHeight + document.documentElement.scrollTop +200 >=
         document.documentElement.scrollHeight
       ) {
-        setVisibleProjects((prev) => Math.min(prev + 5, details.projects.length));
+        setVisibleProjects((prev) => Math.min(prev + 10, currentProjects.length));
       }
     };
 
@@ -40,16 +60,15 @@ const Projects = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [currentProjects.length]);
 
   const handleTagClick = (tag) => {
+    skipNextLoadRef.current = true;
+    setVisibleProjects(10);
     setActiveTag(tag);
   };
 
-  const visibleProjectShow = (activeTag === 'Best'
-    ? details.projects.filter((project) => project.type === 'best')
-    : details.projects
-  ).slice(0, visibleProjects);
+  const visibleProjectShow = currentProjects.slice(0, visibleProjects);
 
   return (
     <div className={`mainContainer projects ${sidebar ? "mainContainerSmall" : ""}`}>

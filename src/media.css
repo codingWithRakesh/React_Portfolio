@@ -109,8 +109,8 @@
 
     /* about buttons */
     .aboutButtons {
-        width: 80%;
-        max-width: 80%;
+        width: 100%;
+        /* max-width: 80%; */
     }
 
     /* skill */
@@ -206,6 +206,25 @@
     }
 
     /* certificate  */
+    .certificateTagComponent {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .75rem;
+        padding-right: 0;
+    }
+
+    .certificateTags {
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+        gap: .6rem;
+    }
+
+    .certificatetag {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .certificate {
         padding: 1rem 2rem;
         display: flex;
@@ -553,6 +572,32 @@
         gap: 1rem;
     }
 
+    .tagComponent {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .75rem;
+    }
+
+    .projectTags {
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+        gap: .6rem;
+    }
+
+    .projectTag {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .projectShowAll {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+        columns: auto;
+    }
+
     .project {
         width: 100% !important;
     }
@@ -565,14 +610,22 @@
 
     .certiti {
         padding-left: 1rem;
+        margin: 0rem;
+    }
+
+    .certificateTags{
         margin-bottom: 1rem;
+        padding-left: 1rem;
     }
 
     .certificate {
         padding: 1rem;
         padding-top: 0;
+        display: flex;
+        flex-direction: column;
         align-content: flex-start;
         gap: 1rem;
+        columns: auto;
     }
 
     .CertificateComClass {
